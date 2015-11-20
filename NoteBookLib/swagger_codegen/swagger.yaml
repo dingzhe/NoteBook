@@ -1,0 +1,51 @@
+swagger: '2.0'
+info:
+  title: Article API
+  version: 0.1.0
+host: 192.168.1.111
+basePath: /php
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /api.php:
+    get:
+      tags:
+        - GetArticle
+      summary: list products
+      description: The article API
+      operationId: getArticleById
+      parameters:
+        - name: id
+          in: query
+          description: Tags to filter by
+          required: true
+          type: string
+        - name: api
+          in: query
+          description: Tags to filter by
+          required: true
+          type: string
+      responses:
+        '200':
+          description: A list with products
+          schema:
+            properties:
+              id:
+                type: string
+              title:
+                type: string
+              author:
+                type: string
+              description:
+                type: string
+              content:
+                type: string
+              dateline:
+                type: string
+        default:
+          description: 'an "unexpected" error'
+definitions: {}

@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2030B4661BFF1CD700C96C6B /* CreatNoteApiSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2030B4671BFF1CD700C96C6B /* Build configuration list for PBXAggregateTarget "CreatNoteApiSDK" */;
+			buildPhases = (
+				2030B46A1BFF1CDB00C96C6B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CreatNoteApiSDK;
+			productName = CreatNoteApiSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2030B4601BFF1C1D00C96C6B /* code-gen in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45A1BFF1C1D00C96C6B /* code-gen */; };
+		2030B4611BFF1C1D00C96C6B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2030B45B1BFF1C1D00C96C6B /* README.md */; };
+		2030B4631BFF1C1D00C96C6B /* swagger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45D1BFF1C1D00C96C6B /* swagger.json */; };
+		2030B4641BFF1C1D00C96C6B /* swagger.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45E1BFF1C1D00C96C6B /* swagger.sh */; };
+		2030B4651BFF1C1D00C96C6B /* swagger.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45F1BFF1C1D00C96C6B /* swagger.yaml */; };
+		2030B47D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */; };
+		2030B47E1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */; };
+		2030B47F1BFF1D2B00C96C6B /* SWGApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B46E1BFF1D2B00C96C6B /* SWGApi.h */; };
+		2030B4801BFF1D2B00C96C6B /* SWGApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B46F1BFF1D2B00C96C6B /* SWGApi.m */; };
+		2030B4811BFF1D2B00C96C6B /* SWGApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */; };
+		2030B4821BFF1D2B00C96C6B /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */; };
+		2030B4831BFF1D2B00C96C6B /* SWGConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */; };
+		2030B4841BFF1D2B00C96C6B /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */; };
+		2030B4851BFF1D2B00C96C6B /* SWGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4741BFF1D2B00C96C6B /* SWGFile.h */; };
+		2030B4861BFF1D2B00C96C6B /* SWGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4751BFF1D2B00C96C6B /* SWGFile.m */; };
+		2030B4871BFF1D2B00C96C6B /* SWGGetArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */; };
+		2030B4881BFF1D2B00C96C6B /* SWGGetArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */; };
+		2030B4891BFF1D2B00C96C6B /* SWGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4781BFF1D2B00C96C6B /* SWGObject.h */; };
+		2030B48A1BFF1D2B00C96C6B /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4791BFF1D2B00C96C6B /* SWGObject.m */; };
+		2030B48B1BFF1D2B00C96C6B /* SWGQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */; };
+		2030B48C1BFF1D2B00C96C6B /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */; };
+		2030B48D1BFF1D2B00C96C6B /* NoteBookLib_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */; };
+		2030B4901BFF214F00C96C6B /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B48E1BFF214F00C96C6B /* Note.h */; };
+		2030B4911BFF214F00C96C6B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B48F1BFF214F00C96C6B /* Note.m */; };
+		2089CC551BFF12C500B80E5A /* NoteBookLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2089CC541BFF12C500B80E5A /* NoteBookLib.h */; };
+		2089CC5B1BFF12C500B80E5A /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */; };
+		2089CC621BFF12C500B80E5A /* NoteBookLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC611BFF12C500B80E5A /* NoteBookLibTests.m */; };
+		2089CC6D1BFF162100B80E5A /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = 2089CC6B1BFF162100B80E5A /* Person.h */; };
+		2089CC6E1BFF162100B80E5A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC6C1BFF162100B80E5A /* Person.m */; };
+		E9EA5CC3B8AB2E313F0FA1B6 /* libPods-NoteBookLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2089CC5C1BFF12C500B80E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2089CC461BFF12C500B80E5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2089CC4E1BFF12C500B80E5A;
+			remoteInfo = NoteBookLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2030B45A1BFF1C1D00C96C6B /* code-gen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "code-gen"; sourceTree = "<group>"; };
+		2030B45B1BFF1C1D00C96C6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2030B45C1BFF1C1D00C96C6B /* swagger-codegen-cli.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "swagger-codegen-cli.jar"; sourceTree = "<group>"; };
+		2030B45D1BFF1C1D00C96C6B /* swagger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swagger.json; sourceTree = "<group>"; };
+		2030B45E1BFF1C1D00C96C6B /* swagger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swagger.sh; sourceTree = "<group>"; };
+		2030B45F1BFF1C1D00C96C6B /* swagger.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swagger.yaml; sourceTree = "<group>"; };
+		2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
+		2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
+		2030B46E1BFF1D2B00C96C6B /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
+		2030B46F1BFF1D2B00C96C6B /* SWGApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApi.m; sourceTree = "<group>"; };
+		2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
+		2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
+		2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
+		2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
+		2030B4741BFF1D2B00C96C6B /* SWGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFile.h; sourceTree = "<group>"; };
+		2030B4751BFF1D2B00C96C6B /* SWGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFile.m; sourceTree = "<group>"; };
+		2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleApi.h; sourceTree = "<group>"; };
+		2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleApi.m; sourceTree = "<group>"; };
+		2030B4781BFF1D2B00C96C6B /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
+		2030B4791BFF1D2B00C96C6B /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
+		2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
+		2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
+		2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookLib_gen.h; sourceTree = "<group>"; };
+		2030B48E1BFF214F00C96C6B /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		2030B48F1BFF214F00C96C6B /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoteBookLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2089CC531BFF12C500B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2089CC541BFF12C500B80E5A /* NoteBookLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteBookLib.h; sourceTree = "<group>"; };
+		2089CC5A1BFF12C500B80E5A /* NoteBookLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteBookLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2089CC601BFF12C500B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2089CC611BFF12C500B80E5A /* NoteBookLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteBookLibTests.m; sourceTree = "<group>"; };
+		2089CC6B1BFF162100B80E5A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2089CC6C1BFF162100B80E5A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBookLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C902983DC7615D4AD08243 /* Pods-NoteBookLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookLib/Pods-NoteBookLib.release.xcconfig"; sourceTree = "<group>"; };
+		977D6C2B42BD4B3215218983 /* Pods-NoteBookLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookLib/Pods-NoteBookLib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2089CC4B1BFF12C500B80E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EA5CC3B8AB2E313F0FA1B6 /* libPods-NoteBookLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC571BFF12C500B80E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2089CC5B1BFF12C500B80E5A /* NoteBookLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E73A99B8144E7572A306B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				977D6C2B42BD4B3215218983 /* Pods-NoteBookLib.debug.xcconfig */,
+				94C902983DC7615D4AD08243 /* Pods-NoteBookLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2030B4591BFF1C1D00C96C6B /* swagger_codegen */ = {
+			isa = PBXGroup;
+			children = (
+				2030B45A1BFF1C1D00C96C6B /* code-gen */,
+				2030B45B1BFF1C1D00C96C6B /* README.md */,
+				2030B45C1BFF1C1D00C96C6B /* swagger-codegen-cli.jar */,
+				2030B45D1BFF1C1D00C96C6B /* swagger.json */,
+				2030B45E1BFF1C1D00C96C6B /* swagger.sh */,
+				2030B45F1BFF1C1D00C96C6B /* swagger.yaml */,
+			);
+			path = swagger_codegen;
+			sourceTree = "<group>";
+		};
+		2030B46B1BFF1D2B00C96C6B /* noteApiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */,
+				2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */,
+				2030B46E1BFF1D2B00C96C6B /* SWGApi.h */,
+				2030B46F1BFF1D2B00C96C6B /* SWGApi.m */,
+				2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */,
+				2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */,
+				2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */,
+				2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */,
+				2030B4741BFF1D2B00C96C6B /* SWGFile.h */,
+				2030B4751BFF1D2B00C96C6B /* SWGFile.m */,
+				2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */,
+				2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */,
+				2030B4781BFF1D2B00C96C6B /* SWGObject.h */,
+				2030B4791BFF1D2B00C96C6B /* SWGObject.m */,
+				2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */,
+				2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */,
+				2030B48E1BFF214F00C96C6B /* Note.h */,
+				2030B48F1BFF214F00C96C6B /* Note.m */,
+			);
+			path = noteApiSDK;
+			sourceTree = "<group>";
+		};
+		2089CC451BFF12C500B80E5A = {
+			isa = PBXGroup;
+			children = (
+				2030B4591BFF1C1D00C96C6B /* swagger_codegen */,
+				2089CC511BFF12C500B80E5A /* NoteBookLib */,
+				2089CC5E1BFF12C500B80E5A /* NoteBookLibTests */,
+				2089CC501BFF12C500B80E5A /* Products */,
+				03E73A99B8144E7572A306B8 /* Pods */,
+				DDF7BFAEC09F788900B4A3A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2089CC501BFF12C500B80E5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */,
+				2089CC5A1BFF12C500B80E5A /* NoteBookLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2089CC511BFF12C500B80E5A /* NoteBookLib */ = {
+			isa = PBXGroup;
+			children = (
+				2030B46B1BFF1D2B00C96C6B /* noteApiSDK */,
+				2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */,
+				2089CC541BFF12C500B80E5A /* NoteBookLib.h */,
+				2089CC6B1BFF162100B80E5A /* Person.h */,
+				2089CC6C1BFF162100B80E5A /* Person.m */,
+				2089CC521BFF12C500B80E5A /* Supporting Files */,
+			);
+			path = NoteBookLib;
+			sourceTree = "<group>";
+		};
+		2089CC521BFF12C500B80E5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC531BFF12C500B80E5A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2089CC5E1BFF12C500B80E5A /* NoteBookLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC611BFF12C500B80E5A /* NoteBookLibTests.m */,
+				2089CC5F1BFF12C500B80E5A /* Supporting Files */,
+			);
+			path = NoteBookLibTests;
+			sourceTree = "<group>";
+		};
+		2089CC5F1BFF12C500B80E5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC601BFF12C500B80E5A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDF7BFAEC09F788900B4A3A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2089CC4C1BFF12C500B80E5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2030B47D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h in Headers */,
+				2030B47F1BFF1D2B00C96C6B /* SWGApi.h in Headers */,
+				2030B4901BFF214F00C96C6B /* Note.h in Headers */,
+				2089CC551BFF12C500B80E5A /* NoteBookLib.h in Headers */,
+				2030B4851BFF1D2B00C96C6B /* SWGFile.h in Headers */,
+				2030B48D1BFF1D2B00C96C6B /* NoteBookLib_gen.h in Headers */,
+				2030B4831BFF1D2B00C96C6B /* SWGConfiguration.h in Headers */,
+				2030B48B1BFF1D2B00C96C6B /* SWGQueryParamCollection.h in Headers */,
+				2030B4891BFF1D2B00C96C6B /* SWGObject.h in Headers */,
+				2089CC6D1BFF162100B80E5A /* Person.h in Headers */,
+				2030B4811BFF1D2B00C96C6B /* SWGApiClient.h in Headers */,
+				2030B4871BFF1D2B00C96C6B /* SWGGetArticleApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2089CC4E1BFF12C500B80E5A /* NoteBookLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2089CC651BFF12C500B80E5A /* Build configuration list for PBXNativeTarget "NoteBookLib" */;
+			buildPhases = (
+				C8B9703A942133D63EE12F0D /* Check Pods Manifest.lock */,
+				2089CC4A1BFF12C500B80E5A /* Sources */,
+				2089CC4B1BFF12C500B80E5A /* Frameworks */,
+				2089CC4C1BFF12C500B80E5A /* Headers */,
+				2089CC4D1BFF12C500B80E5A /* Resources */,
+				20FC1106863B7C0900B96534 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteBookLib;
+			productName = NoteBookLib;
+			productReference = 2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2089CC591BFF12C500B80E5A /* NoteBookLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2089CC681BFF12C500B80E5A /* Build configuration list for PBXNativeTarget "NoteBookLibTests" */;
+			buildPhases = (
+				2089CC561BFF12C500B80E5A /* Sources */,
+				2089CC571BFF12C500B80E5A /* Frameworks */,
+				2089CC581BFF12C500B80E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2089CC5D1BFF12C500B80E5A /* PBXTargetDependency */,
+			);
+			name = NoteBookLibTests;
+			productName = NoteBookLibTests;
+			productReference = 2089CC5A1BFF12C500B80E5A /* NoteBookLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2089CC461BFF12C500B80E5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = dz;
+				TargetAttributes = {
+					2030B4661BFF1CD700C96C6B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2089CC4E1BFF12C500B80E5A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2089CC591BFF12C500B80E5A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 2089CC491BFF12C500B80E5A /* Build configuration list for PBXProject "NoteBookLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2089CC451BFF12C500B80E5A;
+			productRefGroup = 2089CC501BFF12C500B80E5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2089CC4E1BFF12C500B80E5A /* NoteBookLib */,
+				2089CC591BFF12C500B80E5A /* NoteBookLibTests */,
+				2030B4661BFF1CD700C96C6B /* CreatNoteApiSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2089CC4D1BFF12C500B80E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2030B4631BFF1C1D00C96C6B /* swagger.json in Resources */,
+				2030B4651BFF1C1D00C96C6B /* swagger.yaml in Resources */,
+				2030B4641BFF1C1D00C96C6B /* swagger.sh in Resources */,
+				2030B4601BFF1C1D00C96C6B /* code-gen in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC581BFF12C500B80E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2030B46A1BFF1CDB00C96C6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#! /bin/bash\nTMP_DIR=.\nDES_DIR=noteApiSDK\nTOOL_DIR=swagger_codegen\nGEN_HEADER=NoteBookLib_gen.h\n\necho \"Generating source codes into temp folder...\"\n$TOOL_DIR/code-gen $TOOL_DIR/swagger.json objc $TMP_DIR >/dev/null 2>&1\n\nif [[ $? == 0 ]]; then\necho \"Clean generated files...\"\nrm -f NoteBookLib/$GEN_HEADER\nrm -f NoteBookLib/$DES_DIR/*\n                           \n                           echo \"Generating $GEN_HEADER\"\n                           \n                           for file in $(ls \"$TMP_DIR/client\" | grep \\\\.h); do\n                           echo \"#import \\\"$DES_DIR/$file\\\"\" >> NoteBookLib/$GEN_HEADER\n                           done\n                           \n                           echo \"Moving generted files...\"\n                           mkdir -p \"NoteBookLib/$DES_DIR\"\n                           mv $TMP_DIR/client/* NoteBookLib/$DES_DIR/\n                           \n                           rm -r \"$TMP_DIR/client\"\n                           rm -f \"$TMP_DIR/Podfile\"\n                           fi\n";
+		};
+		20FC1106863B7C0900B96534 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBookLib/Pods-NoteBookLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B9703A942133D63EE12F0D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2089CC4A1BFF12C500B80E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2030B48C1BFF1D2B00C96C6B /* SWGQueryParamCollection.m in Sources */,
+				2030B4611BFF1C1D00C96C6B /* README.md in Sources */,
+				2030B47E1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m in Sources */,
+				2030B4801BFF1D2B00C96C6B /* SWGApi.m in Sources */,
+				2089CC6E1BFF162100B80E5A /* Person.m in Sources */,
+				2030B4881BFF1D2B00C96C6B /* SWGGetArticleApi.m in Sources */,
+				2030B4841BFF1D2B00C96C6B /* SWGConfiguration.m in Sources */,
+				2030B4821BFF1D2B00C96C6B /* SWGApiClient.m in Sources */,
+				2030B4861BFF1D2B00C96C6B /* SWGFile.m in Sources */,
+				2030B48A1BFF1D2B00C96C6B /* SWGObject.m in Sources */,
+				2030B4911BFF214F00C96C6B /* Note.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC561BFF12C500B80E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2089CC621BFF12C500B80E5A /* NoteBookLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2089CC5D1BFF12C500B80E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2089CC4E1BFF12C500B80E5A /* NoteBookLib */;
+			targetProxy = 2089CC5C1BFF12C500B80E5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2030B4681BFF1CD700C96C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2030B4691BFF1CD700C96C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2089CC631BFF12C500B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2089CC641BFF12C500B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2089CC661BFF12C500B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977D6C2B42BD4B3215218983 /* Pods-NoteBookLib.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteBookLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2089CC671BFF12C500B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C902983DC7615D4AD08243 /* Pods-NoteBookLib.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteBookLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2089CC691BFF12C500B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteBookLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2089CC6A1BFF12C500B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteBookLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2030B4671BFF1CD700C96C6B /* Build configuration list for PBXAggregateTarget "CreatNoteApiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2030B4681BFF1CD700C96C6B /* Debug */,
+				2030B4691BFF1CD700C96C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2089CC491BFF12C500B80E5A /* Build configuration list for PBXProject "NoteBookLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC631BFF12C500B80E5A /* Debug */,
+				2089CC641BFF12C500B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2089CC651BFF12C500B80E5A /* Build configuration list for PBXNativeTarget "NoteBookLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC661BFF12C500B80E5A /* Debug */,
+				2089CC671BFF12C500B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2089CC681BFF12C500B80E5A /* Build configuration list for PBXNativeTarget "NoteBookLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC691BFF12C500B80E5A /* Debug */,
+				2089CC6A1BFF12C500B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2089CC461BFF12C500B80E5A /* Project object */;
+}

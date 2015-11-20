@@ -1,0 +1,1 @@
+PODS_NOTEBOOK_ISO_____OTHER_LDFLAGS = -framework "Foundation"

@@ -1,0 +1,20 @@
+#! /bin/bash
+
+if [[ $# != 3 ]]; then
+	echo "./code_gen {swagger_json} {lang} {output_dir}"
+	echo ""
+	echo "  EXAMPLE"
+	echo "  ./code_gen swagger.json objc objc_src"
+	echo ""
+	exit 1
+fi
+
+JAVA_OPTS="-Xms256m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=512m"
+SWAGGER_CODEGEN_JAR='swagger-codegen-cli.jar'
+CUR_DIR=$(dirname "${BASH_SOURCE[0]}")
+
+input=$1
+lang=$2 
+output=$3
+
+java $JAVA_OPTS -jar "$CUR_DIR/$SWAGGER_CODEGEN_JAR" generate -i $input -l $lang -o $output

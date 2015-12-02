@@ -4,6 +4,7 @@
 #import "noteApiSDK/SWGConfiguration.h"
 #import "noteApiSDK/SWGFile.h"
 #import "noteApiSDK/SWGGetArticleApi.h"
+#import "noteApiSDK/SWGGetArticleByIdRequest.h"
+#import "noteApiSDK/SWGGetArticleByIdResponse.h"
 #import "noteApiSDK/SWGObject.h"
 #import "noteApiSDK/SWGQueryParamCollection.h"
-#import "noteApiSDK/Note.h"

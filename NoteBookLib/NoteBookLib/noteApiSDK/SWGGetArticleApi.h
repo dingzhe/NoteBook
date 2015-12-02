@@ -1,4 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "SWGGetArticleByIdRequest.h"
+#import "SWGGetArticleByIdResponse.h"
 #import "SWGObject.h"
 #import "SWGApi.h"
 
@@ -10,15 +12,14 @@
  list products
  The article API
 
- @param _id Tags to filter by
- @param api Tags to filter by
+ @param body 
  
 
- return type: 
+ return type: SWGGetArticleByIdResponse*
  */
--(NSNumber*) getArticleByIdWith_id: (NSString*) _id api: (NSString*) api
+-(NSNumber*) getArticleByIdWithBody: (SWGGetArticleByIdRequest*) body
+    completionHandler: (void (^)(SWGGetArticleByIdResponse* output, NSError* error))completionBlock;
     
-    completionHandler: (void (^)(NSData *data, NSError* error))completionBlock;
 
 
 

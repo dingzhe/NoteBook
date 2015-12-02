@@ -22,34 +22,49 @@
 
 /* Begin PBXBuildFile section */
 		2030B4601BFF1C1D00C96C6B /* code-gen in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45A1BFF1C1D00C96C6B /* code-gen */; };
-		2030B4611BFF1C1D00C96C6B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2030B45B1BFF1C1D00C96C6B /* README.md */; };
 		2030B4631BFF1C1D00C96C6B /* swagger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45D1BFF1C1D00C96C6B /* swagger.json */; };
 		2030B4641BFF1C1D00C96C6B /* swagger.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45E1BFF1C1D00C96C6B /* swagger.sh */; };
 		2030B4651BFF1C1D00C96C6B /* swagger.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45F1BFF1C1D00C96C6B /* swagger.yaml */; };
-		2030B47D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */; };
-		2030B47E1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */; };
-		2030B47F1BFF1D2B00C96C6B /* SWGApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B46E1BFF1D2B00C96C6B /* SWGApi.h */; };
-		2030B4801BFF1D2B00C96C6B /* SWGApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B46F1BFF1D2B00C96C6B /* SWGApi.m */; };
-		2030B4811BFF1D2B00C96C6B /* SWGApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */; };
-		2030B4821BFF1D2B00C96C6B /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */; };
-		2030B4831BFF1D2B00C96C6B /* SWGConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */; };
-		2030B4841BFF1D2B00C96C6B /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */; };
-		2030B4851BFF1D2B00C96C6B /* SWGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4741BFF1D2B00C96C6B /* SWGFile.h */; };
-		2030B4861BFF1D2B00C96C6B /* SWGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4751BFF1D2B00C96C6B /* SWGFile.m */; };
-		2030B4871BFF1D2B00C96C6B /* SWGGetArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */; };
-		2030B4881BFF1D2B00C96C6B /* SWGGetArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */; };
-		2030B4891BFF1D2B00C96C6B /* SWGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B4781BFF1D2B00C96C6B /* SWGObject.h */; };
-		2030B48A1BFF1D2B00C96C6B /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B4791BFF1D2B00C96C6B /* SWGObject.m */; };
-		2030B48B1BFF1D2B00C96C6B /* SWGQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */; };
-		2030B48C1BFF1D2B00C96C6B /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */; };
 		2030B48D1BFF1D2B00C96C6B /* NoteBookLib_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */; };
-		2030B4901BFF214F00C96C6B /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 2030B48E1BFF214F00C96C6B /* Note.h */; };
-		2030B4911BFF214F00C96C6B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030B48F1BFF214F00C96C6B /* Note.m */; };
 		2089CC551BFF12C500B80E5A /* NoteBookLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2089CC541BFF12C500B80E5A /* NoteBookLib.h */; };
 		2089CC5B1BFF12C500B80E5A /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */; };
 		2089CC621BFF12C500B80E5A /* NoteBookLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC611BFF12C500B80E5A /* NoteBookLibTests.m */; };
 		2089CC6D1BFF162100B80E5A /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = 2089CC6B1BFF162100B80E5A /* Person.h */; };
 		2089CC6E1BFF162100B80E5A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC6C1BFF162100B80E5A /* Person.m */; };
+		20D709BC1C0406F300F301AB /* NoteBookArticleService.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709BA1C0406F300F301AB /* NoteBookArticleService.h */; };
+		20D709BD1C0406F300F301AB /* NoteBookArticleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709BB1C0406F300F301AB /* NoteBookArticleService.m */; };
+		20D709C01C04437400F301AB /* SWGApi+RAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709BE1C04437400F301AB /* SWGApi+RAC.h */; };
+		20D709C11C04437400F301AB /* SWGApi+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709BF1C04437400F301AB /* SWGApi+RAC.m */; };
+		20D709C51C0C447F00F301AB /* NoteBookDALService.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709C31C0C447F00F301AB /* NoteBookDALService.h */; };
+		20D709C61C0C447F00F301AB /* NoteBookDALService.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709C41C0C447F00F301AB /* NoteBookDALService.m */; };
+		20D709C91C0C4BC500F301AB /* RACCommand+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709C71C0C4BC500F301AB /* RACCommand+Ext.h */; };
+		20D709CA1C0C4BC500F301AB /* RACCommand+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709C81C0C4BC500F301AB /* RACCommand+Ext.m */; };
+		20D709E01C0C53AC00F301AB /* JSONValueTransformer+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709CC1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.h */; };
+		20D709E11C0C53AC00F301AB /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709CD1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.m */; };
+		20D709E21C0C53AC00F301AB /* SWGApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709CE1C0C53AC00F301AB /* SWGApi.h */; };
+		20D709E31C0C53AC00F301AB /* SWGApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709CF1C0C53AC00F301AB /* SWGApi.m */; };
+		20D709E41C0C53AC00F301AB /* SWGApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709D01C0C53AC00F301AB /* SWGApiClient.h */; };
+		20D709E51C0C53AC00F301AB /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709D11C0C53AC00F301AB /* SWGApiClient.m */; };
+		20D709E61C0C53AC00F301AB /* SWGConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709D21C0C53AC00F301AB /* SWGConfiguration.h */; };
+		20D709E71C0C53AC00F301AB /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709D31C0C53AC00F301AB /* SWGConfiguration.m */; };
+		20D709E81C0C53AC00F301AB /* SWGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709D41C0C53AC00F301AB /* SWGFile.h */; };
+		20D709E91C0C53AC00F301AB /* SWGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709D51C0C53AC00F301AB /* SWGFile.m */; };
+		20D709EA1C0C53AC00F301AB /* SWGGetArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709D61C0C53AC00F301AB /* SWGGetArticleApi.h */; };
+		20D709EB1C0C53AC00F301AB /* SWGGetArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709D71C0C53AC00F301AB /* SWGGetArticleApi.m */; };
+		20D709EC1C0C53AC00F301AB /* SWGGetArticleByIdRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709D81C0C53AC00F301AB /* SWGGetArticleByIdRequest.h */; };
+		20D709ED1C0C53AC00F301AB /* SWGGetArticleByIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709D91C0C53AC00F301AB /* SWGGetArticleByIdRequest.m */; };
+		20D709EE1C0C53AC00F301AB /* SWGGetArticleByIdResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709DA1C0C53AC00F301AB /* SWGGetArticleByIdResponse.h */; };
+		20D709EF1C0C53AC00F301AB /* SWGGetArticleByIdResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709DB1C0C53AC00F301AB /* SWGGetArticleByIdResponse.m */; };
+		20D709F01C0C53AC00F301AB /* SWGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709DC1C0C53AC00F301AB /* SWGObject.h */; };
+		20D709F11C0C53AC00F301AB /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709DD1C0C53AC00F301AB /* SWGObject.m */; };
+		20D709F21C0C53AC00F301AB /* SWGQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709DE1C0C53AC00F301AB /* SWGQueryParamCollection.h */; };
+		20D709F31C0C53AC00F301AB /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709DF1C0C53AC00F301AB /* SWGQueryParamCollection.m */; };
+		20D709F91C0E9B2E00F301AB /* ErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709F51C0E9B2E00F301AB /* ErrorHandler.h */; };
+		20D709FA1C0E9B2E00F301AB /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709F61C0E9B2E00F301AB /* ErrorHandler.m */; };
+		20D709FB1C0E9B2E00F301AB /* ErrorHandlerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709F71C0E9B2E00F301AB /* ErrorHandlerManager.h */; };
+		20D709FC1C0E9B2E00F301AB /* ErrorHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709F81C0E9B2E00F301AB /* ErrorHandlerManager.m */; };
+		20D709FF1C0E9D2000F301AB /* RACSignal+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709FD1C0E9D2000F301AB /* RACSignal+Ext.h */; };
+		20D70A001C0E9D2000F301AB /* RACSignal+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709FE1C0E9D2000F301AB /* RACSignal+Ext.m */; };
 		E9EA5CC3B8AB2E313F0FA1B6 /* libPods-NoteBookLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */; };
 /* End PBXBuildFile section */
 
@@ -70,25 +85,7 @@
 		2030B45D1BFF1C1D00C96C6B /* swagger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swagger.json; sourceTree = "<group>"; };
 		2030B45E1BFF1C1D00C96C6B /* swagger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swagger.sh; sourceTree = "<group>"; };
 		2030B45F1BFF1C1D00C96C6B /* swagger.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swagger.yaml; sourceTree = "<group>"; };
-		2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
-		2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
-		2030B46E1BFF1D2B00C96C6B /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
-		2030B46F1BFF1D2B00C96C6B /* SWGApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApi.m; sourceTree = "<group>"; };
-		2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
-		2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
-		2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
-		2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
-		2030B4741BFF1D2B00C96C6B /* SWGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFile.h; sourceTree = "<group>"; };
-		2030B4751BFF1D2B00C96C6B /* SWGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFile.m; sourceTree = "<group>"; };
-		2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleApi.h; sourceTree = "<group>"; };
-		2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleApi.m; sourceTree = "<group>"; };
-		2030B4781BFF1D2B00C96C6B /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
-		2030B4791BFF1D2B00C96C6B /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
-		2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
-		2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
 		2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookLib_gen.h; sourceTree = "<group>"; };
-		2030B48E1BFF214F00C96C6B /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
-		2030B48F1BFF214F00C96C6B /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		2089CC4F1BFF12C500B80E5A /* NoteBookLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoteBookLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2089CC531BFF12C500B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2089CC541BFF12C500B80E5A /* NoteBookLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteBookLib.h; sourceTree = "<group>"; };
@@ -97,6 +94,40 @@
 		2089CC611BFF12C500B80E5A /* NoteBookLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteBookLibTests.m; sourceTree = "<group>"; };
 		2089CC6B1BFF162100B80E5A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2089CC6C1BFF162100B80E5A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		20D709BA1C0406F300F301AB /* NoteBookArticleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookArticleService.h; sourceTree = "<group>"; };
+		20D709BB1C0406F300F301AB /* NoteBookArticleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteBookArticleService.m; sourceTree = "<group>"; };
+		20D709BE1C04437400F301AB /* SWGApi+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SWGApi+RAC.h"; sourceTree = "<group>"; };
+		20D709BF1C04437400F301AB /* SWGApi+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SWGApi+RAC.m"; sourceTree = "<group>"; };
+		20D709C31C0C447F00F301AB /* NoteBookDALService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteBookDALService.h; path = services/NoteBookDALService.h; sourceTree = "<group>"; };
+		20D709C41C0C447F00F301AB /* NoteBookDALService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteBookDALService.m; path = services/NoteBookDALService.m; sourceTree = "<group>"; };
+		20D709C71C0C4BC500F301AB /* RACCommand+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+Ext.h"; sourceTree = "<group>"; };
+		20D709C81C0C4BC500F301AB /* RACCommand+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+Ext.m"; sourceTree = "<group>"; };
+		20D709CC1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
+		20D709CD1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
+		20D709CE1C0C53AC00F301AB /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
+		20D709CF1C0C53AC00F301AB /* SWGApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApi.m; sourceTree = "<group>"; };
+		20D709D01C0C53AC00F301AB /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
+		20D709D11C0C53AC00F301AB /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
+		20D709D21C0C53AC00F301AB /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
+		20D709D31C0C53AC00F301AB /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
+		20D709D41C0C53AC00F301AB /* SWGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFile.h; sourceTree = "<group>"; };
+		20D709D51C0C53AC00F301AB /* SWGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFile.m; sourceTree = "<group>"; };
+		20D709D61C0C53AC00F301AB /* SWGGetArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleApi.h; sourceTree = "<group>"; };
+		20D709D71C0C53AC00F301AB /* SWGGetArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleApi.m; sourceTree = "<group>"; };
+		20D709D81C0C53AC00F301AB /* SWGGetArticleByIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleByIdRequest.h; sourceTree = "<group>"; };
+		20D709D91C0C53AC00F301AB /* SWGGetArticleByIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleByIdRequest.m; sourceTree = "<group>"; };
+		20D709DA1C0C53AC00F301AB /* SWGGetArticleByIdResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleByIdResponse.h; sourceTree = "<group>"; };
+		20D709DB1C0C53AC00F301AB /* SWGGetArticleByIdResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleByIdResponse.m; sourceTree = "<group>"; };
+		20D709DC1C0C53AC00F301AB /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
+		20D709DD1C0C53AC00F301AB /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
+		20D709DE1C0C53AC00F301AB /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
+		20D709DF1C0C53AC00F301AB /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
+		20D709F51C0E9B2E00F301AB /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		20D709F61C0E9B2E00F301AB /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		20D709F71C0E9B2E00F301AB /* ErrorHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandlerManager.h; sourceTree = "<group>"; };
+		20D709F81C0E9B2E00F301AB /* ErrorHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandlerManager.m; sourceTree = "<group>"; };
+		20D709FD1C0E9D2000F301AB /* RACSignal+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+Ext.h"; sourceTree = "<group>"; };
+		20D709FE1C0E9D2000F301AB /* RACSignal+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+Ext.m"; sourceTree = "<group>"; };
 		9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBookLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C902983DC7615D4AD08243 /* Pods-NoteBookLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookLib/Pods-NoteBookLib.release.xcconfig"; sourceTree = "<group>"; };
 		977D6C2B42BD4B3215218983 /* Pods-NoteBookLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookLib/Pods-NoteBookLib.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,31 +175,6 @@
 			path = swagger_codegen;
 			sourceTree = "<group>";
 		};
-		2030B46B1BFF1D2B00C96C6B /* noteApiSDK */ = {
-			isa = PBXGroup;
-			children = (
-				2030B46C1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h */,
-				2030B46D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m */,
-				2030B46E1BFF1D2B00C96C6B /* SWGApi.h */,
-				2030B46F1BFF1D2B00C96C6B /* SWGApi.m */,
-				2030B4701BFF1D2B00C96C6B /* SWGApiClient.h */,
-				2030B4711BFF1D2B00C96C6B /* SWGApiClient.m */,
-				2030B4721BFF1D2B00C96C6B /* SWGConfiguration.h */,
-				2030B4731BFF1D2B00C96C6B /* SWGConfiguration.m */,
-				2030B4741BFF1D2B00C96C6B /* SWGFile.h */,
-				2030B4751BFF1D2B00C96C6B /* SWGFile.m */,
-				2030B4761BFF1D2B00C96C6B /* SWGGetArticleApi.h */,
-				2030B4771BFF1D2B00C96C6B /* SWGGetArticleApi.m */,
-				2030B4781BFF1D2B00C96C6B /* SWGObject.h */,
-				2030B4791BFF1D2B00C96C6B /* SWGObject.m */,
-				2030B47A1BFF1D2B00C96C6B /* SWGQueryParamCollection.h */,
-				2030B47B1BFF1D2B00C96C6B /* SWGQueryParamCollection.m */,
-				2030B48E1BFF214F00C96C6B /* Note.h */,
-				2030B48F1BFF214F00C96C6B /* Note.m */,
-			);
-			path = noteApiSDK;
-			sourceTree = "<group>";
-		};
 		2089CC451BFF12C500B80E5A = {
 			isa = PBXGroup;
 			children = (
@@ -193,9 +199,17 @@
 		2089CC511BFF12C500B80E5A /* NoteBookLib */ = {
 			isa = PBXGroup;
 			children = (
-				2030B46B1BFF1D2B00C96C6B /* noteApiSDK */,
+				20D709CB1C0C53AC00F301AB /* noteApiSDK */,
+				20D709C21C0C442200F301AB /* services */,
 				2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */,
 				2089CC541BFF12C500B80E5A /* NoteBookLib.h */,
+				20D709BE1C04437400F301AB /* SWGApi+RAC.h */,
+				20D709BF1C04437400F301AB /* SWGApi+RAC.m */,
+				20D709FD1C0E9D2000F301AB /* RACSignal+Ext.h */,
+				20D709FE1C0E9D2000F301AB /* RACSignal+Ext.m */,
+				20D709F41C0E9B2E00F301AB /* error_handling */,
+				20D709C71C0C4BC500F301AB /* RACCommand+Ext.h */,
+				20D709C81C0C4BC500F301AB /* RACCommand+Ext.m */,
 				2089CC6B1BFF162100B80E5A /* Person.h */,
 				2089CC6C1BFF162100B80E5A /* Person.m */,
 				2089CC521BFF12C500B80E5A /* Supporting Files */,
@@ -228,6 +242,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		20D709C21C0C442200F301AB /* services */ = {
+			isa = PBXGroup;
+			children = (
+				20D709C31C0C447F00F301AB /* NoteBookDALService.h */,
+				20D709C41C0C447F00F301AB /* NoteBookDALService.m */,
+				20D709BA1C0406F300F301AB /* NoteBookArticleService.h */,
+				20D709BB1C0406F300F301AB /* NoteBookArticleService.m */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		20D709CB1C0C53AC00F301AB /* noteApiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				20D709CC1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.h */,
+				20D709CD1C0C53AC00F301AB /* JSONValueTransformer+ISO8601.m */,
+				20D709CE1C0C53AC00F301AB /* SWGApi.h */,
+				20D709CF1C0C53AC00F301AB /* SWGApi.m */,
+				20D709D01C0C53AC00F301AB /* SWGApiClient.h */,
+				20D709D11C0C53AC00F301AB /* SWGApiClient.m */,
+				20D709D21C0C53AC00F301AB /* SWGConfiguration.h */,
+				20D709D31C0C53AC00F301AB /* SWGConfiguration.m */,
+				20D709D41C0C53AC00F301AB /* SWGFile.h */,
+				20D709D51C0C53AC00F301AB /* SWGFile.m */,
+				20D709D61C0C53AC00F301AB /* SWGGetArticleApi.h */,
+				20D709D71C0C53AC00F301AB /* SWGGetArticleApi.m */,
+				20D709D81C0C53AC00F301AB /* SWGGetArticleByIdRequest.h */,
+				20D709D91C0C53AC00F301AB /* SWGGetArticleByIdRequest.m */,
+				20D709DA1C0C53AC00F301AB /* SWGGetArticleByIdResponse.h */,
+				20D709DB1C0C53AC00F301AB /* SWGGetArticleByIdResponse.m */,
+				20D709DC1C0C53AC00F301AB /* SWGObject.h */,
+				20D709DD1C0C53AC00F301AB /* SWGObject.m */,
+				20D709DE1C0C53AC00F301AB /* SWGQueryParamCollection.h */,
+				20D709DF1C0C53AC00F301AB /* SWGQueryParamCollection.m */,
+			);
+			path = noteApiSDK;
+			sourceTree = "<group>";
+		};
+		20D709F41C0E9B2E00F301AB /* error_handling */ = {
+			isa = PBXGroup;
+			children = (
+				20D709F51C0E9B2E00F301AB /* ErrorHandler.h */,
+				20D709F61C0E9B2E00F301AB /* ErrorHandler.m */,
+				20D709F71C0E9B2E00F301AB /* ErrorHandlerManager.h */,
+				20D709F81C0E9B2E00F301AB /* ErrorHandlerManager.m */,
+			);
+			path = error_handling;
+			sourceTree = "<group>";
+		};
 		DDF7BFAEC09F788900B4A3A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,18 +306,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2030B47D1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.h in Headers */,
-				2030B47F1BFF1D2B00C96C6B /* SWGApi.h in Headers */,
-				2030B4901BFF214F00C96C6B /* Note.h in Headers */,
+				20D709F21C0C53AC00F301AB /* SWGQueryParamCollection.h in Headers */,
+				20D709E81C0C53AC00F301AB /* SWGFile.h in Headers */,
+				20D709F91C0E9B2E00F301AB /* ErrorHandler.h in Headers */,
 				2089CC551BFF12C500B80E5A /* NoteBookLib.h in Headers */,
-				2030B4851BFF1D2B00C96C6B /* SWGFile.h in Headers */,
+				20D709EC1C0C53AC00F301AB /* SWGGetArticleByIdRequest.h in Headers */,
 				2030B48D1BFF1D2B00C96C6B /* NoteBookLib_gen.h in Headers */,
-				2030B4831BFF1D2B00C96C6B /* SWGConfiguration.h in Headers */,
-				2030B48B1BFF1D2B00C96C6B /* SWGQueryParamCollection.h in Headers */,
-				2030B4891BFF1D2B00C96C6B /* SWGObject.h in Headers */,
+				20D709E61C0C53AC00F301AB /* SWGConfiguration.h in Headers */,
+				20D709C91C0C4BC500F301AB /* RACCommand+Ext.h in Headers */,
+				20D709E01C0C53AC00F301AB /* JSONValueTransformer+ISO8601.h in Headers */,
+				20D709FF1C0E9D2000F301AB /* RACSignal+Ext.h in Headers */,
+				20D709E41C0C53AC00F301AB /* SWGApiClient.h in Headers */,
+				20D709C01C04437400F301AB /* SWGApi+RAC.h in Headers */,
+				20D709F01C0C53AC00F301AB /* SWGObject.h in Headers */,
+				20D709BC1C0406F300F301AB /* NoteBookArticleService.h in Headers */,
+				20D709EA1C0C53AC00F301AB /* SWGGetArticleApi.h in Headers */,
 				2089CC6D1BFF162100B80E5A /* Person.h in Headers */,
-				2030B4811BFF1D2B00C96C6B /* SWGApiClient.h in Headers */,
-				2030B4871BFF1D2B00C96C6B /* SWGGetArticleApi.h in Headers */,
+				20D709FB1C0E9B2E00F301AB /* ErrorHandlerManager.h in Headers */,
+				20D709C51C0C447F00F301AB /* NoteBookDALService.h in Headers */,
+				20D709EE1C0C53AC00F301AB /* SWGGetArticleByIdResponse.h in Headers */,
+				20D709E21C0C53AC00F301AB /* SWGApi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,17 +481,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2030B48C1BFF1D2B00C96C6B /* SWGQueryParamCollection.m in Sources */,
-				2030B4611BFF1C1D00C96C6B /* README.md in Sources */,
-				2030B47E1BFF1D2B00C96C6B /* JSONValueTransformer+ISO8601.m in Sources */,
-				2030B4801BFF1D2B00C96C6B /* SWGApi.m in Sources */,
+				20D709F31C0C53AC00F301AB /* SWGQueryParamCollection.m in Sources */,
+				20D709FA1C0E9B2E00F301AB /* ErrorHandler.m in Sources */,
+				20D709F11C0C53AC00F301AB /* SWGObject.m in Sources */,
 				2089CC6E1BFF162100B80E5A /* Person.m in Sources */,
-				2030B4881BFF1D2B00C96C6B /* SWGGetArticleApi.m in Sources */,
-				2030B4841BFF1D2B00C96C6B /* SWGConfiguration.m in Sources */,
-				2030B4821BFF1D2B00C96C6B /* SWGApiClient.m in Sources */,
-				2030B4861BFF1D2B00C96C6B /* SWGFile.m in Sources */,
-				2030B48A1BFF1D2B00C96C6B /* SWGObject.m in Sources */,
-				2030B4911BFF214F00C96C6B /* Note.m in Sources */,
+				20D709E31C0C53AC00F301AB /* SWGApi.m in Sources */,
+				20D709BD1C0406F300F301AB /* NoteBookArticleService.m in Sources */,
+				20D709E51C0C53AC00F301AB /* SWGApiClient.m in Sources */,
+				20D709CA1C0C4BC500F301AB /* RACCommand+Ext.m in Sources */,
+				20D709EF1C0C53AC00F301AB /* SWGGetArticleByIdResponse.m in Sources */,
+				20D709EB1C0C53AC00F301AB /* SWGGetArticleApi.m in Sources */,
+				20D709C61C0C447F00F301AB /* NoteBookDALService.m in Sources */,
+				20D709FC1C0E9B2E00F301AB /* ErrorHandlerManager.m in Sources */,
+				20D709ED1C0C53AC00F301AB /* SWGGetArticleByIdRequest.m in Sources */,
+				20D709E11C0C53AC00F301AB /* JSONValueTransformer+ISO8601.m in Sources */,
+				20D70A001C0E9D2000F301AB /* RACSignal+Ext.m in Sources */,
+				20D709E91C0C53AC00F301AB /* SWGFile.m in Sources */,
+				20D709E71C0C53AC00F301AB /* SWGConfiguration.m in Sources */,
+				20D709C11C04437400F301AB /* SWGApi+RAC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +705,7 @@
 				2030B4691BFF1CD700C96C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2089CC491BFF12C500B80E5A /* Build configuration list for PBXProject "NoteBookLib" */ = {
 			isa = XCConfigurationList;

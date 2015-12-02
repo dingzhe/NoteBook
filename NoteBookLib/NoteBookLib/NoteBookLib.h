@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Person.h"
 #import "NoteBookLib_gen.h"
+#import "NoteBookArticleService.h"
+#import "RACCommand+Ext.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 //! Project version number for NoteBookLib.
 FOUNDATION_EXPORT double NoteBookLibVersionNumber;
 

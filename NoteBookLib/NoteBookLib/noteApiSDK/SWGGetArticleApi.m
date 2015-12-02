@@ -1,6 +1,8 @@
 #import "SWGGetArticleApi.h"
 #import "SWGFile.h"
 #import "SWGQueryParamCollection.h"
+#import "SWGGetArticleByIdRequest.h"
+#import "SWGGetArticleByIdResponse.h"
 
 
 @implementation SWGGetArticleApi
@@ -8,20 +10,16 @@
 /*!
  * list products
  * The article API
- * \param _id Tags to filter by
- * \param api Tags to filter by
- * \returns void
+ * \param body 
+ * \returns SWGGetArticleByIdResponse*
  */
--(NSNumber*) getArticleByIdWith_id: (NSString*) _id api: (NSString*) api
+-(NSNumber*) getArticleByIdWithBody: (SWGGetArticleByIdRequest*) body
+    completionHandler: (void (^)(SWGGetArticleByIdResponse* output, NSError* error))completionBlock { 
     
-    completionHandler: (void (^)(NSData *data, NSError* error))completionBlock { 
 
     
-    // verify the required parameter '_id' is set
-    NSAssert(_id != nil, @"Missing the required parameter `_id` when calling getArticleById");
-    
-    // verify the required parameter 'api' is set
-    NSAssert(api != nil, @"Missing the required parameter `api` when calling getArticleById");
+    // verify the required parameter 'body' is set
+    NSAssert(body != nil, @"Missing the required parameter `body` when calling getArticleById");
     
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/api.php", self.basePath];
@@ -33,14 +31,6 @@
     
 
     NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
-    if(_id != nil) {
-        
-        queryParams[@"id"] = _id;
-    }
-    if(api != nil) {
-        
-        queryParams[@"api"] = api;
-    }
     
     NSMutableDictionary* headerParams = [NSMutableDictionary dictionary];
 
@@ -76,6 +66,34 @@
     
     id bodyDictionary = nil;
     
+    id __body = body;
+
+    if(__body != nil && [__body isKindOfClass:[NSArray class]]){
+        NSMutableArray * objs = [[NSMutableArray alloc] init];
+        for (id dict in (NSArray*)__body) {
+            if([dict respondsToSelector:@selector(toDictionary)]) {
+                [objs addObject:[(SWGObject*)dict toDictionary]];
+            }
+            else{
+                [objs addObject:dict];
+            }
+        }
+        bodyDictionary = objs;
+    }
+    else if([__body respondsToSelector:@selector(toDictionary)]) {
+        bodyDictionary = [(SWGObject*)__body toDictionary];
+    }
+    else if([__body isKindOfClass:[NSString class]]) {
+        // convert it to a dictionary
+        NSError * error;
+        NSString * str = (NSString*)__body;
+        NSDictionary *JSON =
+            [NSJSONSerialization JSONObjectWithData: [str dataUsingEncoding: NSUTF8StringEncoding]
+                                            options: NSJSONReadingMutableContainers
+                                              error: &error];
+        bodyDictionary = JSON;
+    }
+    
     
 
     
@@ -83,24 +101,39 @@
     
 
     
+    // non container response
 
     
 
     
-
-    
-    // it's void
+    // complex response
+        
+    // comples response type
     return [self.apiClient executeWithPath: requestUrl
-                                method: @"GET"
-                           queryParams: queryParams
-                                  body: bodyDictionary
-                          headerParams: headerParams
-                          authSettings: authSettings
-                    requestContentType: requestContentType
-                   responseContentType: responseContentType
-                       completionBlock: ^(NSData *data, NSError *error) {
-                            completionBlock(data, error);
-                        }];
+                                    method: @"GET"
+                               queryParams: queryParams
+                                      body: bodyDictionary
+                              headerParams: headerParams
+                              authSettings: authSettings
+                        requestContentType: requestContentType
+                       responseContentType: responseContentType
+                           completionBlock: ^(NSDictionary *data, NSError *error) {
+                             if (error) {
+                                 completionBlock(nil, error);
+                                 
+                                 return;
+                             }
+                             SWGGetArticleByIdResponse* result = nil;
+                             if (data) {
+                                 result = [[SWGGetArticleByIdResponse  alloc]  initWithDictionary:data error:nil];
+                             }
+                             completionBlock(result , nil);
+                             
+                           }];
+    
+
+    
+
     
 }
 

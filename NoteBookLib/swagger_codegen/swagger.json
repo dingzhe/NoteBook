@@ -26,44 +26,19 @@
                 "operationId": "getArticleById",
                 "parameters": [
                     {
-                        "name": "id",
-                        "in": "query",
-                        "description": "Tags to filter by",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "api",
-                        "in": "query",
-                        "description": "Tags to filter by",
-                        "required": true,
-                        "type": "string"
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/GetArticleByIdRequest"
+                        },
+                        "in": "body",
+                        "required": true
                     }
                 ],
                 "responses": {
                     "200": {
                         "description": "A list with products",
                         "schema": {
-                            "properties": {
-                                "id": {
-                                    "type": "string"
-                                },
-                                "title": {
-                                    "type": "string"
-                                },
-                                "author": {
-                                    "type": "string"
-                                },
-                                "description": {
-                                    "type": "string"
-                                },
-                                "content": {
-                                    "type": "string"
-                                },
-                                "dateline": {
-                                    "type": "string"
-                                }
-                            }
+                            "$ref": "#/definitions/GetArticleByIdResponse"
                         }
                     },
                     "default": {
@@ -73,5 +48,38 @@
             }
         }
     },
-    "definitions": {}
+    "definitions": {
+        "GetArticleByIdRequest": {
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "api": {
+                    "type": "string"
+                }
+            }
+        },
+        "GetArticleByIdResponse": {
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "dateline": {
+                    "type": "string"
+                }
+            }
+        }
+    }
 }

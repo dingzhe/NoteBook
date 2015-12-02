@@ -56,10 +56,11 @@
     [_getArticleCommand execute:request];
 }
 - (void) test3 {
-    SWGGetArticleByIdRequest *request = [[SWGGetArticleByIdRequest alloc] init];
-    request._id = @"8";
-    request.api = @"article";
-    [_getArticleCommand execute:request];
+    NSURL *url = [NSURL URLWithString:@"prefs:root=LOCATION_SERVICES"];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+    {
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 

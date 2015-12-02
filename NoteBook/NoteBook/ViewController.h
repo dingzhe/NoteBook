@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TestViewModel.h"
 @interface ViewController : UIViewController
 
-
+@property (nonatomic, strong) TestViewModel *viewModel;
++ (instancetype) viewController;
 @end
 

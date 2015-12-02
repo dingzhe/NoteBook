@@ -14,6 +14,14 @@
 		2089CC2D1BFF12A100B80E5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2C1BFF12A100B80E5A /* Images.xcassets */; };
 		2089CC301BFF12A100B80E5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */; };
 		2089CC3C1BFF12A100B80E5A /* NoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */; };
+		20D70A031C0ECCAA00F301AB /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A021C0ECCAA00F301AB /* ViewModel.m */; };
+		20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A051C0ECD5F00F301AB /* TestViewModel.m */; };
+		20D70A091C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */; };
+		20D70A0D1C0ED0EE00F301AB /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */; };
+		20D70A101C0ED39200F301AB /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A0F1C0ED39200F301AB /* UIView+HUD.m */; };
+		20D70A131C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */; };
+		20D70A161C0ED5C100F301AB /* KeyboardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A151C0ED5C100F301AB /* KeyboardState.m */; };
+		20D70A191C0ED63400F301AB /* NSObject+RAC+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */; };
 		8DCFEBFC62CCEA3487D4CA93 /* libPods-NoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +49,23 @@
 		2089CC351BFF12A100B80E5A /* NoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2089CC3A1BFF12A100B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteBookTests.m; sourceTree = "<group>"; };
+		20D70A011C0ECCAA00F301AB /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = base/ViewModel.h; sourceTree = "<group>"; };
+		20D70A021C0ECCAA00F301AB /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = base/ViewModel.m; sourceTree = "<group>"; };
+		20D70A041C0ECD5F00F301AB /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewModel.h; path = viewModel/TestViewModel.h; sourceTree = "<group>"; };
+		20D70A051C0ECD5F00F301AB /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewModel.m; path = viewModel/TestViewModel.m; sourceTree = "<group>"; };
+		20D70A071C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RACCommandSupport+Ext.h"; sourceTree = "<group>"; };
+		20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RACCommandSupport+Ext.m"; sourceTree = "<group>"; };
+		20D70A0A1C0ED05500F301AB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		20D70A0B1C0ED0ED00F301AB /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
+		20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
+		20D70A0E1C0ED39200F301AB /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		20D70A0F1C0ED39200F301AB /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		20D70A111C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDisposableSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
+		20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDisposableSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
+		20D70A141C0ED5C100F301AB /* KeyboardState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardState.h; sourceTree = "<group>"; };
+		20D70A151C0ED5C100F301AB /* KeyboardState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardState.m; sourceTree = "<group>"; };
+		20D70A171C0ED63400F301AB /* NSObject+RAC+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RAC+Ext.h"; sourceTree = "<group>"; };
+		20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RAC+Ext.m"; sourceTree = "<group>"; };
 		6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.debug.xcconfig"; sourceTree = "<group>"; };
 		CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +118,22 @@
 				2089CC241BFF12A100B80E5A /* AppDelegate.m */,
 				2089CC261BFF12A100B80E5A /* ViewController.h */,
 				2089CC271BFF12A100B80E5A /* ViewController.m */,
+				20D70A011C0ECCAA00F301AB /* ViewModel.h */,
+				20D70A021C0ECCAA00F301AB /* ViewModel.m */,
+				20D70A041C0ECD5F00F301AB /* TestViewModel.h */,
+				20D70A051C0ECD5F00F301AB /* TestViewModel.m */,
+				20D70A071C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.h */,
+				20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */,
+				20D70A0B1C0ED0ED00F301AB /* NSObject+Ext.h */,
+				20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */,
+				20D70A0E1C0ED39200F301AB /* UIView+HUD.h */,
+				20D70A0F1C0ED39200F301AB /* UIView+HUD.m */,
+				20D70A111C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.h */,
+				20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */,
+				20D70A141C0ED5C100F301AB /* KeyboardState.h */,
+				20D70A151C0ED5C100F301AB /* KeyboardState.m */,
+				20D70A171C0ED63400F301AB /* NSObject+RAC+Ext.h */,
+				20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */,
 				2089CC2C1BFF12A100B80E5A /* Images.xcassets */,
 				2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */,
 				2089CC1F1BFF12A100B80E5A /* Supporting Files */,
@@ -105,6 +146,7 @@
 			children = (
 				2089CC201BFF12A100B80E5A /* Info.plist */,
 				2089CC211BFF12A100B80E5A /* main.m */,
+				20D70A0A1C0ED05500F301AB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,9 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D70A0D1C0ED0EE00F301AB /* NSObject+Ext.m in Sources */,
+				20D70A091C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m in Sources */,
+				20D70A161C0ED5C100F301AB /* KeyboardState.m in Sources */,
 				2089CC281BFF12A100B80E5A /* ViewController.m in Sources */,
+				20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */,
+				20D70A101C0ED39200F301AB /* UIView+HUD.m in Sources */,
 				2089CC251BFF12A100B80E5A /* AppDelegate.m in Sources */,
+				20D70A131C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m in Sources */,
+				20D70A031C0ECCAA00F301AB /* ViewModel.m in Sources */,
 				2089CC221BFF12A100B80E5A /* main.m in Sources */,
+				20D70A191C0ED63400F301AB /* NSObject+RAC+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +455,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)Lib/build/Debug-iphoneos",
 				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/NoteBook/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -438,6 +489,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)Lib/build/Debug-iphoneos",
 				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/NoteBook/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69F884D9-F17D-4922-B9FC-522BC14D179D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NoteBook</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>435AE8A72A53311CECD478C7D634C04CDE0578BB</key>
+		<string>114.215.152.69:/home/dz/gitproject/note.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NoteBook.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>435AE8A72A53311CECD478C7D634C04CDE0578BB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>114.215.152.69:/home/dz/gitproject/note.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>435AE8A72A53311CECD478C7D634C04CDE0578BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>435AE8A72A53311CECD478C7D634C04CDE0578BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Note%E5%BA%93%E6%B5%8B%E8%AF%95</string>
+		</dict>
+	</array>
+</dict>
+</plist>

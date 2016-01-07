@@ -47,6 +47,10 @@
     SWGGetArticleByIdRequest *request = [[SWGGetArticleByIdRequest alloc] init];
     request._id = @"8";
     request.api = @"article";
+    SWGGetArticleApi *api = [SWGGetArticleApi apiWithBasePath:@"http://192.168.1.111/php"];
+    [api getArticleByIdWithBody:request completionHandler:^(SWGGetArticleByIdResponse *output, NSError *error) {
+        NSLog(@"%@",output);
+    }];
     [_getArticleCommand execute:request];
 }
 - (void) test2 {

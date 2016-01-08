@@ -10,6 +10,8 @@
 #import "Person.h"
 #import "NoteBookLib_gen.h"
 #import "NoteBookArticleService.h"
+#import "NoteBookSignService.h"
+#import "NoteBookWeeklyService.h"
 #import "RACCommand+Ext.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 //! Project version number for NoteBookLib.

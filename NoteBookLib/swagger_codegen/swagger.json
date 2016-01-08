@@ -4,8 +4,8 @@
         "title": "Article API",
         "version": "0.1.0"
     },
-    "host": "192.168.1.111",
-    "basePath": "/php",
+    "host": "114.215.152.69",
+    "basePath": "/php/api",
     "schemes": [
         "http"
     ],
@@ -16,13 +16,181 @@
         "application/json"
     ],
     "paths": {
-        "/api.php": {
-            "get": {
+        "/signin": {
+            "post": {
+                "tags": [
+                    "sign"
+                ],
+                "summary": "登录",
+                "description": "sign in",
+                "operationId": "signIn",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/SignRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/SignResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/signup": {
+            "post": {
+                "tags": [
+                    "sign"
+                ],
+                "summary": "注册",
+                "description": "sign up",
+                "operationId": "signUp",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/SignRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/SignResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/addweekly": {
+            "post": {
+                "tags": [
+                    "weekly"
+                ],
+                "summary": "添加周报",
+                "description": "添加周报",
+                "operationId": "addWeekly",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/AddWeeklyRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/AddWeeklyResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/weeklylist": {
+            "post": {
+                "tags": [
+                    "weekly"
+                ],
+                "summary": "周报列表",
+                "description": "周报列表",
+                "operationId": "weeklyList",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/WeeklyListRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/WeeklyListResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/myweekly": {
+            "post": {
+                "tags": [
+                    "weekly"
+                ],
+                "summary": "用户周报列表",
+                "description": "用户周报列表",
+                "operationId": "myWeekly",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/MyWeeklyRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/MyWeeklyResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/makeurl": {
+            "post": {
+                "tags": [
+                    "MakeUrl"
+                ],
+                "summary": "得到URL",
+                "description": "得到URL",
+                "operationId": "MakeUrl",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/GetArticleByIdRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/Article"
+                        }
+                    }
+                }
+            }
+        },
+        "/article": {
+            "post": {
                 "tags": [
                     "GetArticle"
                 ],
-                "summary": "list products",
-                "description": "The article API",
+                "summary": "根据id得到文章",
+                "description": "根据id得到文章",
                 "operationId": "getArticleById",
                 "parameters": [
                     {
@@ -38,7 +206,7 @@
                     "200": {
                         "description": "A list with products",
                         "schema": {
-                            "$ref": "#/definitions/GetArticleByIdResponse"
+                            "$ref": "#/definitions/Article"
                         }
                     },
                     "default": {
@@ -46,20 +214,412 @@
                     }
                 }
             }
+        },
+        "/allarticle": {
+            "post": {
+                "tags": [
+                    "AllArticle"
+                ],
+                "summary": "得到所有的文章",
+                "description": "得到所有的文章",
+                "operationId": "getAllArticle",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/GetArticleByIdRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/ArticleList"
+                        }
+                    }
+                }
+            }
+        },
+        "/articlelist": {
+            "post": {
+                "tags": [
+                    "ArticleList"
+                ],
+                "summary": "得到文章列表",
+                "description": "得到文章列表",
+                "operationId": "getArticleList",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/GetArticleByIdRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/ArticleList"
+                        }
+                    }
+                }
+            }
+        },
+        "/idlist": {
+            "post": {
+                "tags": [
+                    "IdList"
+                ],
+                "summary": "得到文章id列表",
+                "description": "得到文章id列表",
+                "operationId": "getIdList",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/GetArticleByIdRequest"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/IdList"
+                        }
+                    }
+                }
+            }
+        },
+        "/updatearticle": {
+            "post": {
+                "tags": [
+                    "UpdateArticle"
+                ],
+                "summary": "修改文章",
+                "description": "修改文章",
+                "operationId": "updateArticle",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/Article"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/UpdateArticleResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/addarticle": {
+            "post": {
+                "tags": [
+                    "AddArticle"
+                ],
+                "summary": "添加文章",
+                "description": "添加文章",
+                "operationId": "addArticle",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/Article"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/AddArticleResponses"
+                        }
+                    }
+                }
+            }
+        },
+        "/deletearticle": {
+            "post": {
+                "tags": [
+                    "DeleteArticle"
+                ],
+                "summary": "删除文章",
+                "description": "删除文章",
+                "operationId": "deleteArticle",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "schema": {
+                            "$ref": "#/definitions/Id"
+                        },
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list with products",
+                        "schema": {
+                            "$ref": "#/definitions/AddArticleResponses"
+                        }
+                    }
+                }
+            }
         }
     },
     "definitions": {
-        "GetArticleByIdRequest": {
+        "SignRequest": {
             "properties": {
-                "id": {
+                "app": {
                     "type": "string"
                 },
-                "api": {
+                "sign": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "password": {
                     "type": "string"
                 }
             }
         },
-        "GetArticleByIdResponse": {
+        "SignResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "number"
+                },
+                "data": {
+                    "$ref": "#/definitions/User"
+                }
+            }
+        },
+        "User": {
+            "properties": {
+                "userid": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "token": {
+                    "type": "string"
+                }
+            }
+        },
+        "Weekly": {
+            "properties": {
+                "weeklyid": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "uid": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "dateline": {
+                    "type": "string"
+                },
+                "private": {
+                    "type": "string"
+                }
+            }
+        },
+        "AddWeeklyRequest": {
+            "properties": {
+                "app": {
+                    "type": "string"
+                },
+                "sign": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "weekly": {
+                    "$ref": "#/definitions/Weekly"
+                }
+            }
+        },
+        "AddWeeklyResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "number"
+                },
+                "data": {
+                    "items": {
+                        "$ref": "#/definitions/Weekly"
+                    }
+                }
+            }
+        },
+        "WeeklyListRequest": {
+            "properties": {
+                "app": {
+                    "type": "string"
+                },
+                "sign": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "uid": {
+                    "type": "string"
+                }
+            }
+        },
+        "WeeklyListResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "number"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Weekly"
+                    }
+                }
+            }
+        },
+        "MyWeeklyRequest": {
+            "properties": {
+                "app": {
+                    "type": "string"
+                },
+                "sign": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "uid": {
+                    "type": "string"
+                }
+            }
+        },
+        "MyWeeklyResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "number"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Weekly"
+                    }
+                }
+            }
+        },
+        "AddArticleResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorCode": {
+                    "type": "string"
+                },
+                "data": {
+                    "items": {
+                        "$ref": "#/definitions/Article"
+                    }
+                }
+            }
+        },
+        "UpdateArticleResponses": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorCode": {
+                    "type": "string"
+                },
+                "data": {
+                    "items": {
+                        "$ref": "#/definitions/Article"
+                    }
+                },
+                "oldArticle": {
+                    "items": {
+                        "$ref": "#/definitions/Article"
+                    }
+                }
+            }
+        },
+        "ArticleList": {
+            "properties": {
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Article"
+                    }
+                }
+            }
+        },
+        "GetArticleByIdRequest": {
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            }
+        },
+        "IdList": {
+            "properties": {
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Id"
+                    }
+                }
+            }
+        },
+        "Id": {
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            }
+        },
+        "Article": {
             "properties": {
                 "id": {
                     "type": "string"

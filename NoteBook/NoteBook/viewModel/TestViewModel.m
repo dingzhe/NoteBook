@@ -11,7 +11,9 @@
 
 @interface TestViewModel()
 @property (nonatomic, strong) RACCommand *getArticleCommand;
-@property (nonatomic, strong) SWGGetArticleByIdResponse* article;
+@property (nonatomic, strong) SWGGetArticleByIdRequest* article;
+@property (nonatomic, strong) RACCommand *signInCommand;
+
 @end
 
 @implementation TestViewModel
@@ -24,39 +26,44 @@
     if (self = [super init]) {
         
         @weakify(self)
+        _signInCommand = [NoteBookSignService.service signInCommandEnable:nil];
+        
+        [_signInCommand.responses subscribeNext:^(SWGSignResponses *response) {
+            @strongify(self)
+//            [self.showHUDSignal sendNext:@"保存成功"];
+            NSLog(@"%@",response);
+        }];
+        [_signInCommand.errors subscribeNext:^(NSError *error) {
+            NSLog(@"%@",error);
+            
+//            DDLogError(@"Error while update base:%@", error);
+        }];
         _getArticleCommand = [NoteBookArticleService.service getArticleWithIdCommandEnable:nil];
-        [_getArticleCommand.responses subscribeNext:^(SWGGetArticleByIdResponse* response) {
+        
+        [_getArticleCommand.responses subscribeNext:^(SWGArticle *response) {
             @strongify(self)
             //            [self.showHUDSignal sendNext:@"保存成功"];
             NSLog(@"%@",response);
-            self.article = response;
-            NSLog(@"-----%@",self.article);
-            
-            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
-            
         }];
         [_getArticleCommand.errors subscribeNext:^(NSError *error) {
-            ////            DDLogError(@"Error while update base:%@", error);
             NSLog(@"%@",error);
+            //            DDLogError(@"Error while update base:%@", error);
         }];
     }
     return self;
 }
 
 - (void) test1 {
-    SWGGetArticleByIdRequest *request = [[SWGGetArticleByIdRequest alloc] init];
-    request._id = @"8";
-    request.api = @"article";
-    SWGGetArticleApi *api = [SWGGetArticleApi apiWithBasePath:@"http://192.168.1.111/php"];
-    [api getArticleByIdWithBody:request completionHandler:^(SWGGetArticleByIdResponse *output, NSError *error) {
-        NSLog(@"%@",output);
-    }];
-    [_getArticleCommand execute:request];
+    SWGSignRequest * request = [[SWGSignRequest alloc] init];
+    request.username = @"ding";
+    request.password = @"123456";
+//    request.app = @"iOS";
+    [_signInCommand execute:request];
+
 }
 - (void) test2 {
-    SWGGetArticleByIdRequest *request = [[SWGGetArticleByIdRequest alloc] init];
+    SWGGetArticleByIdRequest * request = [[SWGGetArticleByIdRequest alloc] init];
     request._id = @"8";
-    request.api = @"article";
     [_getArticleCommand execute:request];
 }
 - (void) test3 {

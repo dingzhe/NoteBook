@@ -1,20 +1,20 @@
 #import "SWGGetArticleApi.h"
 #import "SWGFile.h"
 #import "SWGQueryParamCollection.h"
+#import "SWGArticle.h"
 #import "SWGGetArticleByIdRequest.h"
-#import "SWGGetArticleByIdResponse.h"
 
 
 @implementation SWGGetArticleApi
 
 /*!
- * list products
- * The article API
+ * 根据id得到文章
+ * 根据id得到文章
  * \param body 
- * \returns SWGGetArticleByIdResponse*
+ * \returns SWGArticle*
  */
 -(NSNumber*) getArticleByIdWithBody: (SWGGetArticleByIdRequest*) body
-    completionHandler: (void (^)(SWGGetArticleByIdResponse* output, NSError* error))completionBlock { 
+    completionHandler: (void (^)(SWGArticle* output, NSError* error))completionBlock { 
     
 
     
@@ -22,7 +22,7 @@
     NSAssert(body != nil, @"Missing the required parameter `body` when calling getArticleById");
     
 
-    NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/api.php", self.basePath];
+    NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/article", self.basePath];
 
     // remove format in URL if needed
     if ([requestUrl rangeOfString:@".{format}"].location != NSNotFound)
@@ -110,7 +110,7 @@
         
     // comples response type
     return [self.apiClient executeWithPath: requestUrl
-                                    method: @"GET"
+                                    method: @"POST"
                                queryParams: queryParams
                                       body: bodyDictionary
                               headerParams: headerParams
@@ -123,9 +123,9 @@
                                  
                                  return;
                              }
-                             SWGGetArticleByIdResponse* result = nil;
+                             SWGArticle* result = nil;
                              if (data) {
-                                 result = [[SWGGetArticleByIdResponse  alloc]  initWithDictionary:data error:nil];
+                                 result = [[SWGArticle  alloc]  initWithDictionary:data error:nil];
                              }
                              completionBlock(result , nil);
                              

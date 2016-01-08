@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "NoteBookLib_gen.h"
-//#import "NoteBookDALService.h"
 #import "services/NoteBookDALService.h"
 @interface NoteBookArticleService : NoteBookDALService
 

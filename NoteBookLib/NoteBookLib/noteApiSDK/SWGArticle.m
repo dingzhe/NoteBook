@@ -1,6 +1,6 @@
-#import "SWGGetArticleByIdResponse.h"
+#import "SWGArticle.h"
 
-@implementation SWGGetArticleByIdResponse
+@implementation SWGArticle
   
 + (JSONKeyMapper *)keyMapper
 {

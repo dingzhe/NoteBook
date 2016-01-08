@@ -15,7 +15,7 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        _api = [SWGGetArticleApi apiWithBasePath:@"http://192.168.1.111/php"];
+        _api = [SWGGetArticleApi apiWithBasePath:@"http://114.215.152.69/php/api"];
     }
     return self;
 }

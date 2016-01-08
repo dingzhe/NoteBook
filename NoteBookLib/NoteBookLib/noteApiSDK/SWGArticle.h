@@ -2,10 +2,10 @@
 #import "SWGObject.h"
 
 
-@protocol SWGGetArticleByIdResponse
+@protocol SWGArticle
 @end
   
-@interface SWGGetArticleByIdResponse : SWGObject
+@interface SWGArticle : SWGObject
 
 
 @property(nonatomic) NSString* _id;

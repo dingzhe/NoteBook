@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "SWGArticle.h"
 #import "SWGGetArticleByIdRequest.h"
-#import "SWGGetArticleByIdResponse.h"
 #import "SWGObject.h"
 #import "SWGApi.h"
 
@@ -9,16 +9,16 @@
 
 /**
 
- list products
- The article API
+ 根据id得到文章
+ 根据id得到文章
 
  @param body 
  
 
- return type: SWGGetArticleByIdResponse*
+ return type: SWGArticle*
  */
 -(NSNumber*) getArticleByIdWithBody: (SWGGetArticleByIdRequest*) body
-    completionHandler: (void (^)(SWGGetArticleByIdResponse* output, NSError* error))completionBlock;
+    completionHandler: (void (^)(SWGArticle* output, NSError* error))completionBlock;
     
 
 

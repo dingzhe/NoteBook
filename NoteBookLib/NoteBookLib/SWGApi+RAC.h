@@ -10,4 +10,5 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 @interface SWGApi (RAC)
 - (RACCommand *) commandWithSelector:(SEL)selector enabled:(RACSignal *)enabled;
+
 @end

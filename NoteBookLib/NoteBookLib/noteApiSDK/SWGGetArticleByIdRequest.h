@@ -10,6 +10,4 @@
 
 @property(nonatomic) NSString* _id;
 
-@property(nonatomic) NSString* api;
-
 @end

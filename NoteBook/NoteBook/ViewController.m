@@ -10,7 +10,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) RACCommand *getArticleCommand;
-@property (nonatomic, strong) SWGGetArticleByIdResponse* article;
+@property (nonatomic, strong) SWGGetArticleByIdRequest* article;
 @end
 
 @implementation ViewController

@@ -11,7 +11,99 @@
 #import "ErrorHandlerManager.h"
 #import "RACSignal+Ext.h"
 #import <ReactiveCocoa/NSInvocation+RACTypeParsing.h>
+#import "NSString+Ext.h"
 
+static NSString * const kVSCharactersToBeEscapedInQueryString = @":/?&=;+!@#$()',*";
+
+static NSString * VSPercentEscapedQueryStringKeyFromStringWithEncoding(NSString *string, NSStringEncoding encoding) {
+    static NSString * const kVSCharactersToLeaveUnescapedInQueryStringPairKey = @"";
+    
+    return (__bridge_transfer  NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)string, (__bridge CFStringRef)kVSCharactersToLeaveUnescapedInQueryStringPairKey, (__bridge CFStringRef)kVSCharactersToBeEscapedInQueryString, CFStringConvertNSStringEncodingToEncoding(encoding));
+}
+
+static NSString * VSPercentEscapedQueryStringValueFromStringWithEncoding(NSString *string, NSStringEncoding encoding) {
+    return (__bridge_transfer  NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)string, NULL, (__bridge CFStringRef)kVSCharactersToBeEscapedInQueryString, CFStringConvertNSStringEncodingToEncoding(encoding));
+}
+@interface VSQueryStringPair : NSObject
+@property (readwrite, nonatomic, strong) id field;
+@property (readwrite, nonatomic, strong) id value;
+
+- (id)initWithField:(id)field value:(id)value;
+
+- (NSString *)URLEncodedStringValueWithEncoding:(NSStringEncoding)stringEncoding;
+@end
+
+@implementation VSQueryStringPair
+
+- (id)initWithField:(id)field value:(id)value {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    self.field = field;
+    self.value = value;
+    
+    return self;
+}
+
+- (NSString *)URLEncodedStringValueWithEncoding:(NSStringEncoding)stringEncoding {
+    if (!self.value || [self.value isEqual:[NSNull null]]) {
+        return VSPercentEscapedQueryStringKeyFromStringWithEncoding([self.field description], stringEncoding);
+    } else {
+        return [NSString stringWithFormat:@"%@=%@", VSPercentEscapedQueryStringKeyFromStringWithEncoding([self.field description], stringEncoding), VSPercentEscapedQueryStringValueFromStringWithEncoding([self.value description], stringEncoding)];
+    }
+}
+
+@end
+
+extern NSArray * VSQueryStringPairsFromDictionary(NSDictionary *dictionary);
+extern NSArray * VSQueryStringPairsFromKeyAndValue(NSString *key, id value,BOOL arrange);
+
+static NSString * VSQueryStringFromParametersWithEncoding(NSDictionary *parameters, NSStringEncoding stringEncoding) {
+    NSMutableArray *mutablePairs = [NSMutableArray array];
+    for (VSQueryStringPair *pair in VSQueryStringPairsFromDictionary(parameters)) {
+        [mutablePairs addObject:[pair URLEncodedStringValueWithEncoding:stringEncoding]];
+    }
+    
+    return [mutablePairs componentsJoinedByString:@"&"];
+}
+
+NSArray * VSQueryStringPairsFromDictionary(NSDictionary *dictionary) {
+    return VSQueryStringPairsFromKeyAndValue(nil, dictionary,YES);
+}
+
+NSArray * VSQueryStringPairsFromKeyAndValue(NSString *key, id value,BOOL arrange) {
+    NSMutableArray *mutableQueryStringComponents = [NSMutableArray array];
+    
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"description" ascending:YES selector:@selector(compare:)];
+    
+    if ([value isKindOfClass:[NSDictionary class]]) {
+        NSDictionary *dictionary = value;
+        // Sort dictionary keys to ensure consistent ordering in query string, which is important when deserializing potentially ambiguous sequences, such as an array of dictionaries
+        
+        for (id nestedKey in (arrange?[dictionary.allKeys sortedArrayUsingDescriptors:@[ sortDescriptor ]]:dictionary.allKeys)) {
+            id nestedValue = [dictionary objectForKey:nestedKey];
+            if (nestedValue) {
+                [mutableQueryStringComponents addObjectsFromArray:VSQueryStringPairsFromKeyAndValue((key ? [NSString stringWithFormat:@"%@[%@]", key, nestedKey] : nestedKey), nestedValue,NO)];
+            }
+        }
+    } else if ([value isKindOfClass:[NSArray class]]) {
+        NSArray *array = value;
+        for (id nestedValue in array) {
+            [mutableQueryStringComponents addObjectsFromArray:VSQueryStringPairsFromKeyAndValue([NSString stringWithFormat:@"%@[]", key], nestedValue,NO)];
+        }
+    } else if ([value isKindOfClass:[NSSet class]]) {
+        NSSet *set = value;
+        for (id obj in (arrange?[set sortedArrayUsingDescriptors:@[ sortDescriptor ]]:set)) {
+            [mutableQueryStringComponents addObjectsFromArray:VSQueryStringPairsFromKeyAndValue(key, obj,NO)];
+        }
+    } else {
+        [mutableQueryStringComponents addObject:[[VSQueryStringPair alloc] initWithField:key value:value]];
+    }
+    
+    return mutableQueryStringComponents;
+}
 @implementation SWGApi (RAC)
 #pragma mark - private methods
 
@@ -151,7 +243,8 @@
                                  NSMutableArray *newInput = [NSMutableArray array];
                                  for (id obj in input) {
                                      if ([obj isKindOfClass:[SWGObject class]]) {
-                                         [newInput addObject:obj];
+                                         //[newInput addObject:obj];
+                                         [newInput addObject:[self _appendedRequestObject:obj]];
                                      }else{
                                          [newInput addObject:obj];
                                      }
@@ -159,7 +252,8 @@
                                  [arguments addObjectsFromArray:(NSArray *)newInput];
                              }
                              else if (input) {
-                                 [arguments addObject:input];
+//                                 [arguments addObject:input];
+                                 [arguments addObject:[self _appendedRequestObject:input]];
                              }
                              
                              void (^subscriberBlock)(id, id)  = ^(id output, id error) {
@@ -181,5 +275,26 @@
                        }];
 }
 
-
+- (SWGObject*) _appendedRequestObject:(SWGObject*)request {
+    // additional body params
+    NSDate *date = [NSDate date];
+    float f = [date timeIntervalSince1970];
+    
+    NSDictionary *originDic = [request toDictionary];
+    NSMutableDictionary *newDic = [NSMutableDictionary dictionaryWithDictionary:originDic];
+    [newDic setObject:@"iOS" forKey:@"app"];
+    [newDic setObject:[NSString stringWithFormat:@"%.0f",f] forKey:@"time"];
+    
+    NSString *paramstr;
+    paramstr = VSQueryStringFromParametersWithEncoding(newDic, NSUTF8StringEncoding);
+    paramstr = [NSString stringWithFormat:@"%@%@",paramstr,
+                @"479e32249a65c4f7b45e11254097c844"];
+    NSString *sign = [paramstr md5];
+    
+    [newDic setObject:sign forKey:@"sign"];
+    
+    request = [request initWithDictionary:newDic error:nil];
+    
+    return request;
+}
 @end

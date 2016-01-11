@@ -466,8 +466,26 @@
                 "time": {
                     "type": "string"
                 },
-                "weekly": {
-                    "$ref": "#/definitions/Weekly"
+                "weeklyid": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "uid": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "dateline": {
+                    "type": "string"
+                },
+                "private": {
+                    "type": "string"
                 }
             }
         },

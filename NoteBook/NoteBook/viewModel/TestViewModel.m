@@ -14,6 +14,11 @@
 @property (nonatomic, strong) SWGGetArticleByIdRequest* article;
 @property (nonatomic, strong) RACCommand *signInCommand;
 
+@property (nonatomic, strong) RACCommand *signUpCommand;
+@property (nonatomic, strong) RACCommand *addweeklyCommand;
+@property (nonatomic, strong) RACCommand *weeklyListCommand;
+@property (nonatomic, strong) RACCommand *myWeeklyCommand;
+
 @end
 
 @implementation TestViewModel
@@ -32,18 +37,81 @@
             @strongify(self)
 //            [self.showHUDSignal sendNext:@"保存成功"];
             NSLog(@"%@",response);
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
         }];
         [_signInCommand.errors subscribeNext:^(NSError *error) {
             NSLog(@"%@",error);
             
 //            DDLogError(@"Error while update base:%@", error);
         }];
+        
+        _signUpCommand = [NoteBookSignService.service signUpCommandEnable:nil];
+        
+        [_signUpCommand.responses subscribeNext:^(SWGSignResponses *response) {
+            @strongify(self)
+            //            [self.showHUDSignal sendNext:@"保存成功"];
+            NSLog(@"%@",response);
+            
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+        }];
+        [_signUpCommand.errors subscribeNext:^(NSError *error) {
+            NSLog(@"%@",error);
+            
+            //            DDLogError(@"Error while update base:%@", error);
+        }];
+        
+        _addweeklyCommand = [NoteBookWeeklyService.service addWeeklyCommandEnable:nil];
+        
+        [_addweeklyCommand.responses subscribeNext:^(SWGAddWeeklyResponses *response) {
+            @strongify(self)
+            //            [self.showHUDSignal sendNext:@"保存成功"];
+            NSLog(@"%@",response);
+            
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+        }];
+        [_addweeklyCommand.errors subscribeNext:^(NSError *error) {
+            NSLog(@"%@",error);
+            
+            //            DDLogError(@"Error while update base:%@", error);
+        }];
+        
+        _weeklyListCommand = [NoteBookWeeklyService.service weeklyListCommandEnable:nil];
+        
+        [_weeklyListCommand.responses subscribeNext:^(SWGWeeklyListResponses *response) {
+            @strongify(self)
+            //            [self.showHUDSignal sendNext:@"保存成功"];
+            NSLog(@"%@",response);
+            
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+        }];
+        [_weeklyListCommand.errors subscribeNext:^(NSError *error) {
+            NSLog(@"%@",error);
+            
+            //            DDLogError(@"Error while update base:%@", error);
+        }];
+        
+        _myWeeklyCommand = [NoteBookWeeklyService.service myWeeklyCommandEnable:nil];
+        
+        [_myWeeklyCommand.responses subscribeNext:^(SWGMyWeeklyResponses *response) {
+            @strongify(self)
+            //            [self.showHUDSignal sendNext:@"保存成功"];
+            NSLog(@"%@",response);
+            
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+        }];
+        [_myWeeklyCommand.errors subscribeNext:^(NSError *error) {
+            NSLog(@"%@",error);
+            
+            //            DDLogError(@"Error while update base:%@", error);
+        }];
+        
         _getArticleCommand = [NoteBookArticleService.service getArticleWithIdCommandEnable:nil];
         
         [_getArticleCommand.responses subscribeNext:^(SWGArticle *response) {
             @strongify(self)
             //            [self.showHUDSignal sendNext:@"保存成功"];
             NSLog(@"%@",response);
+            [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
         }];
         [_getArticleCommand.errors subscribeNext:^(NSError *error) {
             NSLog(@"%@",error);
@@ -54,24 +122,71 @@
 }
 
 - (void) test1 {
-    SWGSignRequest * request = [[SWGSignRequest alloc] init];
-    request.username = @"ding";
-    request.password = @"123456";
-//    request.app = @"iOS";
-    [_signInCommand execute:request];
-
+//    [self signIn];
+    [self addWeekly];
+//    [self weeklyList];
+//    [self myWeekly];
 }
 - (void) test2 {
-    SWGGetArticleByIdRequest * request = [[SWGGetArticleByIdRequest alloc] init];
-    request._id = @"8";
-    [_getArticleCommand execute:request];
+//    SWGGetArticleByIdRequest * request = [[SWGGetArticleByIdRequest alloc] init];
+//    request._id = @"8";
+//    [_getArticleCommand execute:request];
+    [self weeklyList];
 }
 - (void) test3 {
-    NSURL *url = [NSURL URLWithString:@"prefs:root=LOCATION_SERVICES"];
-    if ([[UIApplication sharedApplication] canOpenURL:url])
-    {
-        [[UIApplication sharedApplication] openURL:url];
-    }
+    [self myWeekly];
+}
+
+
+/**
+ *  登录
+ */
+- (void)signIn{
+    SWGSignRequest * request = [[SWGSignRequest alloc] init];
+    request.username = @"dingzero";
+    request.password = @"123456";
+    [_signInCommand execute:request];
+}
+
+/**
+ *  注册
+ */
+- (void)signUp{
+    SWGSignRequest * request = [[SWGSignRequest alloc] init];
+    request.username = @"dingzero";
+    request.password = @"123456";
+    [_signUpCommand execute:request];
+}
+
+/**
+ *  新建周报
+ */
+- (void)addWeekly{
+    SWGAddWeeklyRequest * request = [[SWGAddWeeklyRequest alloc] init];
+    request.uid = @"9";
+    request.title = @"好像支持中文啊";
+    request.content = @"DontsupportChinese";
+    request.dateline = @"1";
+//    request.dateline = 
+    [_addweeklyCommand execute:request];
+}
+
+/**
+ *  周报列表
+ */
+- (void)weeklyList{
+    SWGWeeklyListRequest *request = [[SWGWeeklyListRequest alloc] init];
+    request.uid = @"9";
+    [_weeklyListCommand execute:request];
+}
+
+/**
+ *  个人周报列表
+ */
+- (void)myWeekly{
+    SWGMyWeeklyRequest *request = [[SWGMyWeeklyRequest alloc] init];
+    request.uid = @"9";
+    [_myWeeklyCommand execute:request];
 }
 
 

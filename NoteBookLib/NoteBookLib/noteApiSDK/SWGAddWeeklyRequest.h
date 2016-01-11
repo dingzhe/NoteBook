@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import "SWGObject.h"
-#import "SWGWeekly.h"
 
 
 @protocol SWGAddWeeklyRequest
@@ -15,6 +14,18 @@
 
 @property(nonatomic) NSString* time;
 
-@property(nonatomic) SWGWeekly* weekly;
+@property(nonatomic) NSString* weeklyid;
+
+@property(nonatomic) NSString* username;
+
+@property(nonatomic) NSString* uid;
+
+@property(nonatomic) NSString* title;
+
+@property(nonatomic) NSString* content;
+
+@property(nonatomic) NSString* dateline;
+
+@property(nonatomic) NSString* private;
 
 @end

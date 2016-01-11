@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WeeklyListTableViewController.h"
 @interface AppDelegate ()
-
+@property(nonatomic,strong)UINavigationController *navController;
 @end
 
 @implementation AppDelegate
@@ -19,11 +20,31 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    ViewController *testVC = [ViewController viewController];
-    self.window.rootViewController = testVC;
+    
+    
+    UIViewController *appVC = [[UIViewController alloc] init];
+    appVC.view.backgroundColor = [UIColor orangeColor];
+    appVC.title = @"app";
+    
+    
+    WeeklyListTableViewController *weelyListController = [[WeeklyListTableViewController alloc] init];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    
+    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
+    
+    weelyListController.navigationItem.leftBarButtonItem = testAPI;
+    _navController = [[UINavigationController alloc] initWithRootViewController:weelyListController];
+    tabBarController.viewControllers = @[_navController,appVC];
+    self.window.rootViewController = tabBarController;
     return YES;
 }
+- (void)openTestView{
+    ViewController *testVC = [ViewController viewController];
+    [_navController pushViewController:testVC animated:YES];
 
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

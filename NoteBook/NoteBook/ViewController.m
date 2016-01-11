@@ -33,7 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:240./255. green:255./255. blue:240./255. alpha:1.];
     @weakify(self)
     
     UIButton *testBtn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];

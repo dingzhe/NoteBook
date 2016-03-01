@@ -164,9 +164,14 @@
 - (void)addWeekly{
     SWGAddWeeklyRequest * request = [[SWGAddWeeklyRequest alloc] init];
     request.uid = @"9";
-    request.title = @"好像支持中文啊";
+    NSString* date;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYY-MM-dd[hh:mm:ss]"];
+    date = [formatter stringFromDate:[NSDate date]];
+    request.title = date;
     request.content = @"DontsupportChinese";
-    request.dateline = @"1";
+    request.dateline = date;
+    
 //    request.dateline = 
     [_addweeklyCommand execute:request];
 }

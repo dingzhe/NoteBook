@@ -28,4 +28,11 @@
 - (RACCommand*) myWeeklyCommandEnable:(RACSignal*)enable{
     return [_api commandWithSelector:@selector(myWeeklyWithBody:completionHandler:) enabled:enable];
 }
+
+- (RACCommand*) delWeeklyCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(delWeeklyWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) updateWeeklyCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(updateWeeklyWithBody:completionHandler:) enabled:enable];
+}
 @end

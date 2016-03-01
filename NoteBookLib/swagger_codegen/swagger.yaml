@@ -66,7 +66,46 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/AddWeeklyResponses'
+  /delweekly:
+    post:
+      tags:
+        - weekly
+      summary: 添加周报
+      description: 添加周报
+      operationId: delWeekly
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/DelWeeklyRequest'
+          in: body
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Responses'
 
+  /updateweekly:
+    post:
+      tags:
+        - weekly
+      summary: 添加周报
+      description: 添加周报
+      operationId: updateWeekly
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/UpdateWeeklyRequest'
+          in: body
+          required: true
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Responses'            
+            
+            
+            
   /weeklylist:
     post:
       tags:
@@ -254,6 +293,47 @@ paths:
           schema:
             $ref: '#/definitions/AddArticleResponses'
 definitions:
+
+  DelWeeklyRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      weeklyid:
+        type: string
+  Responses:
+    properties:
+      message:
+        type: string
+      errorCode:
+        type: string
+        
+  UpdateWeeklyRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      weeklyid:
+        type: string        
+      title:
+        type: string
+      content:
+        type: string
+      dateline:
+        type: string
+      private:
+        type: string        
+        
   SignRequest:
     properties:
       app:

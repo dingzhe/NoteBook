@@ -1,8 +1,11 @@
 #import <Foundation/Foundation.h>
 #import "SWGAddWeeklyResponses.h"
 #import "SWGAddWeeklyRequest.h"
+#import "SWGResponses.h"
+#import "SWGDelWeeklyRequest.h"
 #import "SWGMyWeeklyRequest.h"
 #import "SWGMyWeeklyResponses.h"
+#import "SWGUpdateWeeklyRequest.h"
 #import "SWGWeeklyListResponses.h"
 #import "SWGWeeklyListRequest.h"
 #import "SWGObject.h"
@@ -28,6 +31,21 @@
 
 /**
 
+ 添加周报
+ 添加周报
+
+ @param body 
+ 
+
+ return type: SWGResponses*
+ */
+-(NSNumber*) delWeeklyWithBody: (SWGDelWeeklyRequest*) body
+    completionHandler: (void (^)(SWGResponses* output, NSError* error))completionBlock;
+    
+
+
+/**
+
  用户周报列表
  用户周报列表
 
@@ -38,6 +56,21 @@
  */
 -(NSNumber*) myWeeklyWithBody: (SWGMyWeeklyRequest*) body
     completionHandler: (void (^)(SWGMyWeeklyResponses* output, NSError* error))completionBlock;
+    
+
+
+/**
+
+ 添加周报
+ 添加周报
+
+ @param body 
+ 
+
+ return type: SWGResponses*
+ */
+-(NSNumber*) updateWeeklyWithBody: (SWGUpdateWeeklyRequest*) body
+    completionHandler: (void (^)(SWGResponses* output, NSError* error))completionBlock;
     
 
 

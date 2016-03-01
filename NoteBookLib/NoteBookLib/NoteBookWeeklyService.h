@@ -13,4 +13,6 @@
 - (RACCommand*) weeklyListCommandEnable:(RACSignal*)enable;
 - (RACCommand*) addWeeklyCommandEnable:(RACSignal*)enable;
 - (RACCommand*) myWeeklyCommandEnable:(RACSignal*)enable;
+- (RACCommand*) delWeeklyCommandEnable:(RACSignal*)enable;
+- (RACCommand*) updateWeeklyCommandEnable:(RACSignal*)enable;
 @end

@@ -7,7 +7,10 @@
 //
 #import <UIKit/UIKit.h>
 #import "RVMViewModel.h"
+//#import "/Users/dz/Desktop/Note库测试/Pods/ReactiveViewModel/ReactiveViewModel/RVMViewModel.h"
+
 #import <ReactiveCocoa/ReactiveCocoa.h>
+//#import "/Users/dz/Desktop/Note库测试/Pods/ReactiveCocoa/ReactiveCocoa/ReactiveCocoa.h"
 @interface ViewModel : RVMViewModel
 
 @property (nonatomic, strong, readonly) RACSubject *needsLayoutSignal;

@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		200218B91C43AA6D00D095CB /* WeeklyListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 200218B81C43AA6D00D095CB /* WeeklyListTableViewCell.m */; };
 		2030B4581BFF19DB00C96C6B /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2030B4571BFF19DB00C96C6B /* NoteBookLib.framework */; };
+		20669D861C891DAC000ED690 /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CF3B1C8D86AC0088AECD /* libPods-NoteBook.a in Sources */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
+		2073CF3C1C8D86C90088AECD /* libPods-NoteBook.a in Resources */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
+		2073CF3D1C8D87130088AECD /* NoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */; };
+		2073CF3E1C8D87450088AECD /* NoteBookLib.framework in Sources */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CF3F1C8D875C0088AECD /* NoteBookLib.framework in Resources */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CFA21C8E778E0088AECD /* libPods-NoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */; };
 		2089CC221BFF12A100B80E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC211BFF12A100B80E5A /* main.m */; };
 		2089CC251BFF12A100B80E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC241BFF12A100B80E5A /* AppDelegate.m */; };
 		2089CC281BFF12A100B80E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC271BFF12A100B80E5A /* ViewController.m */; };
 		2089CC2D1BFF12A100B80E5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2C1BFF12A100B80E5A /* Images.xcassets */; };
 		2089CC301BFF12A100B80E5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */; };
-		2089CC3C1BFF12A100B80E5A /* NoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */; };
 		20D70A031C0ECCAA00F301AB /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A021C0ECCAA00F301AB /* ViewModel.m */; };
 		20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A051C0ECD5F00F301AB /* TestViewModel.m */; };
 		20D70A091C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */; };
@@ -24,6 +30,7 @@
 		20D70A161C0ED5C100F301AB /* KeyboardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A151C0ED5C100F301AB /* KeyboardState.m */; };
 		20D70A191C0ED63400F301AB /* NSObject+RAC+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */; };
 		20F794571C412A2B001139B7 /* WeeklyListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F794561C412A2B001139B7 /* WeeklyListTableViewController.m */; };
+		675CC48EA3AF5D578385155D /* libPods-NoteBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A99174446C803406F104F37 /* libPods-NoteBookTests.a */; };
 		8DCFEBFC62CCEA3487D4CA93 /* libPods-NoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +48,22 @@
 		200218B71C43AA6D00D095CB /* WeeklyListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyListTableViewCell.h; sourceTree = "<group>"; };
 		200218B81C43AA6D00D095CB /* WeeklyListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyListTableViewCell.m; sourceTree = "<group>"; };
 		2030B4571BFF19DB00C96C6B /* NoteBookLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteBookLib.framework; path = "../NoteBookLib/build/Debug-iphoneos/NoteBookLib.framework"; sourceTree = "<group>"; };
+		20669D851C891DAC000ED690 /* NoteBookLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteBookLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos/NoteBookLib.framework"; sourceTree = "<group>"; };
+		20669D9F1C8D795F000ED690 /* libPods-NoteBook-ReactiveViewModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveViewModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos/libPods-NoteBook-ReactiveViewModel.a"; sourceTree = "<absolute>"; };
+		20669DA11C8D7E47000ED690 /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
+		2073CF231C8D86990088AECD /* libPods-NoteBook-AJWValidator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-AJWValidator.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-AJWValidator.a"; sourceTree = "<absolute>"; };
+		2073CF241C8D86990088AECD /* libPods-NoteBook-ISO8601.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ISO8601.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ISO8601.a"; sourceTree = "<absolute>"; };
+		2073CF251C8D86990088AECD /* libPods-NoteBook-JSONModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-JSONModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-JSONModel.a"; sourceTree = "<absolute>"; };
+		2073CF261C8D86990088AECD /* libPods-NoteBook-Masonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-Masonry.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-Masonry.a"; sourceTree = "<absolute>"; };
+		2073CF271C8D86990088AECD /* libPods-NoteBook-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-MBProgressHUD.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-MBProgressHUD.a"; sourceTree = "<absolute>"; };
+		2073CF281C8D86990088AECD /* libPods-NoteBook-MJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-MJRefresh.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-MJRefresh.a"; sourceTree = "<absolute>"; };
+		2073CF291C8D86990088AECD /* libPods-NoteBook-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveCocoa.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ReactiveCocoa.a"; sourceTree = "<absolute>"; };
+		2073CF2A1C8D86990088AECD /* libPods-NoteBook-ReactiveViewModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveViewModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ReactiveViewModel.a"; sourceTree = "<absolute>"; };
+		2073CF2B1C8D86990088AECD /* libPods-NoteBook-Tortuga22-NinePatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-Tortuga22-NinePatch.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-Tortuga22-NinePatch.a"; sourceTree = "<absolute>"; };
+		2073CF2C1C8D86990088AECD /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
+		2073CF2D1C8D86990088AECD /* libPods-NoteBookLib-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookLib-AFNetworking.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBookLib-AFNetworking.a"; sourceTree = "<absolute>"; };
+		2073CF2E1C8D86990088AECD /* libPods-NoteBookLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookLib.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBookLib.a"; sourceTree = "<absolute>"; };
+		2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
 		2089CC1C1BFF12A100B80E5A /* NoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2089CC201BFF12A100B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2089CC211BFF12A100B80E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +75,8 @@
 		2089CC2F1BFF12A100B80E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2089CC351BFF12A100B80E5A /* NoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2089CC3A1BFF12A100B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteBookTests.m; sourceTree = "<group>"; };
-		20D70A011C0ECCAA00F301AB /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = base/ViewModel.h; sourceTree = "<group>"; };
+		2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NoteBookTests.m; path = "../../../../Users/dz/Desktop/Note库测试/NoteBook/NoteBookTests/NoteBookTests.m"; sourceTree = DEVELOPER_DIR; };
+		20D70A011C0ECCAA00F301AB /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = "/Users/dz/Desktop/Note库测试/NoteBook/NoteBook/base/ViewModel.h"; sourceTree = "<absolute>"; };
 		20D70A021C0ECCAA00F301AB /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = base/ViewModel.m; sourceTree = "<group>"; };
 		20D70A041C0ECD5F00F301AB /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewModel.h; path = viewModel/TestViewModel.h; sourceTree = "<group>"; };
 		20D70A051C0ECD5F00F301AB /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewModel.m; path = viewModel/TestViewModel.m; sourceTree = "<group>"; };
@@ -73,6 +96,8 @@
 		20F794551C412A2B001139B7 /* WeeklyListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyListTableViewController.h; sourceTree = "<group>"; };
 		20F794561C412A2B001139B7 /* WeeklyListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyListTableViewController.m; sourceTree = "<group>"; };
 		6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A99174446C803406F104F37 /* libPods-NoteBookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.debug.xcconfig"; sourceTree = "<group>"; };
 		CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2073CFA21C8E778E0088AECD /* libPods-NoteBook.a in Frameworks */,
+				20669D861C891DAC000ED690 /* NoteBookLib.framework in Frameworks */,
+				675CC48EA3AF5D578385155D /* libPods-NoteBookTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +209,25 @@
 		92FB1C94A532B53B0E75D668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */,
+				2073CF231C8D86990088AECD /* libPods-NoteBook-AJWValidator.a */,
+				2073CF241C8D86990088AECD /* libPods-NoteBook-ISO8601.a */,
+				2073CF251C8D86990088AECD /* libPods-NoteBook-JSONModel.a */,
+				2073CF261C8D86990088AECD /* libPods-NoteBook-Masonry.a */,
+				2073CF271C8D86990088AECD /* libPods-NoteBook-MBProgressHUD.a */,
+				2073CF281C8D86990088AECD /* libPods-NoteBook-MJRefresh.a */,
+				2073CF291C8D86990088AECD /* libPods-NoteBook-ReactiveCocoa.a */,
+				2073CF2A1C8D86990088AECD /* libPods-NoteBook-ReactiveViewModel.a */,
+				2073CF2B1C8D86990088AECD /* libPods-NoteBook-Tortuga22-NinePatch.a */,
+				2073CF2C1C8D86990088AECD /* libPods-NoteBook.a */,
+				2073CF2D1C8D86990088AECD /* libPods-NoteBookLib-AFNetworking.a */,
+				2073CF2E1C8D86990088AECD /* libPods-NoteBookLib.a */,
+				20669DA11C8D7E47000ED690 /* libPods-NoteBook.a */,
+				20669D9F1C8D795F000ED690 /* libPods-NoteBook-ReactiveViewModel.a */,
+				20669D851C891DAC000ED690 /* NoteBookLib.framework */,
 				2030B4571BFF19DB00C96C6B /* NoteBookLib.framework */,
 				6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */,
+				9A99174446C803406F104F37 /* libPods-NoteBookTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +237,7 @@
 			children = (
 				C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */,
 				CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */,
+				74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -222,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2089CC421BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBookTests" */;
 			buildPhases = (
+				A4168832CBC74CB201C99CFE /* Check Pods Manifest.lock */,
 				2089CC311BFF12A100B80E5A /* Sources */,
 				2089CC321BFF12A100B80E5A /* Frameworks */,
 				2089CC331BFF12A100B80E5A /* Resources */,
+				BD383B84C3A7004BDD88CB03 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,12 +335,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2073CF3F1C8D875C0088AECD /* NoteBookLib.framework in Resources */,
+				2073CF3C1C8D86C90088AECD /* libPods-NoteBook.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A4168832CBC74CB201C99CFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AB93AB522291565CC756B7A8 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +371,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD383B84C3A7004BDD88CB03 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E89302E6AFD6E6807C829655 /* Copy Pods Resources */ = {
@@ -350,7 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2089CC3C1BFF12A100B80E5A /* NoteBookTests.m in Sources */,
+				2073CF3E1C8D87450088AECD /* NoteBookLib.framework in Sources */,
+				2073CF3D1C8D87130088AECD /* NoteBookTests.m in Sources */,
+				2073CF3B1C8D86AC0088AECD /* libPods-NoteBook.a in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,11 +610,13 @@
 		};
 		2089CC431BFF12A100B80E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -540,23 +624,37 @@
 				);
 				INFOPLIST_FILE = NoteBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteBook.app/NoteBook";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} \"${SRCROOT}/../NoteBookLib/NoteBookLib\"";
 			};
 			name = Debug;
 		};
 		2089CC441BFF12A100B80E5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = NoteBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteBook.app/NoteBook";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} \"${SRCROOT}/../NoteBookLib/NoteBookLib\"";
 			};
 			name = Release;
 		};
@@ -570,7 +668,7 @@
 				2089CC3E1BFF12A100B80E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2089CC3F1BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBook" */ = {
 			isa = XCConfigurationList;
@@ -579,7 +677,7 @@
 				2089CC411BFF12A100B80E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2089CC421BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBookTests" */ = {
 			isa = XCConfigurationList;
@@ -588,7 +686,7 @@
 				2089CC441BFF12A100B80E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

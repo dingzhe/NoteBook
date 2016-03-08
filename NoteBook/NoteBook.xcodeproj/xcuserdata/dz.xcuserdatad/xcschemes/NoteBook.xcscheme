@@ -23,8 +23,8 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -34,12 +34,26 @@
                ReferencedContainer = "container:NoteBook.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2073CF151C8D82C00088AECD"
+               BuildableName = "NoteBook2Tests.xctest"
+               BlueprintName = "NoteBook2Tests"
+               ReferencedContainer = "container:NoteBook.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldUseLaunchSchemeArgsEnv = "NO"
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "2089CC341BFF12A100B80E5A"
                BuildableName = "NoteBookTests.xctest"
                BlueprintName = "NoteBookTests"
+               ReferencedContainer = "container:NoteBook.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2073CF151C8D82C00088AECD"
+               BuildableName = "NoteBook2Tests.xctest"
+               BlueprintName = "NoteBook2Tests"
                ReferencedContainer = "container:NoteBook.xcodeproj">
             </BuildableReference>
          </TestableReference>

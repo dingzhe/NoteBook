@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D20AD66DDEA7CB8EB1F571F"
+               BlueprintIdentifier = "3F7CABF744D83AFC4AF69039"
                BuildableName = "libPods-NoteBook-Tortuga22-NinePatch.a"
                BlueprintName = "Pods-NoteBook-Tortuga22-NinePatch"
                ReferencedContainer = "container:Pods.xcodeproj">

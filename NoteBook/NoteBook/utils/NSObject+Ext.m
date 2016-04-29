@@ -1,13 +1,12 @@
 //
 //  NSObject+Ext.m
-//  bolome_shared
+//  NoteBook
 //
-//  Created by by on 3/13/15.
-//  Copyright (c) 2015 bolome. All rights reserved.
+//  Created by Mac on 16/4/29.
+//  Copyright © 2016年 dz. All rights reserved.
 //
 
 #import "NSObject+Ext.h"
-#import <objc/runtime.h>
 
 @implementation NSObject(Ext_private)
 

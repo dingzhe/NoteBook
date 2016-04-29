@@ -1,12 +1,13 @@
 //
 //  NSObject+Ext.h
-//  bolome_shared
+//  NoteBook
 //
-//  Created by by on 3/13/15.
-//  Copyright (c) 2015 bolome. All rights reserved.
+//  Created by Mac on 16/4/29.
+//  Copyright © 2016年 dz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 #import <objc/runtime.h>
 
 #define GET_ASSOCIATED_OBJ() objc_getAssociatedObject(self, _cmd)
@@ -45,18 +46,18 @@ _##varl##var = varl##var; \
 
 #define BEGIN_IMP_SINGLETON(methodName, class) \
 + (class *)methodName { \
-    static class *instance = nil; \
-    static dispatch_once_t once; \
-    dispatch_once(&once, ^{ \
+static class *instance = nil; \
+static dispatch_once_t once; \
+dispatch_once(&once, ^{ \
 
 #define END_IMP_SINGLETON \
-    }); \
-    return instance; \
+}); \
+return instance; \
 }
 
 #define IMP_SINGLETON(methodName, class) \
 BEGIN_IMP_SINGLETON(methodName, class) \
-    instance = [[self alloc] init]; \
+instance = [[self alloc] init]; \
 END_IMP_SINGLETON
 
 @interface NSObject(Ext)

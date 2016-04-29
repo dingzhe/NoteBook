@@ -14,7 +14,7 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        _api = [SWGSignApi apiWithBasePath:@"http://114.215.152.69/php/api"];
+        _api = [SWGSignApi apiWithBasePath:ServerURL];
     }
     return self;
 }

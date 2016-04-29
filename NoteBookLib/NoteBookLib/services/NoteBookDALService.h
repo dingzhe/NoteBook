@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "NoteBookLib_gen.h"
 #import "SWGApi+RAC.h"
+#import "NoteBookConfigure.h"
+
 @interface NoteBookDALService : NSObject<SWGApiDelegate>
 + (instancetype) service;
 //

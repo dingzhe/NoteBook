@@ -13,7 +13,7 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        _api = [SWGWeeklyApi apiWithBasePath:@"http://114.215.152.69/php/api"];
+        _api = [SWGWeeklyApi apiWithBasePath:ServerURL];
     }
     return self;
 }

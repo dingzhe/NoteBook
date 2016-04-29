@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		04ECA6221CD33F1B00C2513A /* NoteBookSignService.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ECA6211CD33F1B00C2513A /* NoteBookSignService.h */; };
+		04ECA6241CD3401700C2513A /* NoteBookConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ECA6231CD3401700C2513A /* NoteBookConfigure.h */; };
 		2030B4601BFF1C1D00C96C6B /* code-gen in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45A1BFF1C1D00C96C6B /* code-gen */; };
 		2030B4631BFF1C1D00C96C6B /* swagger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45D1BFF1C1D00C96C6B /* swagger.json */; };
 		2030B4641BFF1C1D00C96C6B /* swagger.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45E1BFF1C1D00C96C6B /* swagger.sh */; };
@@ -104,7 +106,6 @@
 		207555BD1C3FAE2A00253F7E /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 207555BB1C3FAE2A00253F7E /* NSString+Ext.m */; };
 		207555C01C3FAE9E00253F7E /* NSMutableString+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 207555BE1C3FAE9E00253F7E /* NSMutableString+Ext.h */; };
 		207555C11C3FAE9E00253F7E /* NSMutableString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 207555BF1C3FAE9E00253F7E /* NSMutableString+Ext.m */; };
-		2075564D1C3FB31D00253F7E /* NoteBookSignService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2075564B1C3FB31D00253F7E /* NoteBookSignService.h */; };
 		2075564E1C3FB31D00253F7E /* NoteBookSignService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075564C1C3FB31D00253F7E /* NoteBookSignService.m */; };
 		207556511C3FB47800253F7E /* NoteBookWeeklyService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2075564F1C3FB47800253F7E /* NoteBookWeeklyService.h */; };
 		207556521C3FB47800253F7E /* NoteBookWeeklyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 207556501C3FB47800253F7E /* NoteBookWeeklyService.m */; };
@@ -140,6 +141,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04ECA6211CD33F1B00C2513A /* NoteBookSignService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookSignService.h; sourceTree = "<group>"; };
+		04ECA6231CD3401700C2513A /* NoteBookConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookConfigure.h; sourceTree = "<group>"; };
 		2030B45A1BFF1C1D00C96C6B /* code-gen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "code-gen"; sourceTree = "<group>"; };
 		2030B45B1BFF1C1D00C96C6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2030B45C1BFF1C1D00C96C6B /* swagger-codegen-cli.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "swagger-codegen-cli.jar"; sourceTree = "<group>"; };
@@ -225,7 +228,6 @@
 		207555BB1C3FAE2A00253F7E /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
 		207555BE1C3FAE9E00253F7E /* NSMutableString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Ext.h"; sourceTree = "<group>"; };
 		207555BF1C3FAE9E00253F7E /* NSMutableString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Ext.m"; sourceTree = "<group>"; };
-		2075564B1C3FB31D00253F7E /* NoteBookSignService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteBookSignService.h; path = "/Users/dz/Desktop/Note库测试/NoteBookLib/NoteBookLib/NoteBookSignService.h"; sourceTree = "<absolute>"; };
 		2075564C1C3FB31D00253F7E /* NoteBookSignService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteBookSignService.m; sourceTree = "<group>"; };
 		2075564F1C3FB47800253F7E /* NoteBookWeeklyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookWeeklyService.h; sourceTree = "<group>"; };
 		207556501C3FB47800253F7E /* NoteBookWeeklyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteBookWeeklyService.m; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				20D709C21C0C442200F301AB /* services */,
 				2030B47C1BFF1D2B00C96C6B /* NoteBookLib_gen.h */,
 				2089CC541BFF12C500B80E5A /* NoteBookLib.h */,
+				04ECA6231CD3401700C2513A /* NoteBookConfigure.h */,
 				20D709BE1C04437400F301AB /* SWGApi+RAC.h */,
 				20D709BF1C04437400F301AB /* SWGApi+RAC.m */,
 				20D709FD1C0E9D2000F301AB /* RACSignal+Ext.h */,
@@ -456,7 +459,7 @@
 				20D709C41C0C447F00F301AB /* NoteBookDALService.m */,
 				20D709BA1C0406F300F301AB /* NoteBookArticleService.h */,
 				20D709BB1C0406F300F301AB /* NoteBookArticleService.m */,
-				2075564B1C3FB31D00253F7E /* NoteBookSignService.h */,
+				04ECA6211CD33F1B00C2513A /* NoteBookSignService.h */,
 				2075564C1C3FB31D00253F7E /* NoteBookSignService.m */,
 				2075564F1C3FB47800253F7E /* NoteBookWeeklyService.h */,
 				207556501C3FB47800253F7E /* NoteBookWeeklyService.m */,
@@ -508,6 +511,7 @@
 				20669D451C8590E5000ED690 /* SWGArticleList.h in Headers */,
 				20669D371C8590E5000ED690 /* SWGAddArticleResponses.h in Headers */,
 				20669D5B1C8590E5000ED690 /* SWGMakeUrlApi.h in Headers */,
+				04ECA6221CD33F1B00C2513A /* NoteBookSignService.h in Headers */,
 				20669D6B1C8590E5000ED690 /* SWGSignResponses.h in Headers */,
 				20669D471C8590E5000ED690 /* SWGArticleListApi.h in Headers */,
 				20669D5F1C8590E5000ED690 /* SWGMyWeeklyResponses.h in Headers */,
@@ -517,6 +521,7 @@
 				20669D531C8590E5000ED690 /* SWGGetArticleByIdRequest.h in Headers */,
 				20D709C91C0C4BC500F301AB /* RACCommand+Ext.h in Headers */,
 				207555BC1C3FAE2A00253F7E /* NSString+Ext.h in Headers */,
+				04ECA6241CD3401700C2513A /* NoteBookConfigure.h in Headers */,
 				20669D3F1C8590E5000ED690 /* SWGApi.h in Headers */,
 				20D709FF1C0E9D2000F301AB /* RACSignal+Ext.h in Headers */,
 				20669D5D1C8590E5000ED690 /* SWGMyWeeklyRequest.h in Headers */,
@@ -538,7 +543,6 @@
 				20669D551C8590E5000ED690 /* SWGId.h in Headers */,
 				207556511C3FB47800253F7E /* NoteBookWeeklyService.h in Headers */,
 				207555C01C3FAE9E00253F7E /* NSMutableString+Ext.h in Headers */,
-				2075564D1C3FB31D00253F7E /* NoteBookSignService.h in Headers */,
 				20669D671C8590E5000ED690 /* SWGSignApi.h in Headers */,
 				20669D491C8590E5000ED690 /* SWGConfiguration.h in Headers */,
 			);
@@ -873,6 +877,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 977D6C2B42BD4B3215218983 /* Pods-NoteBookLib.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -883,6 +888,7 @@
 				);
 				INFOPLIST_FILE = NoteBookLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -895,6 +901,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94C902983DC7615D4AD08243 /* Pods-NoteBookLib.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -905,6 +912,7 @@
 				);
 				INFOPLIST_FILE = NoteBookLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";

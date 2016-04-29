@@ -10,7 +10,9 @@
 #import "ViewController.h"
 #import "WeeklyListTableViewController.h"
 #import "MarkdownViewController.h"
-
+#import "RootTabBarViewController.h"
+//#import "PermissionManager.h"
+#import "PermissionManager+DzNote.h"
 @interface AppDelegate ()
 @property(nonatomic,strong)UINavigationController *navController;
 @end
@@ -22,24 +24,26 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    
-    
-    MarkdownViewController *appVC = [[MarkdownViewController alloc] init];
-    appVC.view.backgroundColor = [UIColor orangeColor];
-    appVC.title = @"app";
-    UINavigationController *appNav = [[UINavigationController alloc] initWithRootViewController:appVC];
-    
-    WeeklyListTableViewController *weelyListController = [[WeeklyListTableViewController alloc] init];
-    
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    
-    
-//    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
+    self.window.rootViewController = [[RootTabBarViewController alloc]init];
+    [PermissionManager.manager registerVisionPermissions];
+//    MarkdownViewController *appVC = [[MarkdownViewController alloc] init];
+//    appVC.view.backgroundColor = [UIColor orangeColor];
+//    appVC.title = @"app";
+//    UINavigationController *appNav = [[UINavigationController alloc] initWithRootViewController:appVC];
 //    
-//    weelyListController.navigationItem.leftBarButtonItem = testAPI;
-    _navController = [[UINavigationController alloc] initWithRootViewController:weelyListController];
-    tabBarController.viewControllers = @[_navController,appNav];
-    self.window.rootViewController = tabBarController;
+//    WeeklyListTableViewController *weelyListController = [[WeeklyListTableViewController alloc] init];
+//    
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    
+//    
+////    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
+////    
+////    weelyListController.navigationItem.leftBarButtonItem = testAPI;
+//    _navController = [[UINavigationController alloc] initWithRootViewController:weelyListController];
+//    tabBarController.viewControllers = @[_navController,appNav];
+//    self.window.rootViewController = tabBarController;
+    
+    
     return YES;
 }
 - (void)openTestView{

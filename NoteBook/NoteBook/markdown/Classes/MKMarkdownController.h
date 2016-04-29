@@ -8,6 +8,8 @@
 
 @interface MKMarkdownController : UIViewController
 
+- (instancetype)initWithAddNote;
+- (instancetype)initWithModel:(SWGWeekly *)model;
 @property (nonatomic, copy) void (^onComplete) (UIViewController *);
 
 @property (nonatomic, copy) NSString *defaultMarkdownText;

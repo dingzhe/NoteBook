@@ -137,8 +137,8 @@
 }
 
 - (void) test1 {
-//    [self signIn];
-    [self addWeekly];
+    [self signIn];
+//    [self addWeekly];
 //    [self weeklyList];
 //    [self myWeekly];
 }

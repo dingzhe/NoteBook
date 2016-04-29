@@ -10,13 +10,71 @@
 @interface MKMarkdownController() <UITextViewDelegate>
 
 @property (nonatomic, strong) MKTextView *textView;
-
+@property (nonatomic, strong) NSString *editType;
+@property (nonatomic, strong) RACCommand *addweeklyCommand;
+@property (nonatomic, strong) RACCommand *updateWeeklyCommand;
+@property (nonatomic, strong) SWGWeekly *model;
 @end
 
 
 @implementation MKMarkdownController
 {
 
+}
+
+- (instancetype)initWithAddNote
+{
+    self = [super init];
+    if (self) {
+        [self initCommand];
+        _editType = @"addnote";
+    }
+    return self;
+}
+- (instancetype)initWithModel:(SWGWeekly *)model
+{
+    self = [super init];
+    if (self) {
+        _model = model;
+        [self initUpdateCommand];
+        _editType = @"editnote";
+    }
+    return self;
+}
+
+- (void)initCommand{
+    @weakify(self)
+    _addweeklyCommand = [NoteBookWeeklyService.service addWeeklyCommandEnable:nil];
+    
+    [_addweeklyCommand.responses subscribeNext:^(SWGAddWeeklyResponses *response) {
+        @strongify(self)
+//        [self.showHUDSignal sendNext:@"保存成功"];
+        NSLog(@"%@",response);
+        
+//        [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+    }];
+    [_addweeklyCommand.errors subscribeNext:^(NSError *error) {
+        NSLog(@"%@",error);
+        
+        //            DDLogError(@"Error while update base:%@", error);
+    }];
+}
+- (void)initUpdateCommand{
+    @weakify(self)
+    _updateWeeklyCommand = [NoteBookWeeklyService.service updateWeeklyCommandEnable:nil];
+    
+    [_updateWeeklyCommand.responses subscribeNext:^(SWGAddWeeklyResponses *response) {
+        @strongify(self)
+        //        [self.showHUDSignal sendNext:@"保存成功"];
+        NSLog(@"%@",response);
+        
+        //        [self showHUDMessage:[NSString stringWithFormat:@"%@",response]];
+    }];
+    [_updateWeeklyCommand.errors subscribeNext:^(NSError *error) {
+        NSLog(@"%@",error);
+        
+        //            DDLogError(@"Error while update base:%@", error);
+    }];
 }
 
 - (void)viewDidLoad
@@ -61,6 +119,44 @@
   [self.textView becomeFirstResponder];
 
   self.textView.text = self.defaultMarkdownText;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    if ([_editType isEqualToString:@"addnote"]) {
+        [self addWeekly];
+    }else if ([_editType isEqualToString:@"editnote"]){
+        [self updateWeekly];
+    }
+}
+- (void)addWeekly{
+    SWGAddWeeklyRequest * request = [[SWGAddWeeklyRequest alloc] init];
+    request.uid = @"9";
+    NSString* date;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYY-MM-dd[hh:mm:ss]"];
+    date = [formatter stringFromDate:[NSDate date]];
+    request.title = date;
+    request.content = self.textView.text;
+    request.dateline = date;
+    
+    //    request.dateline =
+    [_addweeklyCommand execute:request];
+}
+
+- (void)updateWeekly{
+    SWGUpdateWeeklyRequest * request = [[SWGUpdateWeeklyRequest alloc] init];
+    request.uid = _model.uid;
+    request.weeklyid = _model.weeklyid;
+    request.title = _model.title;
+    NSString* date;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYY-MM-dd[hh:mm:ss]"];
+    date = [formatter stringFromDate:[NSDate date]];
+//    request.title = date;
+    request.content = self.textView.text;
+    request.dateline = date;
+    
+    //    request.dateline =
+    [_updateWeeklyCommand execute:request];
 }
 - (void)closeView{
 //    [self.navigationController popViewControllerAnimated:YES];

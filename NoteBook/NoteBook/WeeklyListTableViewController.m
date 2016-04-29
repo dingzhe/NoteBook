@@ -90,7 +90,7 @@
     
     content = [content stringByReplacingOccurrencesOfString:@"\r" withString:@""];
     
-    MKMarkdownController *controller = [MKMarkdownController new];
+    MKMarkdownController *controller = [[MKMarkdownController alloc] initWithAddNote];
     controller.defaultMarkdownText   = content;
     controller.onComplete = ^(UIViewController *c)
     {
@@ -184,9 +184,15 @@
     return cell;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+
+    [self pullToRefresh];
+    
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SWGWeekly * model = _count[indexPath.section];
-    MKMarkdownController *controller = [MKMarkdownController new];
+    MKMarkdownController *controller = [[MKMarkdownController alloc] initWithModel:model];
     controller.defaultMarkdownText   = model.content;
     controller.onComplete = ^(UIViewController *c)
     {

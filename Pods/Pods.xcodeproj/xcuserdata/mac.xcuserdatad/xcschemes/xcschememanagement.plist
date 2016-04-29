@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ISO8601.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,6 +87,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>12E2BC28C62976C425F4B71C2723F0B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EDAB2B41322A4123063E13725E08EF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>217B4B777E63ECC01AA538F89A10C2E2</key>
 		<dict>
 			<key>primary</key>
@@ -92,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>32603C485A4B50D15CE5A437A39CC054</key>
+		<key>3529BA4E642024DBA1B786D728DE22E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,17 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC86D8B5161C640FC26E078BE47BFE4B</key>
+		<key>9831727CD3564CE9EFC5956C9A37B8A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B117635513DD2BD0B925C67FA628C69F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E5CEC4E38660346A02FD6912DA9070CA</key>
+		<key>C210D035BF330BB5420E7E1E2412D3AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

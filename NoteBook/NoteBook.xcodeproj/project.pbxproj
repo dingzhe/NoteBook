@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04ECA49F1CCFB0CD00C2513A /* libPods-NoteBookLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA49D1CCFB0CD00C2513A /* libPods-NoteBookLib.a */; };
+		04ECA4A01CCFB0CD00C2513A /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA49E1CCFB0CD00C2513A /* NoteBookLib.framework */; };
+		04ECA4A21CCFB0DB00C2513A /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A11CCFB0DB00C2513A /* libAFNetworking.a */; };
+		04ECA4AE1CCFB0FD00C2513A /* libAJWValidator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A31CCFB0FD00C2513A /* libAJWValidator.a */; };
+		04ECA4AF1CCFB0FD00C2513A /* libISO8601.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A41CCFB0FD00C2513A /* libISO8601.a */; };
+		04ECA4B01CCFB0FD00C2513A /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A51CCFB0FD00C2513A /* libJSONModel.a */; };
+		04ECA4B11CCFB0FD00C2513A /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A61CCFB0FD00C2513A /* libMasonry.a */; };
+		04ECA4B21CCFB0FD00C2513A /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A71CCFB0FD00C2513A /* libMBProgressHUD.a */; };
+		04ECA4B31CCFB0FD00C2513A /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A81CCFB0FD00C2513A /* libMJRefresh.a */; };
+		04ECA4B41CCFB0FD00C2513A /* libPods-NoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4A91CCFB0FD00C2513A /* libPods-NoteBook.a */; };
+		04ECA4B61CCFB0FD00C2513A /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4AB1CCFB0FD00C2513A /* libReactiveCocoa.a */; };
+		04ECA4B71CCFB0FD00C2513A /* libReactiveViewModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4AC1CCFB0FD00C2513A /* libReactiveViewModel.a */; };
+		04ECA4B81CCFB0FD00C2513A /* libTortuga22-NinePatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4AD1CCFB0FD00C2513A /* libTortuga22-NinePatch.a */; };
+		04ECA4BA1CCFB90600C2513A /* libMMMarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECA4B91CCFB90600C2513A /* libMMMarkdown.a */; };
+		04ECA4BD1CCFB96800C2513A /* MarkdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4BC1CCFB96800C2513A /* MarkdownViewController.m */; };
+		04ECA4F11CCFB97C00C2513A /* MKHighlighterTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4C11CCFB97C00C2513A /* MKHighlighterTextStorage.m */; };
+		04ECA4F21CCFB97C00C2513A /* MKHighlighterType.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4C31CCFB97C00C2513A /* MKHighlighterType.m */; };
+		04ECA4F31CCFB97C00C2513A /* MKKeyboardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4C51CCFB97C00C2513A /* MKKeyboardToolBar.m */; };
+		04ECA4F41CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4C71CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.m */; };
+		04ECA4F51CCFB97C00C2513A /* MKMarkdownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4C91CCFB97C00C2513A /* MKMarkdownController.m */; };
+		04ECA4F61CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4CB1CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m */; };
+		04ECA4F71CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4CD1CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.m */; };
+		04ECA4F81CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4CF1CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m */; };
+		04ECA4F91CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4D11CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m */; };
+		04ECA4FA1CCFB97C00C2513A /* MKMarkdownListHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4D31CCFB97C00C2513A /* MKMarkdownListHighlighter.m */; };
+		04ECA4FB1CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4D51CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.m */; };
+		04ECA4FC1CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4D71CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.m */; };
+		04ECA4FD1CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4D91CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m */; };
+		04ECA4FE1CCFB97C00C2513A /* MKPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4DB1CCFB97C00C2513A /* MKPreviewController.m */; };
+		04ECA4FF1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4DD1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m */; };
+		04ECA5001CCFB97C00C2513A /* MKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4DF1CCFB97C00C2513A /* MKTextView.m */; };
+		04ECA5011CCFB97C00C2513A /* bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E11CCFB97C00C2513A /* bold.png */; };
+		04ECA5021CCFB97C00C2513A /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E21CCFB97C00C2513A /* code.png */; };
+		04ECA5031CCFB97C00C2513A /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E31CCFB97C00C2513A /* help.png */; };
+		04ECA5041CCFB97C00C2513A /* hr.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E41CCFB97C00C2513A /* hr.png */; };
+		04ECA5051CCFB97C00C2513A /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E51CCFB97C00C2513A /* img.png */; };
+		04ECA5061CCFB97C00C2513A /* italic.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E61CCFB97C00C2513A /* italic.png */; };
+		04ECA5071CCFB97C00C2513A /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E71CCFB97C00C2513A /* link.png */; };
+		04ECA5081CCFB97C00C2513A /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E81CCFB97C00C2513A /* more.png */; };
+		04ECA5091CCFB97C00C2513A /* ol.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4E91CCFB97C00C2513A /* ol.png */; };
+		04ECA50A1CCFB97C00C2513A /* quote.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4EA1CCFB97C00C2513A /* quote.png */; };
+		04ECA50B1CCFB97C00C2513A /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4EB1CCFB97C00C2513A /* title.png */; };
+		04ECA50C1CCFB97C00C2513A /* ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4EC1CCFB97C00C2513A /* ul.png */; };
+		04ECA50D1CCFB97C00C2513A /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4EE1CCFB97C00C2513A /* markdown.css */; };
+		04ECA50E1CCFB97C00C2513A /* markdown.html in Resources */ = {isa = PBXBuildFile; fileRef = 04ECA4EF1CCFB97C00C2513A /* markdown.html */; };
+		04ECA50F1CCFB97C00C2513A /* syntax.md in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA4F01CCFB97C00C2513A /* syntax.md */; };
+		200218B91C43AA6D00D095CB /* WeeklyListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 200218B81C43AA6D00D095CB /* WeeklyListTableViewCell.m */; };
+		20669D861C891DAC000ED690 /* NoteBookLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CF3B1C8D86AC0088AECD /* libPods-NoteBook.a in Sources */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
+		2073CF3C1C8D86C90088AECD /* libPods-NoteBook.a in Resources */ = {isa = PBXBuildFile; fileRef = 6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */; };
+		2073CF3D1C8D87130088AECD /* NoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */; };
+		2073CF3E1C8D87450088AECD /* NoteBookLib.framework in Sources */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CF3F1C8D875C0088AECD /* NoteBookLib.framework in Resources */ = {isa = PBXBuildFile; fileRef = 20669D851C891DAC000ED690 /* NoteBookLib.framework */; };
+		2073CFA21C8E778E0088AECD /* libPods-NoteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */; };
+		2089CC221BFF12A100B80E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC211BFF12A100B80E5A /* main.m */; };
+		2089CC251BFF12A100B80E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC241BFF12A100B80E5A /* AppDelegate.m */; };
+		2089CC281BFF12A100B80E5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089CC271BFF12A100B80E5A /* ViewController.m */; };
+		2089CC2D1BFF12A100B80E5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2C1BFF12A100B80E5A /* Images.xcassets */; };
+		2089CC301BFF12A100B80E5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */; };
+		20D70A031C0ECCAA00F301AB /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A021C0ECCAA00F301AB /* ViewModel.m */; };
+		20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A051C0ECD5F00F301AB /* TestViewModel.m */; };
+		20D70A091C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */; };
+		20D70A0D1C0ED0EE00F301AB /* NSObject+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */; };
+		20D70A101C0ED39200F301AB /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A0F1C0ED39200F301AB /* UIView+HUD.m */; };
+		20D70A131C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */; };
+		20D70A161C0ED5C100F301AB /* KeyboardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A151C0ED5C100F301AB /* KeyboardState.m */; };
+		20D70A191C0ED63400F301AB /* NSObject+RAC+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */; };
+		20F794571C412A2B001139B7 /* WeeklyListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F794561C412A2B001139B7 /* WeeklyListTableViewController.m */; };
+		675CC48EA3AF5D578385155D /* libPods-NoteBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A99174446C803406F104F37 /* libPods-NoteBookTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2089CC361BFF12A100B80E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2089CC141BFF12A100B80E5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2089CC1B1BFF12A100B80E5A;
+			remoteInfo = NoteBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04ECA49C1CCFAD6D00C2513A /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = base/ViewModel.h; sourceTree = "<group>"; };
+		04ECA49D1CCFB0CD00C2513A /* libPods-NoteBookLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookLib.a"; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libPods-NoteBookLib.a"; sourceTree = "<group>"; };
+		04ECA49E1CCFB0CD00C2513A /* NoteBookLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteBookLib.framework; path = "../NoteBookLib/build/Debug-iphoneos/NoteBookLib.framework"; sourceTree = "<group>"; };
+		04ECA4A11CCFB0DB00C2513A /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		04ECA4A31CCFB0FD00C2513A /* libAJWValidator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAJWValidator.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libAJWValidator.a"; sourceTree = "<group>"; };
+		04ECA4A41CCFB0FD00C2513A /* libISO8601.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libISO8601.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libISO8601.a"; sourceTree = "<group>"; };
+		04ECA4A51CCFB0FD00C2513A /* libJSONModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSONModel.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libJSONModel.a"; sourceTree = "<group>"; };
+		04ECA4A61CCFB0FD00C2513A /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libMasonry.a"; sourceTree = "<group>"; };
+		04ECA4A71CCFB0FD00C2513A /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		04ECA4A81CCFB0FD00C2513A /* libMJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJRefresh.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libMJRefresh.a"; sourceTree = "<group>"; };
+		04ECA4A91CCFB0FD00C2513A /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libPods-NoteBook.a"; sourceTree = "<group>"; };
+		04ECA4AA1CCFB0FD00C2513A /* libPods-NoteBookTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookTests.a"; path = "/Users/mac/dz/testLib/Pods/../build/Debug-iphoneos/libPods-NoteBookTests.a"; sourceTree = "<absolute>"; };
+		04ECA4AB1CCFB0FD00C2513A /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		04ECA4AC1CCFB0FD00C2513A /* libReactiveViewModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveViewModel.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libReactiveViewModel.a"; sourceTree = "<group>"; };
+		04ECA4AD1CCFB0FD00C2513A /* libTortuga22-NinePatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTortuga22-NinePatch.a"; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libTortuga22-NinePatch.a"; sourceTree = "<group>"; };
+		04ECA4B91CCFB90600C2513A /* libMMMarkdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMMarkdown.a; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-fvyeegdsakomvwfgapcqgvjqpdkx/Build/Products/Debug-iphonesimulator/libMMMarkdown.a"; sourceTree = "<group>"; };
+		04ECA4BB1CCFB96800C2513A /* MarkdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownViewController.h; sourceTree = "<group>"; };
+		04ECA4BC1CCFB96800C2513A /* MarkdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownViewController.m; sourceTree = "<group>"; };
+		04ECA4C01CCFB97C00C2513A /* MKHighlighterTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHighlighterTextStorage.h; sourceTree = "<group>"; };
+		04ECA4C11CCFB97C00C2513A /* MKHighlighterTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHighlighterTextStorage.m; sourceTree = "<group>"; };
+		04ECA4C21CCFB97C00C2513A /* MKHighlighterType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHighlighterType.h; sourceTree = "<group>"; };
+		04ECA4C31CCFB97C00C2513A /* MKHighlighterType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHighlighterType.m; sourceTree = "<group>"; };
+		04ECA4C41CCFB97C00C2513A /* MKKeyboardToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKKeyboardToolBar.h; sourceTree = "<group>"; };
+		04ECA4C51CCFB97C00C2513A /* MKKeyboardToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKKeyboardToolBar.m; sourceTree = "<group>"; };
+		04ECA4C61CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownCodeBlockHighlighter.h; sourceTree = "<group>"; };
+		04ECA4C71CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownCodeBlockHighlighter.m; sourceTree = "<group>"; };
+		04ECA4C81CCFB97C00C2513A /* MKMarkdownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownController.h; sourceTree = "<group>"; };
+		04ECA4C91CCFB97C00C2513A /* MKMarkdownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownController.m; sourceTree = "<group>"; };
+		04ECA4CA1CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownHeaderHighlighter.h; sourceTree = "<group>"; };
+		04ECA4CB1CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownHeaderHighlighter.m; sourceTree = "<group>"; };
+		04ECA4CC1CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownInlineBlockHighlighter.h; sourceTree = "<group>"; };
+		04ECA4CD1CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownInlineBlockHighlighter.m; sourceTree = "<group>"; };
+		04ECA4CE1CCFB97C00C2513A /* MKMarkdownItalicHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownItalicHighlighter.h; sourceTree = "<group>"; };
+		04ECA4CF1CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownItalicHighlighter.m; sourceTree = "<group>"; };
+		04ECA4D01CCFB97C00C2513A /* MKMarkdownLinkHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownLinkHighlighter.h; sourceTree = "<group>"; };
+		04ECA4D11CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownLinkHighlighter.m; sourceTree = "<group>"; };
+		04ECA4D21CCFB97C00C2513A /* MKMarkdownListHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownListHighlighter.h; sourceTree = "<group>"; };
+		04ECA4D31CCFB97C00C2513A /* MKMarkdownListHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownListHighlighter.m; sourceTree = "<group>"; };
+		04ECA4D41CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownOrderListHighlighter.h; sourceTree = "<group>"; };
+		04ECA4D51CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownOrderListHighlighter.m; sourceTree = "<group>"; };
+		04ECA4D61CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownStrikethroughHighlighter.h; sourceTree = "<group>"; };
+		04ECA4D71CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownStrikethroughHighlighter.m; sourceTree = "<group>"; };
+		04ECA4D81CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMarkdownStrongBlockHighlighter.h; sourceTree = "<group>"; };
+		04ECA4D91CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMarkdownStrongBlockHighlighter.m; sourceTree = "<group>"; };
+		04ECA4DA1CCFB97C00C2513A /* MKPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPreviewController.h; sourceTree = "<group>"; };
+		04ECA4DB1CCFB97C00C2513A /* MKPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPreviewController.m; sourceTree = "<group>"; };
+		04ECA4DC1CCFB97C00C2513A /* MKRegularExpressionHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRegularExpressionHighlighter.h; sourceTree = "<group>"; };
+		04ECA4DD1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRegularExpressionHighlighter.m; sourceTree = "<group>"; };
+		04ECA4DE1CCFB97C00C2513A /* MKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTextView.h; sourceTree = "<group>"; };
+		04ECA4DF1CCFB97C00C2513A /* MKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTextView.m; sourceTree = "<group>"; };
+		04ECA4E11CCFB97C00C2513A /* bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bold.png; sourceTree = "<group>"; };
+		04ECA4E21CCFB97C00C2513A /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		04ECA4E31CCFB97C00C2513A /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		04ECA4E41CCFB97C00C2513A /* hr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hr.png; sourceTree = "<group>"; };
+		04ECA4E51CCFB97C00C2513A /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		04ECA4E61CCFB97C00C2513A /* italic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = italic.png; sourceTree = "<group>"; };
+		04ECA4E71CCFB97C00C2513A /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+		04ECA4E81CCFB97C00C2513A /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		04ECA4E91CCFB97C00C2513A /* ol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ol.png; sourceTree = "<group>"; };
+		04ECA4EA1CCFB97C00C2513A /* quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quote.png; sourceTree = "<group>"; };
+		04ECA4EB1CCFB97C00C2513A /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		04ECA4EC1CCFB97C00C2513A /* ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ul.png; sourceTree = "<group>"; };
+		04ECA4EE1CCFB97C00C2513A /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+		04ECA4EF1CCFB97C00C2513A /* markdown.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = markdown.html; sourceTree = "<group>"; };
+		04ECA4F01CCFB97C00C2513A /* syntax.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = syntax.md; sourceTree = "<group>"; };
+		200218B71C43AA6D00D095CB /* WeeklyListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyListTableViewCell.h; sourceTree = "<group>"; };
+		200218B81C43AA6D00D095CB /* WeeklyListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyListTableViewCell.m; sourceTree = "<group>"; };
+		2030B4571BFF19DB00C96C6B /* NoteBookLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteBookLib.framework; path = "../NoteBookLib/build/Debug-iphoneos/NoteBookLib.framework"; sourceTree = "<group>"; };
+		20669D851C891DAC000ED690 /* NoteBookLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteBookLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos/NoteBookLib.framework"; sourceTree = "<group>"; };
+		20669D9F1C8D795F000ED690 /* libPods-NoteBook-ReactiveViewModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveViewModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos/libPods-NoteBook-ReactiveViewModel.a"; sourceTree = "<absolute>"; };
+		20669DA11C8D7E47000ED690 /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
+		2073CF231C8D86990088AECD /* libPods-NoteBook-AJWValidator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-AJWValidator.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-AJWValidator.a"; sourceTree = "<absolute>"; };
+		2073CF241C8D86990088AECD /* libPods-NoteBook-ISO8601.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ISO8601.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ISO8601.a"; sourceTree = "<absolute>"; };
+		2073CF251C8D86990088AECD /* libPods-NoteBook-JSONModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-JSONModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-JSONModel.a"; sourceTree = "<absolute>"; };
+		2073CF261C8D86990088AECD /* libPods-NoteBook-Masonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-Masonry.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-Masonry.a"; sourceTree = "<absolute>"; };
+		2073CF271C8D86990088AECD /* libPods-NoteBook-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-MBProgressHUD.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-MBProgressHUD.a"; sourceTree = "<absolute>"; };
+		2073CF281C8D86990088AECD /* libPods-NoteBook-MJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-MJRefresh.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-MJRefresh.a"; sourceTree = "<absolute>"; };
+		2073CF291C8D86990088AECD /* libPods-NoteBook-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveCocoa.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ReactiveCocoa.a"; sourceTree = "<absolute>"; };
+		2073CF2A1C8D86990088AECD /* libPods-NoteBook-ReactiveViewModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-ReactiveViewModel.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-ReactiveViewModel.a"; sourceTree = "<absolute>"; };
+		2073CF2B1C8D86990088AECD /* libPods-NoteBook-Tortuga22-NinePatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook-Tortuga22-NinePatch.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook-Tortuga22-NinePatch.a"; sourceTree = "<absolute>"; };
+		2073CF2C1C8D86990088AECD /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
+		2073CF2D1C8D86990088AECD /* libPods-NoteBookLib-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookLib-AFNetworking.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBookLib-AFNetworking.a"; sourceTree = "<absolute>"; };
+		2073CF2E1C8D86990088AECD /* libPods-NoteBookLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBookLib.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBookLib.a"; sourceTree = "<absolute>"; };
+		2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NoteBook.a"; path = "/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos/libPods-NoteBook.a"; sourceTree = "<absolute>"; };
+		2089CC1C1BFF12A100B80E5A /* NoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2089CC201BFF12A100B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2089CC211BFF12A100B80E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2089CC231BFF12A100B80E5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2089CC241BFF12A100B80E5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2089CC261BFF12A100B80E5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2089CC271BFF12A100B80E5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2089CC2C1BFF12A100B80E5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2089CC2F1BFF12A100B80E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2089CC351BFF12A100B80E5A /* NoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2089CC3A1BFF12A100B80E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NoteBookTests.m; path = "../../../../Users/dz/Desktop/Note库测试/NoteBook/NoteBookTests/NoteBookTests.m"; sourceTree = DEVELOPER_DIR; };
+		20D70A021C0ECCAA00F301AB /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = base/ViewModel.m; sourceTree = "<group>"; };
+		20D70A041C0ECD5F00F301AB /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewModel.h; path = viewModel/TestViewModel.h; sourceTree = "<group>"; };
+		20D70A051C0ECD5F00F301AB /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewModel.m; path = viewModel/TestViewModel.m; sourceTree = "<group>"; };
+		20D70A071C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RACCommandSupport+Ext.h"; sourceTree = "<group>"; };
+		20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RACCommandSupport+Ext.m"; sourceTree = "<group>"; };
+		20D70A0A1C0ED05500F301AB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		20D70A0B1C0ED0ED00F301AB /* NSObject+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Ext.h"; sourceTree = "<group>"; };
+		20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Ext.m"; sourceTree = "<group>"; };
+		20D70A0E1C0ED39200F301AB /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		20D70A0F1C0ED39200F301AB /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		20D70A111C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDisposableSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
+		20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDisposableSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
+		20D70A141C0ED5C100F301AB /* KeyboardState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardState.h; sourceTree = "<group>"; };
+		20D70A151C0ED5C100F301AB /* KeyboardState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardState.m; sourceTree = "<group>"; };
+		20D70A171C0ED63400F301AB /* NSObject+RAC+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RAC+Ext.h"; sourceTree = "<group>"; };
+		20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RAC+Ext.m"; sourceTree = "<group>"; };
+		20F794551C412A2B001139B7 /* WeeklyListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyListTableViewController.h; sourceTree = "<group>"; };
+		20F794561C412A2B001139B7 /* WeeklyListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyListTableViewController.m; sourceTree = "<group>"; };
+		6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82624AFC791A2185DA766B90 /* Pods-NoteBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBookTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A99174446C803406F104F37 /* libPods-NoteBookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteBookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2089CC191BFF12A100B80E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ECA4BA1CCFB90600C2513A /* libMMMarkdown.a in Frameworks */,
+				04ECA4AE1CCFB0FD00C2513A /* libAJWValidator.a in Frameworks */,
+				04ECA4AF1CCFB0FD00C2513A /* libISO8601.a in Frameworks */,
+				04ECA4B01CCFB0FD00C2513A /* libJSONModel.a in Frameworks */,
+				04ECA4B11CCFB0FD00C2513A /* libMasonry.a in Frameworks */,
+				04ECA4B21CCFB0FD00C2513A /* libMBProgressHUD.a in Frameworks */,
+				04ECA4B31CCFB0FD00C2513A /* libMJRefresh.a in Frameworks */,
+				04ECA4B41CCFB0FD00C2513A /* libPods-NoteBook.a in Frameworks */,
+				04ECA4B61CCFB0FD00C2513A /* libReactiveCocoa.a in Frameworks */,
+				04ECA4B71CCFB0FD00C2513A /* libReactiveViewModel.a in Frameworks */,
+				04ECA4B81CCFB0FD00C2513A /* libTortuga22-NinePatch.a in Frameworks */,
+				04ECA4A21CCFB0DB00C2513A /* libAFNetworking.a in Frameworks */,
+				04ECA49F1CCFB0CD00C2513A /* libPods-NoteBookLib.a in Frameworks */,
+				04ECA4A01CCFB0CD00C2513A /* NoteBookLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC321BFF12A100B80E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2073CFA21C8E778E0088AECD /* libPods-NoteBook.a in Frameworks */,
+				20669D861C891DAC000ED690 /* NoteBookLib.framework in Frameworks */,
+				675CC48EA3AF5D578385155D /* libPods-NoteBookTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04ECA4BE1CCFB97C00C2513A /* markdown */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA4BF1CCFB97C00C2513A /* Classes */,
+				04ECA4E01CCFB97C00C2513A /* Images */,
+				04ECA4ED1CCFB97C00C2513A /* Resources */,
+			);
+			path = markdown;
+			sourceTree = "<group>";
+		};
+		04ECA4BF1CCFB97C00C2513A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA4C01CCFB97C00C2513A /* MKHighlighterTextStorage.h */,
+				04ECA4C11CCFB97C00C2513A /* MKHighlighterTextStorage.m */,
+				04ECA4C21CCFB97C00C2513A /* MKHighlighterType.h */,
+				04ECA4C31CCFB97C00C2513A /* MKHighlighterType.m */,
+				04ECA4C41CCFB97C00C2513A /* MKKeyboardToolBar.h */,
+				04ECA4C51CCFB97C00C2513A /* MKKeyboardToolBar.m */,
+				04ECA4C61CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.h */,
+				04ECA4C71CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.m */,
+				04ECA4C81CCFB97C00C2513A /* MKMarkdownController.h */,
+				04ECA4C91CCFB97C00C2513A /* MKMarkdownController.m */,
+				04ECA4CA1CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.h */,
+				04ECA4CB1CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m */,
+				04ECA4CC1CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.h */,
+				04ECA4CD1CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.m */,
+				04ECA4CE1CCFB97C00C2513A /* MKMarkdownItalicHighlighter.h */,
+				04ECA4CF1CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m */,
+				04ECA4D01CCFB97C00C2513A /* MKMarkdownLinkHighlighter.h */,
+				04ECA4D11CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m */,
+				04ECA4D21CCFB97C00C2513A /* MKMarkdownListHighlighter.h */,
+				04ECA4D31CCFB97C00C2513A /* MKMarkdownListHighlighter.m */,
+				04ECA4D41CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.h */,
+				04ECA4D51CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.m */,
+				04ECA4D61CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.h */,
+				04ECA4D71CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.m */,
+				04ECA4D81CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.h */,
+				04ECA4D91CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m */,
+				04ECA4DA1CCFB97C00C2513A /* MKPreviewController.h */,
+				04ECA4DB1CCFB97C00C2513A /* MKPreviewController.m */,
+				04ECA4DC1CCFB97C00C2513A /* MKRegularExpressionHighlighter.h */,
+				04ECA4DD1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m */,
+				04ECA4DE1CCFB97C00C2513A /* MKTextView.h */,
+				04ECA4DF1CCFB97C00C2513A /* MKTextView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04ECA4E01CCFB97C00C2513A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA4E11CCFB97C00C2513A /* bold.png */,
+				04ECA4E21CCFB97C00C2513A /* code.png */,
+				04ECA4E31CCFB97C00C2513A /* help.png */,
+				04ECA4E41CCFB97C00C2513A /* hr.png */,
+				04ECA4E51CCFB97C00C2513A /* img.png */,
+				04ECA4E61CCFB97C00C2513A /* italic.png */,
+				04ECA4E71CCFB97C00C2513A /* link.png */,
+				04ECA4E81CCFB97C00C2513A /* more.png */,
+				04ECA4E91CCFB97C00C2513A /* ol.png */,
+				04ECA4EA1CCFB97C00C2513A /* quote.png */,
+				04ECA4EB1CCFB97C00C2513A /* title.png */,
+				04ECA4EC1CCFB97C00C2513A /* ul.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		04ECA4ED1CCFB97C00C2513A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA4EE1CCFB97C00C2513A /* markdown.css */,
+				04ECA4EF1CCFB97C00C2513A /* markdown.html */,
+				04ECA4F01CCFB97C00C2513A /* syntax.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2089CC131BFF12A100B80E5A = {
+			isa = PBXGroup;
+			children = (
+				2089CC1E1BFF12A100B80E5A /* NoteBook */,
+				2089CC381BFF12A100B80E5A /* NoteBookTests */,
+				2089CC1D1BFF12A100B80E5A /* Products */,
+				CF1A18D4F786EEB0A5903630 /* Pods */,
+				92FB1C94A532B53B0E75D668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2089CC1D1BFF12A100B80E5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC1C1BFF12A100B80E5A /* NoteBook.app */,
+				2089CC351BFF12A100B80E5A /* NoteBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2089CC1E1BFF12A100B80E5A /* NoteBook */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC231BFF12A100B80E5A /* AppDelegate.h */,
+				2089CC241BFF12A100B80E5A /* AppDelegate.m */,
+				2089CC261BFF12A100B80E5A /* ViewController.h */,
+				2089CC271BFF12A100B80E5A /* ViewController.m */,
+				04ECA4BB1CCFB96800C2513A /* MarkdownViewController.h */,
+				04ECA4BC1CCFB96800C2513A /* MarkdownViewController.m */,
+				04ECA4BE1CCFB97C00C2513A /* markdown */,
+				20F794551C412A2B001139B7 /* WeeklyListTableViewController.h */,
+				20F794561C412A2B001139B7 /* WeeklyListTableViewController.m */,
+				200218B71C43AA6D00D095CB /* WeeklyListTableViewCell.h */,
+				200218B81C43AA6D00D095CB /* WeeklyListTableViewCell.m */,
+				04ECA49C1CCFAD6D00C2513A /* ViewModel.h */,
+				20D70A021C0ECCAA00F301AB /* ViewModel.m */,
+				20D70A041C0ECD5F00F301AB /* TestViewModel.h */,
+				20D70A051C0ECD5F00F301AB /* TestViewModel.m */,
+				20D70A071C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.h */,
+				20D70A081C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m */,
+				20D70A0B1C0ED0ED00F301AB /* NSObject+Ext.h */,
+				20D70A0C1C0ED0ED00F301AB /* NSObject+Ext.m */,
+				20D70A0E1C0ED39200F301AB /* UIView+HUD.h */,
+				20D70A0F1C0ED39200F301AB /* UIView+HUD.m */,
+				20D70A111C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.h */,
+				20D70A121C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m */,
+				20D70A141C0ED5C100F301AB /* KeyboardState.h */,
+				20D70A151C0ED5C100F301AB /* KeyboardState.m */,
+				20D70A171C0ED63400F301AB /* NSObject+RAC+Ext.h */,
+				20D70A181C0ED63400F301AB /* NSObject+RAC+Ext.m */,
+				2089CC2C1BFF12A100B80E5A /* Images.xcassets */,
+				2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */,
+				2089CC1F1BFF12A100B80E5A /* Supporting Files */,
+			);
+			path = NoteBook;
+			sourceTree = "<group>";
+		};
+		2089CC1F1BFF12A100B80E5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC201BFF12A100B80E5A /* Info.plist */,
+				2089CC211BFF12A100B80E5A /* main.m */,
+				20D70A0A1C0ED05500F301AB /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2089CC381BFF12A100B80E5A /* NoteBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC3B1BFF12A100B80E5A /* NoteBookTests.m */,
+				2089CC391BFF12A100B80E5A /* Supporting Files */,
+			);
+			path = NoteBookTests;
+			sourceTree = "<group>";
+		};
+		2089CC391BFF12A100B80E5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2089CC3A1BFF12A100B80E5A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92FB1C94A532B53B0E75D668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA4B91CCFB90600C2513A /* libMMMarkdown.a */,
+				04ECA4A31CCFB0FD00C2513A /* libAJWValidator.a */,
+				04ECA4A41CCFB0FD00C2513A /* libISO8601.a */,
+				04ECA4A51CCFB0FD00C2513A /* libJSONModel.a */,
+				04ECA4A61CCFB0FD00C2513A /* libMasonry.a */,
+				04ECA4A71CCFB0FD00C2513A /* libMBProgressHUD.a */,
+				04ECA4A81CCFB0FD00C2513A /* libMJRefresh.a */,
+				04ECA4A91CCFB0FD00C2513A /* libPods-NoteBook.a */,
+				04ECA4AA1CCFB0FD00C2513A /* libPods-NoteBookTests.a */,
+				04ECA4AB1CCFB0FD00C2513A /* libReactiveCocoa.a */,
+				04ECA4AC1CCFB0FD00C2513A /* libReactiveViewModel.a */,
+				04ECA4AD1CCFB0FD00C2513A /* libTortuga22-NinePatch.a */,
+				04ECA4A11CCFB0DB00C2513A /* libAFNetworking.a */,
+				04ECA49D1CCFB0CD00C2513A /* libPods-NoteBookLib.a */,
+				04ECA49E1CCFB0CD00C2513A /* NoteBookLib.framework */,
+				2073CFA11C8E778E0088AECD /* libPods-NoteBook.a */,
+				2073CF231C8D86990088AECD /* libPods-NoteBook-AJWValidator.a */,
+				2073CF241C8D86990088AECD /* libPods-NoteBook-ISO8601.a */,
+				2073CF251C8D86990088AECD /* libPods-NoteBook-JSONModel.a */,
+				2073CF261C8D86990088AECD /* libPods-NoteBook-Masonry.a */,
+				2073CF271C8D86990088AECD /* libPods-NoteBook-MBProgressHUD.a */,
+				2073CF281C8D86990088AECD /* libPods-NoteBook-MJRefresh.a */,
+				2073CF291C8D86990088AECD /* libPods-NoteBook-ReactiveCocoa.a */,
+				2073CF2A1C8D86990088AECD /* libPods-NoteBook-ReactiveViewModel.a */,
+				2073CF2B1C8D86990088AECD /* libPods-NoteBook-Tortuga22-NinePatch.a */,
+				2073CF2C1C8D86990088AECD /* libPods-NoteBook.a */,
+				2073CF2D1C8D86990088AECD /* libPods-NoteBookLib-AFNetworking.a */,
+				2073CF2E1C8D86990088AECD /* libPods-NoteBookLib.a */,
+				20669DA11C8D7E47000ED690 /* libPods-NoteBook.a */,
+				20669D9F1C8D795F000ED690 /* libPods-NoteBook-ReactiveViewModel.a */,
+				20669D851C891DAC000ED690 /* NoteBookLib.framework */,
+				2030B4571BFF19DB00C96C6B /* NoteBookLib.framework */,
+				6F87632B1378BEB373CF64B4 /* libPods-NoteBook.a */,
+				9A99174446C803406F104F37 /* libPods-NoteBookTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1A18D4F786EEB0A5903630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */,
+				CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */,
+				74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */,
+				82624AFC791A2185DA766B90 /* Pods-NoteBookTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2089CC1B1BFF12A100B80E5A /* NoteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2089CC3F1BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBook" */;
+			buildPhases = (
+				AB93AB522291565CC756B7A8 /* Check Pods Manifest.lock */,
+				2089CC181BFF12A100B80E5A /* Sources */,
+				2089CC191BFF12A100B80E5A /* Frameworks */,
+				2089CC1A1BFF12A100B80E5A /* Resources */,
+				E89302E6AFD6E6807C829655 /* Copy Pods Resources */,
+				C41A67C8D925815B3BC09E87 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteBook;
+			productName = NoteBook;
+			productReference = 2089CC1C1BFF12A100B80E5A /* NoteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2089CC341BFF12A100B80E5A /* NoteBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2089CC421BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBookTests" */;
+			buildPhases = (
+				A4168832CBC74CB201C99CFE /* Check Pods Manifest.lock */,
+				2089CC311BFF12A100B80E5A /* Sources */,
+				2089CC321BFF12A100B80E5A /* Frameworks */,
+				2089CC331BFF12A100B80E5A /* Resources */,
+				BD383B84C3A7004BDD88CB03 /* Copy Pods Resources */,
+				38C8F70A46B9564742856BEE /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2089CC371BFF12A100B80E5A /* PBXTargetDependency */,
+			);
+			name = NoteBookTests;
+			productName = NoteBookTests;
+			productReference = 2089CC351BFF12A100B80E5A /* NoteBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2089CC141BFF12A100B80E5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = dz;
+				TargetAttributes = {
+					2089CC1B1BFF12A100B80E5A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2089CC341BFF12A100B80E5A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2089CC1B1BFF12A100B80E5A;
+					};
+				};
+			};
+			buildConfigurationList = 2089CC171BFF12A100B80E5A /* Build configuration list for PBXProject "NoteBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2089CC131BFF12A100B80E5A;
+			productRefGroup = 2089CC1D1BFF12A100B80E5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2089CC1B1BFF12A100B80E5A /* NoteBook */,
+				2089CC341BFF12A100B80E5A /* NoteBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2089CC1A1BFF12A100B80E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2089CC301BFF12A100B80E5A /* LaunchScreen.xib in Resources */,
+				04ECA5031CCFB97C00C2513A /* help.png in Resources */,
+				04ECA50B1CCFB97C00C2513A /* title.png in Resources */,
+				04ECA50E1CCFB97C00C2513A /* markdown.html in Resources */,
+				04ECA50A1CCFB97C00C2513A /* quote.png in Resources */,
+				04ECA50D1CCFB97C00C2513A /* markdown.css in Resources */,
+				04ECA5071CCFB97C00C2513A /* link.png in Resources */,
+				04ECA5091CCFB97C00C2513A /* ol.png in Resources */,
+				2089CC2D1BFF12A100B80E5A /* Images.xcassets in Resources */,
+				04ECA5061CCFB97C00C2513A /* italic.png in Resources */,
+				04ECA5041CCFB97C00C2513A /* hr.png in Resources */,
+				04ECA5081CCFB97C00C2513A /* more.png in Resources */,
+				04ECA5051CCFB97C00C2513A /* img.png in Resources */,
+				04ECA5021CCFB97C00C2513A /* code.png in Resources */,
+				04ECA50C1CCFB97C00C2513A /* ul.png in Resources */,
+				04ECA5011CCFB97C00C2513A /* bold.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC331BFF12A100B80E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2073CF3F1C8D875C0088AECD /* NoteBookLib.framework in Resources */,
+				2073CF3C1C8D86C90088AECD /* libPods-NoteBook.a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38C8F70A46B9564742856BEE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4168832CBC74CB201C99CFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB93AB522291565CC756B7A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD383B84C3A7004BDD88CB03 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBookTests/Pods-NoteBookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41A67C8D925815B3BC09E87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89302E6AFD6E6807C829655 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NoteBook/Pods-NoteBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2089CC181BFF12A100B80E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D70A0D1C0ED0EE00F301AB /* NSObject+Ext.m in Sources */,
+				200218B91C43AA6D00D095CB /* WeeklyListTableViewCell.m in Sources */,
+				04ECA50F1CCFB97C00C2513A /* syntax.md in Sources */,
+				04ECA4FF1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m in Sources */,
+				20D70A091C0ED02600F301AB /* UIButton+RACCommandSupport+Ext.m in Sources */,
+				04ECA4F71CCFB97C00C2513A /* MKMarkdownInlineBlockHighlighter.m in Sources */,
+				04ECA4FA1CCFB97C00C2513A /* MKMarkdownListHighlighter.m in Sources */,
+				20D70A161C0ED5C100F301AB /* KeyboardState.m in Sources */,
+				04ECA4F91CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m in Sources */,
+				2089CC281BFF12A100B80E5A /* ViewController.m in Sources */,
+				04ECA4F81CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m in Sources */,
+				20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */,
+				04ECA4FE1CCFB97C00C2513A /* MKPreviewController.m in Sources */,
+				20D70A101C0ED39200F301AB /* UIView+HUD.m in Sources */,
+				04ECA4F21CCFB97C00C2513A /* MKHighlighterType.m in Sources */,
+				04ECA4FB1CCFB97C00C2513A /* MKMarkdownOrderListHighlighter.m in Sources */,
+				04ECA4F51CCFB97C00C2513A /* MKMarkdownController.m in Sources */,
+				04ECA4F41CCFB97C00C2513A /* MKMarkdownCodeBlockHighlighter.m in Sources */,
+				20F794571C412A2B001139B7 /* WeeklyListTableViewController.m in Sources */,
+				04ECA4FC1CCFB97C00C2513A /* MKMarkdownStrikethroughHighlighter.m in Sources */,
+				04ECA4F61CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m in Sources */,
+				2089CC251BFF12A100B80E5A /* AppDelegate.m in Sources */,
+				20D70A131C0ED4D800F301AB /* RACDisposableSubscriptingAssignmentTrampoline.m in Sources */,
+				20D70A031C0ECCAA00F301AB /* ViewModel.m in Sources */,
+				04ECA4BD1CCFB96800C2513A /* MarkdownViewController.m in Sources */,
+				2089CC221BFF12A100B80E5A /* main.m in Sources */,
+				04ECA4F11CCFB97C00C2513A /* MKHighlighterTextStorage.m in Sources */,
+				20D70A191C0ED63400F301AB /* NSObject+RAC+Ext.m in Sources */,
+				04ECA4F31CCFB97C00C2513A /* MKKeyboardToolBar.m in Sources */,
+				04ECA4FD1CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m in Sources */,
+				04ECA5001CCFB97C00C2513A /* MKTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2089CC311BFF12A100B80E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2073CF3E1C8D87450088AECD /* NoteBookLib.framework in Sources */,
+				2073CF3D1C8D87130088AECD /* NoteBookTests.m in Sources */,
+				2073CF3B1C8D86AC0088AECD /* libPods-NoteBook.a in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2089CC371BFF12A100B80E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2089CC1B1BFF12A100B80E5A /* NoteBook */;
+			targetProxy = 2089CC361BFF12A100B80E5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2089CC2E1BFF12A100B80E5A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2089CC2F1BFF12A100B80E5A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2089CC3D1BFF12A100B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2089CC3E1BFF12A100B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2089CC401BFF12A100B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82D5245FA3DC882F6AE6B61 /* Pods-NoteBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Lib/build/Debug-iphoneos",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/NoteBook/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AJWValidator\"",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveViewModel\"",
+					"\"${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/Tortuga22-NinePatch\"",
+					"\"${SRCROOT}/../NoteBookLib/NoteBookLib\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = NoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2089CC411BFF12A100B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA4ADF3F11765F340E1CCA9 /* Pods-NoteBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Lib/build/Debug-iphoneos",
+				);
+				GCC_PREFIX_HEADER = "${SRCROOT}/NoteBook/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AJWValidator\"",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveViewModel\"",
+					"\"${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/Tortuga22-NinePatch\"",
+					"\"${SRCROOT}/../NoteBookLib/NoteBookLib\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = NoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2089CC431BFF12A100B80E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D8A4EDA7F7F1B9C134BA84 /* Pods-NoteBookTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteBook.app/NoteBook";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} \"${SRCROOT}/../NoteBookLib/NoteBookLib\"";
+			};
+			name = Debug;
+		};
+		2089CC441BFF12A100B80E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82624AFC791A2185DA766B90 /* Pods-NoteBookTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/NoteBook-bghfinmqywhdlkfykutoeuwpjsub/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = NoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Release-iphoneos",
+					"/Users/dz/Desktop/Note库测试/Pods/../build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteBook.app/NoteBook";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} \"${SRCROOT}/../NoteBookLib/NoteBookLib\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2089CC171BFF12A100B80E5A /* Build configuration list for PBXProject "NoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC3D1BFF12A100B80E5A /* Debug */,
+				2089CC3E1BFF12A100B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2089CC3F1BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC401BFF12A100B80E5A /* Debug */,
+				2089CC411BFF12A100B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2089CC421BFF12A100B80E5A /* Build configuration list for PBXNativeTarget "NoteBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2089CC431BFF12A100B80E5A /* Debug */,
+				2089CC441BFF12A100B80E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2089CC141BFF12A100B80E5A /* Project object */;
+}

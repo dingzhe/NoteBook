@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "NoteBookLib.h"
 #import "WeeklyListTableViewCell.h"
+#import "MKMarkdownController.h"
+#import "MKPreviewController.h"
 @interface WeeklyListTableViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) RACCommand *weeklyListCommand;
@@ -60,13 +62,46 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerClass:[WeeklyListTableViewCell class] forCellReuseIdentifier:@"WeeklyListCell"];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onPreview:)];
     
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"test"
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(openTestView)];
     UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
     refresh.tintColor = [UIColor blueColor];
     [refresh addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refresh;
     
+}
+- (void)openTestView{
+    ViewController *testVC = [ViewController viewController];
+    [self.navigationController pushViewController:testVC animated:YES];
+    
+}
+- (void)onPreview:(id)onClick
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"syntax" ofType:@"md"];
+    NSString *content  = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    
+    content = [content stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    
+    MKMarkdownController *controller = [MKMarkdownController new];
+    controller.defaultMarkdownText   = content;
+    controller.onComplete = ^(UIViewController *c)
+    {
+        MKPreviewController *pc = (MKPreviewController *) c;
+        NSLog(@"%@", pc.bodyMarkdown);
+        [c dismissViewControllerAnimated:YES completion:nil];
+    };
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:nav
+                       animated:YES
+                     completion:nil];
 }
 - (void)pullToRefresh
 {
@@ -111,10 +146,6 @@
     return modelAry;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
@@ -130,6 +161,9 @@
     // Return the number of rows in the section.
     return 1;
 }
+
+
+
 
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath withObject:(id)object {}
@@ -149,6 +183,24 @@
     cell.detailTextLabel.text = model.content;
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SWGWeekly * model = _count[indexPath.section];
+    MKMarkdownController *controller = [MKMarkdownController new];
+    controller.defaultMarkdownText   = model.content;
+    controller.onComplete = ^(UIViewController *c)
+    {
+        MKPreviewController *pc = (MKPreviewController *) c;
+        NSLog(@"%@", pc.bodyMarkdown);
+        [c dismissViewControllerAnimated:YES completion:nil];
+    };
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:nav animated:YES completion:nil];
+//    [self.navigationController pushViewController:controller animated:YES];
+
+}
+
+
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewCellEditingStyleDelete;

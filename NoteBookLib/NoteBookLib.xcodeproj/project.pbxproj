@@ -127,7 +127,6 @@
 		20D709FC1C0E9B2E00F301AB /* ErrorHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709F81C0E9B2E00F301AB /* ErrorHandlerManager.m */; };
 		20D709FF1C0E9D2000F301AB /* RACSignal+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D709FD1C0E9D2000F301AB /* RACSignal+Ext.h */; };
 		20D70A001C0E9D2000F301AB /* RACSignal+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D709FE1C0E9D2000F301AB /* RACSignal+Ext.m */; };
-		E9EA5CC3B8AB2E313F0FA1B6 /* libPods-NoteBookLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9234B40C30A5E8B194987D3B /* libPods-NoteBookLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,7 +261,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9EA5CC3B8AB2E313F0FA1B6 /* libPods-NoteBookLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,6 +887,7 @@
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -910,6 +909,7 @@
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

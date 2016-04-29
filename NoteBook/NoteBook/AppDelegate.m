@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "WeeklyListTableViewController.h"
+#import "MarkdownViewController.h"
+
 @interface AppDelegate ()
 @property(nonatomic,strong)UINavigationController *navController;
 @end
@@ -22,21 +24,21 @@
     [self.window makeKeyAndVisible];
     
     
-    UIViewController *appVC = [[UIViewController alloc] init];
+    MarkdownViewController *appVC = [[MarkdownViewController alloc] init];
     appVC.view.backgroundColor = [UIColor orangeColor];
     appVC.title = @"app";
-    
+    UINavigationController *appNav = [[UINavigationController alloc] initWithRootViewController:appVC];
     
     WeeklyListTableViewController *weelyListController = [[WeeklyListTableViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     
-    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
-    
-    weelyListController.navigationItem.leftBarButtonItem = testAPI;
+//    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
+//    
+//    weelyListController.navigationItem.leftBarButtonItem = testAPI;
     _navController = [[UINavigationController alloc] initWithRootViewController:weelyListController];
-    tabBarController.viewControllers = @[_navController,appVC];
+    tabBarController.viewControllers = @[_navController,appNav];
     self.window.rootViewController = tabBarController;
     return YES;
 }

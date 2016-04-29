@@ -23,6 +23,7 @@ end
 target :"NoteBook" do
     xcodeproj 'NoteBook/NoteBook.xcodeproj'
     testing_pods
+    pod 'MMMarkdown'
     pod 'Reveal-iOS-SDK', '1.5.1', :configurations => ['Debug']
     pod 'ReactiveCocoa', '2.4.7'
     pod 'ReactiveViewModel', '0.3'
@@ -30,11 +31,31 @@ end
 target :"NoteBookTests" do
     testing_pods
 end
-post_install do |installer_representation|
-    installer_representation.project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '7.0'
-            config.build_settings['SDKROOT'] = 'iphoneos8.4'
+if defined? installer_representation.project
+    post_install do |installer_representation|
+        installer_representation.project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '7.0'
+                config.build_settings['SDKROOT'] = 'iphoneos8.4'
+                config.build_settings['OTHER_LDFLAGS'] = '-framework AFNetworking'
+                config.build_settings['ARCHS'] = 'armv7 arm64'
+                config.build_settings['VALID_ARCHS'] = 'armv7 arm64'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+        end
+    end
+end
+if defined? installer_representation.pods_project
+    post_install do |installer_representation|
+        installer_representation.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '7.0'
+                config.build_settings['SDKROOT'] = 'iphoneos8.4'
+                config.build_settings['OTHER_LDFLAGS'] = '-framework AFNetworking'
+                config.build_settings['ARCHS'] = 'armv7 arm64'
+                config.build_settings['VALID_ARCHS'] = 'armv7 arm64'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
         end
     end
 end

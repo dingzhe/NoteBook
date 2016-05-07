@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FeedViewController.h"
+#import "PersonalViewModel.h"
 
-@interface PersonalViewController : UIViewController
+@interface PersonalViewController : FeedViewController
+
+@property (nonatomic, strong)PersonalViewModel *viewModel;
+
++ (instancetype) viewController;
 
 @end

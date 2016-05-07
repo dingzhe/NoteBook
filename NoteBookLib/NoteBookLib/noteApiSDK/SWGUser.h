@@ -12,6 +12,14 @@
 
 @property(nonatomic) NSString* username;
 
+@property(nonatomic) NSString* sex;
+
+@property(nonatomic) NSString* email;
+
+@property(nonatomic) NSString* phone;
+
+@property(nonatomic) NSString* headimage;
+
 @property(nonatomic) NSString* token;
 
 @end

@@ -10,4 +10,27 @@
 
 @interface NSAttributedString (DzNote)
 
++(NSDictionary*)getAtrributeDicOfAttributedStr:(NSAttributedString*)str;
+
++(CGSize)getSizeOfAttributedStr:(NSAttributedString*)str withConstraints:(CGSize)size;
++(CGSize)getSizeOfAttributedStr:(NSAttributedString*)str
+                withConstraints:(CGSize)size
+                        context:(NSStringDrawingContext *) context;
+
++(CGSize)getOneLineSizeOfAttributedString:(NSAttributedString *)atrributesString
+                          withConstraints:(CGSize)size;
++(CGSize)getOneLineSizeOfAttributedString:(NSAttributedString *)atrributesString
+                          withConstraints:(CGSize)size
+                                  context:(NSStringDrawingContext *) context;
+
++(CGSize)getTwoLineSizeOfAttributedString:(NSAttributedString *)attributedString
+                          withConstraints:(CGSize)size;
++(CGSize)getTwoLineSizeOfAttributedString:(NSAttributedString *)attributedString
+                          withConstraints:(CGSize)size
+                                  context:(NSStringDrawingContext *)context;
+
++(CGSize)getMaxTwoLineSizeOfAttributedString:(NSAttributedString *)attributedString
+                             withConstraints:(CGSize)size;
+
+
 @end

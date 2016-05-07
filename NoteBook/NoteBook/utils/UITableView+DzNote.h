@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UITableView (DzNote)
+// register tableview cell class or nib which is subclass of VSTableViewCell
+- (void) registerVSTableViewCellClass:(Class)cellClass;
+
+- (void) removeBottomPlaceHolderCells;
 
 @end

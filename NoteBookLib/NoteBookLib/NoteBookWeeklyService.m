@@ -35,4 +35,9 @@
 - (RACCommand*) updateWeeklyCommandEnable:(RACSignal*)enable{
     return [_api commandWithSelector:@selector(updateWeeklyWithBody:completionHandler:) enabled:enable];
 }
+
+- (RACCommand*) uploadFileCommandEnable:(RACSignal*)enable {
+    return [_api commandWithSelector:@selector(uploadFileWithUid:type:file:completionHandler:)
+                             enabled:enable];
+}
 @end

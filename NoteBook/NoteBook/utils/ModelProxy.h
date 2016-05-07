@@ -10,4 +10,11 @@
 
 @interface ModelProxy : NSProxy
 
+@property (nonatomic, strong) id model;
+@property (nonatomic, strong, readonly) Class viewModelClass;
+@property (nonatomic, strong) id modelContext;
+
++ (instancetype) modelWithModel:(id)model viewModelClass:(Class)viewModelClass;
+
+
 @end

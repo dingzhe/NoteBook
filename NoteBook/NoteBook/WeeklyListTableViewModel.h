@@ -10,4 +10,8 @@
 
 @interface WeeklyListTableViewModel : FeedViewModel
 
+
++ (instancetype) viewModel;
+//- (void)deleteWeekly:(SWGWeekly *)weekly;
+
 @end

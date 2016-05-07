@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeeklyListTableViewModel.h"
+#import "FeedViewController.h"
+@interface WeeklyListTableViewController : FeedViewController
 
-@interface WeeklyListTableViewController : UITableViewController
+@property (nonatomic,strong) WeeklyListTableViewModel *viewModel;
 
 @end

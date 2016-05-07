@@ -8,9 +8,16 @@
 
 #import "UserModel.h"
 static NSString *UidStorageKey = @"vision.storage.usermodel.uid";
+static NSString *EmailStorageKey = @"vision.storage.usermodel.email";
+static NSString *HeadImageStorageKey = @"vision.storage.usermodel.headimage";
+static NSString *UserNameStorageKey = @"vision.storage.usermodel.username";
+
 @interface UserModel () {
     UserModelStatus _status;
     NSString *_uid;
+    NSString *_headimage;
+    NSString *_email;
+    NSString *_username;
 }
 @end
 @implementation UserModel(private)
@@ -28,9 +35,37 @@ static NSString *UidStorageKey = @"vision.storage.usermodel.uid";
         VisionStorage.storage[UidStorageKey] = uid;
     }
 }
+- (void) _updateHeadImage:(NSString *)headimage {
+    [self willChangeValueForKey:@"headimage"];
+    _headimage = headimage;
+    [self didChangeValueForKey:@"headimage"];
+    VisionStorage.storage[HeadImageStorageKey] = headimage;
+    
+}
+
+- (void) _updateEmail:(NSString *)email {
+    [self willChangeValueForKey:@"email"];
+    _email = email;
+    [self didChangeValueForKey:@"email"];
+    VisionStorage.storage[EmailStorageKey] = email;
+}
+- (void) _updateUserName:(NSString *)username {
+    [self willChangeValueForKey:@"username"];
+    _username = username;
+    [self didChangeValueForKey:@"username"];
+    VisionStorage.storage[EmailStorageKey] = username;
+}
 - (void) _init {
     
     NSString *uid = VisionStorage.storage[UidStorageKey];
+    NSString *headimage = VisionStorage.storage[HeadImageStorageKey];
+    NSString *email = VisionStorage.storage[EmailStorageKey];
+    NSString *username = VisionStorage.storage[UserNameStorageKey];
+    
+    
+    [self _updateHeadImage:headimage];
+    [self _updateEmail:email];
+    [self _updateUserName:username];
     if ([uid isNotEmpty]) {
         [self _updateStatus:UserModelSignedOn];
         [self _updateUid:uid save:NO];
@@ -45,7 +80,9 @@ static NSString *UidStorageKey = @"vision.storage.usermodel.uid";
 @implementation UserModel
 @synthesize status = _status;
 @synthesize uid = _uid;
-
+@synthesize headimage = _headimage;
+@synthesize email = _email;
+@synthesize username = _username;
 BEGIN_IMP_SINGLETON(currentUser, UserModel)
 instance = [[self alloc] init];
 
@@ -65,6 +102,21 @@ END_IMP_SINGLETON
 }
 - (void) signout {
     [self _updateUid:nil save:YES];
+    
     [self _updateStatus:UserModelIdle];
+    [self _updateHeadImage:nil];
+    [self _updateEmail:nil];
+    [self _updateUserName:nil];
+}
+
+- (void) updateHeadImage:(NSString *)headimage{
+    [self _updateHeadImage:headimage];
+}
+
+- (void) updateEmail:(NSString *)email{
+    [self _updateEmail:email];
+}
+- (void) updateUserName:(NSString *)username{
+    [self _updateUserName:username];
 }
 @end

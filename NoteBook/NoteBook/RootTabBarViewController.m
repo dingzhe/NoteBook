@@ -10,7 +10,7 @@
 #import "WeeklyListTableViewController.h"
 #import "MarkdownViewController.h"
 #import "PersonalViewController.h"
-
+#import "NoteViewController.h"
 
 @interface RootTabBarViewController ()<UITabBarControllerDelegate>
 
@@ -64,12 +64,12 @@
 }
 
 - (void) resetRootViewController {
-    NSArray *viewControllers = @[[WeeklyListTableViewController new],
-                                 [MarkdownViewController new],
-                                 [PersonalViewController new],
+    NSArray *viewControllers = @[[WeeklyListTableViewController viewController],
+                                 [NoteViewController viewController],
+                                 [PersonalViewController viewController],
                                  ];
     
-    NSMutableArray * navigationControllers = [NSMutableArray arrayWithCapacity:4];
+    NSMutableArray * navigationControllers = [NSMutableArray arrayWithCapacity:3];
     [viewControllers enumerateObjectsUsingBlock:^(UIViewController* vc, NSUInteger idx, BOOL *stop) {
         UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController: vc];
         if (idx == 3) {

@@ -6,8 +6,16 @@
 //  Copyright © 2016年 dz. All rights reserved.
 //
 
-#ifndef CellProperties_h
-#define CellProperties_h
+#import <Foundation/Foundation.h>
 
+@protocol CellProperties <NSObject>
 
-#endif /* CellProperties_h */
+@property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, assign) BOOL selectable;
+@property (nonatomic, assign) BOOL seperatorHidden;
+@property (nonatomic, assign) BOOL sectionHeader;
+@property (nonatomic, assign) UIEdgeInsets seperatorInsets;
+@property (nonatomic, assign) UIEdgeInsets contentInsets;
+@property (nonatomic, strong) UIColor *backgroundColor;
+
+@end

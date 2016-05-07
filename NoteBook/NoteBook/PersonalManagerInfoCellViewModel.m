@@ -10,4 +10,12 @@
 
 @implementation PersonalManagerInfoCellViewModel
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.headImgUrl = @"";
+    }
+    return self;
+}
+
 @end

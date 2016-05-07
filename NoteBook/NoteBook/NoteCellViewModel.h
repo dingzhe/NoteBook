@@ -10,4 +10,16 @@
 
 @interface NoteCellViewModel : CellViewModel
 
+@property (nonatomic,strong,readonly) SWGWeekly *model;
+
+@property (nonatomic,strong,readonly) NSAttributedString *titleName;
+//@property (nonatomic,strong,readonly) NSAttributedString *authorName;
+@property (nonatomic,strong,readonly) NSAttributedString *updateTime;
+//@property (nonatomic,strong,readonly) NSAttributedString *jobName;
+//@property (nonatomic,strong,readonly) NSNumber *jobid;
+
+@property (nonatomic,assign,readonly) CGRect titleNameFrame;
+//@property (nonatomic,assign,readonly) CGRect authorNameFrame;
+@property (nonatomic,assign,readonly) CGRect updateTimeFrame;
+
 @end

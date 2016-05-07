@@ -38,4 +38,6 @@
 #import "PermissionManager.h"
 #import "AuthPermissionRegistry.h"
 #import "CocoaLumberjack.h"
+#import "UIView+Ext.h"
+
 #endif

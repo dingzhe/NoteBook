@@ -7,7 +7,10 @@
 //
 
 #import "NBTableViewCell.h"
+#import "NoteCellViewModel.h"
 
 @interface NoteTableViewCell : NBTableViewCell
+
+@property (nonatomic,strong,readonly) NoteCellViewModel *viewModel;
 
 @end

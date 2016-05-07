@@ -37,7 +37,13 @@
         [_loginCommand.responses subscribeNext:^(SWGSignResponses* response) {
             @strongify(self)
             NSString *uid = [NSString stringWithFormat:@"%@",response.data.userid];
+            NSString *headimage = [NSString stringWithFormat:@"%@",response.data.headimage];
+            NSString *email = [NSString stringWithFormat:@"%@",response.data.email];
+            NSString *username = [NSString stringWithFormat:@"%@",response.data.username];
             [UserModel.currentUser signedOnWithUid:uid];
+            [UserModel.currentUser updateHeadImage:headimage];
+            [UserModel.currentUser updateEmail:email];
+            [UserModel.currentUser updateUserName:username];
             [self showHUDMessage:@"登录成功"];
         }];
         [_loginCommand.errors subscribeNext:^(NSError *error) {

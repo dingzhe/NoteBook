@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSAttributedString (Ext)
+
+typedef void(^AttributedStringBlock)(NSMutableAttributedString *mutableAttributedString, NSString *orignalString, NSRange range);
+
+@interface NSAttributedString(Ext)
+
++ (instancetype) string:(NSString *)string;
+
++ (instancetype) string:(NSString *)string
+                  block:(AttributedStringBlock)block;
 
 @end

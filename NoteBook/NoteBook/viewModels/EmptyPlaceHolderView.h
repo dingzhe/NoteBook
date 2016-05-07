@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface EmptyPlaceHolderView : UIView
+@property (nonatomic,strong) UIImage *image;
+@property (nonatomic,strong) NSString *string;
 
+@property (nonatomic,assign) CGFloat additionalTopOffset;
 @end

@@ -10,4 +10,14 @@
 
 @interface NSDate (DzNote)
 
+- (NSString *) countDownTextToDate_YYMMddHHmmsss:(NSDate *)date;
+
+- (NSString *) countDownTextToDate_YYMMddHHmmss:(NSDate *)date;
+
+- (NSString *) dateString_specialMdHHmm;
+- (NSString *) dateTimeString_yyyyMMddHHmmss;
+- (NSString *) dateTimeString_MdHHmm;
+- (NSString *) dateString_MMdd;
+- (NSString *) timeString_HHmm;
+
 @end

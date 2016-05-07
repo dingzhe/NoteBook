@@ -10,4 +10,13 @@
 
 @implementation IconTextCellModel
 
++ (instancetype) modelWithText:(NSString *) text iconName:(NSString *)iconName {
+    IconTextCellModel *result = [IconTextCellModel new];
+    
+    result.text = text;
+    result.iconName = iconName;
+    
+    return result;
+}
+
 @end

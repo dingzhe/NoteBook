@@ -7,7 +7,10 @@
 //
 
 #import "NBTableViewCell.h"
+#import "WeeklyListCellViewModel.h"
 
 @interface WeeklyListCell : NBTableViewCell
+
+@property (nonatomic,strong,readonly) WeeklyListCellViewModel *viewModel;
 
 @end

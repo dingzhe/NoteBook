@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CellProperties.h"
+@interface EmptyCellModel : NSObject<CellProperties>
++ (instancetype) modelWithCellHeight:(CGFloat) cellHeight
+                     backgroundColor:(UIColor *) backgroundColor;
 
-@interface EmptyCellModel : NSObject
-
++ (instancetype) seperatorModel;
 @end

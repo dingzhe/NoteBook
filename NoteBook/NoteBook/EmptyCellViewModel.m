@@ -10,4 +10,18 @@
 
 @implementation EmptyCellViewModel
 
+@dynamic model;
+
+- (id) initWithModel:(id)model {
+    if (self = [super initWithModel:model]) {
+        self.cellHeight = self.model.cellHeight;
+        self.selectable = self.model.selectable;
+        self.seperatorHidden = self.model.seperatorHidden;
+        self.seperatorInsets = self.model.seperatorInsets;
+        self.contentInsets = self.model.contentInsets;
+        self.backgroundColor = self.model.backgroundColor;
+    }
+    
+    return self;
+}
 @end

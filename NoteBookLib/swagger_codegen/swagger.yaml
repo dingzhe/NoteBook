@@ -11,6 +11,37 @@ consumes:
 produces:
   - application/json
 paths:
+
+  /uploadfile:
+    post:
+      tags:
+      - weekly
+      operationId: uploadFile
+      summary: 上传文件
+      consumes:
+        - application/x-www-form-urlencoded
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - name: uid
+          in: formData
+          required: false
+          type: string
+        - name: type
+          in: formData
+          required: false
+          type: string
+        - name: file
+          in: formData
+          required: true
+          type: file
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/UploadFileResponse'
+
   /signin:
     post:
       tags:
@@ -46,8 +77,7 @@ paths:
         '200':
           description: A list with products
           schema:
-            $ref: '#/definitions/SignResponses'            
-  
+            $ref: '#/definitions/SignResponses'
   /addweekly:
     post:
       tags:
@@ -62,7 +92,7 @@ paths:
           in: body
           required: true
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/AddWeeklyResponses'
@@ -80,11 +110,10 @@ paths:
           in: body
           required: true
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/Responses'
-
   /updateweekly:
     post:
       tags:
@@ -99,13 +128,10 @@ paths:
           in: body
           required: true
       responses:
-        200:
+        '200':
           description: OK
           schema:
-            $ref: '#/definitions/Responses'            
-            
-            
-            
+            $ref: '#/definitions/Responses'
   /weeklylist:
     post:
       tags:
@@ -120,10 +146,10 @@ paths:
           in: body
           required: true
       responses:
-        200:
+        '200':
           description: OK
           schema:
-            $ref: '#/definitions/WeeklyListResponses'    
+            $ref: '#/definitions/WeeklyListResponses'
   /myweekly:
     post:
       tags:
@@ -138,12 +164,10 @@ paths:
           in: body
           required: true
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/MyWeeklyResponses'
-    
-            
   /makeurl:
     post:
       tags:
@@ -162,8 +186,6 @@ paths:
           description: A list with products
           schema:
             $ref: '#/definitions/Article'
-
-
   /article:
     post:
       tags:
@@ -293,7 +315,6 @@ paths:
           schema:
             $ref: '#/definitions/AddArticleResponses'
 definitions:
-
   DelWeeklyRequest:
     properties:
       app:
@@ -312,7 +333,6 @@ definitions:
         type: string
       errorCode:
         type: string
-        
   UpdateWeeklyRequest:
     properties:
       app:
@@ -324,7 +344,7 @@ definitions:
       uid:
         type: string
       weeklyid:
-        type: string        
+        type: string
       title:
         type: string
       content:
@@ -332,8 +352,7 @@ definitions:
       dateline:
         type: string
       private:
-        type: string        
-        
+        type: string
   SignRequest:
     properties:
       app:
@@ -346,7 +365,6 @@ definitions:
         type: string
       password:
         type: string
-        
   SignResponses:
     properties:
       message:
@@ -361,9 +379,16 @@ definitions:
         type: string
       username:
         type: string
+      sex:
+        type: string
+      email:
+        type: string
+      phone:
+        type: string
+      headimage:
+        type: string
       token:
         type: string
-        
   Weekly:
     properties:
       weeklyid:
@@ -380,7 +405,6 @@ definitions:
         type: string
       private:
         type: string
-        
   AddWeeklyRequest:
     properties:
       app:
@@ -412,7 +436,6 @@ definitions:
       data:
         items:
           $ref: '#/definitions/Weekly'
-          
   WeeklyListRequest:
     properties:
       app:
@@ -452,14 +475,7 @@ definitions:
       data:
         type: array
         items:
-          $ref: '#/definitions/Weekly'        
-          
-          
-          
-          
-          
-          
-  
+          $ref: '#/definitions/Weekly'
   AddArticleResponses:
     properties:
       message:
@@ -497,6 +513,15 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/Id'
+          
+  UploadFileResponse:
+    properties:
+      url:
+        type: string
+      code:
+        type: number
+      message:
+        type: string
   Id:
     properties:
       id:

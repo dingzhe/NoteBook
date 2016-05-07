@@ -10,4 +10,6 @@
 
 @interface NoteViewModel : FeedViewModel
 
++ (instancetype) viewModel;
+
 @end

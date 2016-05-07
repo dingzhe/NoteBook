@@ -30,6 +30,7 @@
 #import "noteApiSDK/SWGUpdateArticleApi.h"
 #import "noteApiSDK/SWGUpdateArticleResponses.h"
 #import "noteApiSDK/SWGUpdateWeeklyRequest.h"
+#import "noteApiSDK/SWGUploadFileResponse.h"
 #import "noteApiSDK/SWGUser.h"
 #import "noteApiSDK/SWGWeekly.h"
 #import "noteApiSDK/SWGWeeklyApi.h"

@@ -10,4 +10,6 @@
 
 @interface PersonalManagerInfoCellViewModel : NSObject
 
+@property (nonatomic,strong) NSString *headImgUrl;
+
 @end

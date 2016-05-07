@@ -7,7 +7,10 @@
 //
 
 #import "FeedViewController.h"
+#import "NoteViewModel.h"
 
 @interface NoteViewController : FeedViewController
+
+@property (nonatomic,strong) NoteViewModel *viewModel;
 
 @end

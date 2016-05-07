@@ -16,6 +16,50 @@
         "application/json"
     ],
     "paths": {
+        "/uploadfile": {
+            "post": {
+                "tags": [
+                    "weekly"
+                ],
+                "operationId": "uploadFile",
+                "summary": "上传文件",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/UploadFileResponse"
+                        }
+                    }
+                }
+            }
+        },
         "/signin": {
             "post": {
                 "tags": [
@@ -541,6 +585,18 @@
                 "username": {
                     "type": "string"
                 },
+                "sex": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "headimage": {
+                    "type": "string"
+                },
                 "token": {
                     "type": "string"
                 }
@@ -743,6 +799,19 @@
                     "items": {
                         "$ref": "#/definitions/Id"
                     }
+                }
+            }
+        },
+        "UploadFileResponse": {
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "number"
+                },
+                "message": {
+                    "type": "string"
                 }
             }
         },

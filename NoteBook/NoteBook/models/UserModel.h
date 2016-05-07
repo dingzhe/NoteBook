@@ -15,9 +15,16 @@ typedef NS_ENUM(NSInteger, UserModelStatus) {
 @interface UserModel : NSObject
 @property (nonatomic, readonly) UserModelStatus status;
 @property (nonatomic, readonly) NSString *uid;
+@property (nonatomic, readonly) NSString *email;
+@property (nonatomic, readonly) NSString *username;
+@property (nonatomic, readonly) NSString *headimage;
+
 DEF_SINGLETON(currentUser)
 
 - (void) signedOnWithUid:(NSString *)uid;
 - (void) signout;
 
+- (void) updateHeadImage:(NSString *)headimage;
+- (void) updateEmail:(NSString *)email;
+- (void) updateUserName:(NSString *)username;
 @end

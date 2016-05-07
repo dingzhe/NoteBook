@@ -617,7 +617,7 @@
     }
 
     
-    NSMutableDictionary * formParams = [[NSMutableDictionary alloc]init];
+//    NSMutableDictionary * formParams = [[NSMutableDictionary alloc]init];
     formParams[@"type"] = type;
 
     [bodyDictionary addObject:formParams];

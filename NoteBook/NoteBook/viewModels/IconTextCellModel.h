@@ -10,4 +10,9 @@
 
 @interface IconTextCellModel : NSObject
 
+@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *iconName;
+
++ (instancetype) modelWithText:(NSString *) text iconName:(NSString *)iconName;
+
 @end

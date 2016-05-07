@@ -16,4 +16,5 @@
 - (RACCommand*) delWeeklyCommandEnable:(RACSignal*)enable;
 - (RACCommand*) updateWeeklyCommandEnable:(RACSignal*)enable;
 
+- (RACCommand*) uploadFileCommandEnable:(RACSignal*)enable;
 @end

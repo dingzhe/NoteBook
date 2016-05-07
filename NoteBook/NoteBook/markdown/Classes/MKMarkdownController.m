@@ -129,14 +129,20 @@
 }
 - (void)addWeekly{
     SWGAddWeeklyRequest * request = [[SWGAddWeeklyRequest alloc] init];
-    request.uid = @"9";
+    request.uid = UserModel.currentUser.uid;
     NSString* date;
     NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"YYYY-MM-dd[hh:mm:ss]"];
     date = [formatter stringFromDate:[NSDate date]];
     request.title = date;
     request.content = self.textView.text;
-    request.dateline = date;
+    
+//    NSDate *date1 = [NSDate date];
+//    float f = [date1 timeIntervalSince1970];
+    
+    NSDate *now = [NSDate date];
+    NSString *data = [NSString stringWithFormat:@"%.0f",[now timeIntervalSince1970]];
+    request.dateline = data;
     
     //    request.dateline =
     [_addweeklyCommand execute:request];

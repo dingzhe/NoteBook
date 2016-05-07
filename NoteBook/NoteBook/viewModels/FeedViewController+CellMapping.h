@@ -9,5 +9,5 @@
 #import "FeedViewController.h"
 
 @interface FeedViewController (CellMapping)
-
++ (Class) getDefaultRegisteredCellClassForViewModelClass:(Class)cellVieModelClass;
 @end

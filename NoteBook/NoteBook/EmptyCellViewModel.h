@@ -6,8 +6,11 @@
 //  Copyright © 2016年 dz. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CellViewModel.h"
+#import "EmptyCellModel.h"
 
-@interface EmptyCellViewModel : NSObject
+@interface EmptyCellViewModel : CellViewModel
+
+@property (nonatomic, strong, readonly) EmptyCellModel *model;
 
 @end

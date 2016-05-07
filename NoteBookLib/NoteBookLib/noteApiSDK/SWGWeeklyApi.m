@@ -8,6 +8,8 @@
 #import "SWGMyWeeklyRequest.h"
 #import "SWGMyWeeklyResponses.h"
 #import "SWGUpdateWeeklyRequest.h"
+#import "SWGUploadFileResponse.h"
+#import "SWGFile.h"
 #import "SWGWeeklyListResponses.h"
 #import "SWGWeeklyListRequest.h"
 
@@ -523,6 +525,152 @@
                              SWGResponses* result = nil;
                              if (data) {
                                  result = [[SWGResponses  alloc]  initWithDictionary:data error:nil];
+                             }
+                             completionBlock(result , nil);
+                             
+                           }];
+    
+
+    
+
+    
+}
+
+/*!
+ * 上传文件
+ * 
+ * \param uid 
+ * \param type 
+ * \param file 
+ * \returns SWGUploadFileResponse*
+ */
+-(NSNumber*) uploadFileWithUid: (NSString*) uid type: (NSString*) type file: (SWGFile*) file
+    completionHandler: (void (^)(SWGUploadFileResponse* output, NSError* error))completionBlock { 
+    
+
+    
+    // verify the required parameter 'file' is set
+    NSAssert(file != nil, @"Missing the required parameter `file` when calling uploadFile");
+    
+
+    NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/uploadfile", self.basePath];
+
+    // remove format in URL if needed
+    if ([requestUrl rangeOfString:@".{format}"].location != NSNotFound)
+        [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:@".{format}"] withString:@".json"];
+
+    
+
+    NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
+    
+    NSMutableDictionary* headerParams = [NSMutableDictionary dictionary];
+
+    if ([self.delegate respondsToSelector:@selector(api:defaultHeadersForRequest:)]) {
+        NSDictionary *defaultHeaders = [self.delegate api:self defaultHeadersForRequest:requestUrl];
+        if (defaultHeaders) {
+            [headerParams addEntriesFromDictionary:defaultHeaders];
+        }
+    }
+
+    
+    
+    // HTTP header `Accept` 
+    headerParams[@"Accept"] = [SWGApiClient selectHeaderAccept:@[@"application/json", @"application/xml"]];
+    if ([headerParams[@"Accept"] length] == 0) {
+        [headerParams removeObjectForKey:@"Accept"];
+    }
+
+    // response content type
+    NSString *responseContentType;
+    if ([headerParams objectForKey:@"Accept"]) {
+        responseContentType = [headerParams[@"Accept"] componentsSeparatedByString:@", "][0];
+    }
+    else {
+        responseContentType = @"";
+    }
+
+    // request content type
+    NSString *requestContentType = [SWGApiClient selectHeaderContentType:@[@"application/x-www-form-urlencoded"]];
+
+    // Authentication setting
+    NSArray *authSettings = @[];
+    
+    id bodyDictionary = nil;
+    
+    
+
+    
+    if(bodyDictionary == nil) {
+        bodyDictionary = [[NSMutableArray alloc] init];
+    }
+
+    
+    NSMutableDictionary * formParams = [[NSMutableDictionary alloc]init];
+    formParams[@"uid"] = uid;
+
+    [bodyDictionary addObject:formParams];
+    
+    
+    
+    if(bodyDictionary == nil) {
+        bodyDictionary = [[NSMutableArray alloc] init];
+    }
+
+    
+    NSMutableDictionary * formParams = [[NSMutableDictionary alloc]init];
+    formParams[@"type"] = type;
+
+    [bodyDictionary addObject:formParams];
+    
+    
+    
+    if(bodyDictionary == nil) {
+        bodyDictionary = [[NSMutableArray alloc] init];
+    }
+
+    
+    
+    requestContentType = @"multipart/form-data";
+
+    if(file != nil) {
+        file.paramName = @"file";
+        [bodyDictionary addObject:file];
+    }
+    
+    
+
+    
+
+    
+
+    
+
+    
+    // non container response
+
+    
+
+    
+    // complex response
+        
+    // comples response type
+    return [self.apiClient executeWithPath: requestUrl
+                                    method: @"POST"
+                               queryParams: queryParams
+                                      body: bodyDictionary
+                              headerParams: headerParams
+                              authSettings: authSettings
+                        requestContentType: requestContentType
+                       responseContentType: responseContentType
+                           completionBlock: ^(NSDictionary *data, NSError *error) {
+                             if (error) {
+                                 completionBlock(nil, error);
+                                 
+                                 return;
+                             }
+                             SWGUploadFileResponse* result = nil;
+                             if (data) {
+                                 result = [[SWGUploadFileResponse  alloc]  initWithDictionary:data error:nil];
                              }
                              completionBlock(result , nil);
                              

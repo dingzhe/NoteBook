@@ -6,6 +6,8 @@
 #import "SWGMyWeeklyRequest.h"
 #import "SWGMyWeeklyResponses.h"
 #import "SWGUpdateWeeklyRequest.h"
+#import "SWGUploadFileResponse.h"
+#import "SWGFile.h"
 #import "SWGWeeklyListResponses.h"
 #import "SWGWeeklyListRequest.h"
 #import "SWGObject.h"
@@ -71,6 +73,23 @@
  */
 -(NSNumber*) updateWeeklyWithBody: (SWGUpdateWeeklyRequest*) body
     completionHandler: (void (^)(SWGResponses* output, NSError* error))completionBlock;
+    
+
+
+/**
+
+ 上传文件
+ 
+
+ @param uid 
+ @param type 
+ @param file 
+ 
+
+ return type: SWGUploadFileResponse*
+ */
+-(NSNumber*) uploadFileWithUid: (NSString*) uid type: (NSString*) type file: (SWGFile*) file
+    completionHandler: (void (^)(SWGUploadFileResponse* output, NSError* error))completionBlock;
     
 
 

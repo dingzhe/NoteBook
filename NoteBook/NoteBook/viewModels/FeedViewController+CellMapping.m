@@ -14,6 +14,10 @@
 #import "WeeklyListCell.h"
 #import "NoteCellViewModel.h"
 #import "NoteTableViewCell.h"
+#import "CommonTextCell.h"
+#import "CommonTextCellViewModel.h"
+#import "EmptyTableViewCell.h"
+#import "EmptyCellViewModel.h"
 
 #pragma mark -
 
@@ -34,10 +38,11 @@ static NSMutableDictionary *globalCellsMapping = nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         globalCellsMapping = [NSMutableDictionary dictionaryWithCapacity:128];
-//        REG_CELL_VIEWMODEL(CommonTextCell, CommonTextCellViewModel);
+        REG_CELL_VIEWMODEL(EmptyTableViewCell, EmptyCellViewModel);
         REG_CELL_VIEWMODEL(PersonalManagerHeadCell,PersonalManagerHeadCellViewModel);
         REG_CELL_VIEWMODEL(WeeklyListCell,WeeklyListCellViewModel);
         REG_CELL_VIEWMODEL(NoteTableViewCell,NoteCellViewModel);
+        REG_CELL_VIEWMODEL(CommonTextCell, CommonTextCellViewModel);
     });
 }
 

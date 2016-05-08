@@ -6,9 +6,20 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface MKPreviewController : UIViewController
+typedef NS_ENUM(NSInteger, MKPreviewControllerType) {
+    MKPreviewControllerBlog,//博客类型，收藏，分享
+    MKPreviewControllerNote, //笔记类型，编辑
+    MKPreviewControllerDefault
+};
 
+
+
+
+@interface MKPreviewController : UIViewController
+@property (nonatomic, assign) MKPreviewControllerType type;
 @property (nonatomic, strong) NSString *bodyMarkdown;
 
 @property (nonatomic, copy) void (^onComplete) (MKPreviewController *);
+
+@property (nonatomic, copy) void (^onclickBarBtn) (UIBarButtonItem *);
 @end

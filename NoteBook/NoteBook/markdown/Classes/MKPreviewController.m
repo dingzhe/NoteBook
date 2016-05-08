@@ -22,8 +22,29 @@
   [super viewDidLoad];
   if(!self.title)
   {
-    self.title = @"预览";
+      if (_type == MKPreviewControllerBlog) {
+          self.title = @"博客";
+      }else if (_type == MKPreviewControllerNote){
+          self.title = @"笔记";
+      }else {
+          self.title = @"预览";
+      }
+    
   }
+    
+    
+    if (_type == MKPreviewControllerBlog) {
+        
+        [self setBlogType];
+    }else if (_type == MKPreviewControllerNote){
+        
+        [self setNoteType];
+    }else {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"提交"
+                                                                                  style:UIBarButtonItemStylePlain
+                                                                                 target:self
+                                                                                 action:@selector(onSubmit:)];
+    }
   UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
   [self.view addSubview:webView];
   self.html = [MMMarkdown HTMLStringWithMarkdown:self.bodyMarkdown
@@ -37,13 +58,23 @@
   [webView loadHTMLString:s baseURL:nil];
 
 
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"提交"
-                                                                            style:UIBarButtonItemStylePlain
-                                                                           target:self
-                                                                           action:@selector(onSubmit:)];
+  
 
 
 }
+
+- (void)setBlogType{
+    UIBarButtonItem *favorites = [[UIBarButtonItem alloc] initWithTitle:@"收藏" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit:)];
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithTitle:@"分享" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit:)];
+    self.navigationItem.rightBarButtonItems = @[share,favorites];
+}
+
+- (void)setNoteType{
+    UIBarButtonItem *edit = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit1:)];
+    UIBarButtonItem *setting = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit1:)];
+    self.navigationItem.rightBarButtonItems = @[setting,edit];
+}
+
 
 - (void)onSubmit:(id)sender
 {
@@ -52,7 +83,13 @@
     self.onComplete(self);
   }
 }
-
+- (void)onSubmit1:(UIBarButtonItem *)sender
+{
+    if(self.onclickBarBtn)
+    {
+        self.onclickBarBtn(sender);
+    }
+}
 - (NSString *)bodyMarkdown
 {
   if(!_bodyMarkdown)

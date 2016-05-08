@@ -18,12 +18,13 @@ typedef NS_ENUM(NSInteger, UserModelStatus) {
 @property (nonatomic, readonly) NSString *email;
 @property (nonatomic, readonly) NSString *username;
 @property (nonatomic, readonly) NSString *headimage;
+@property (nonatomic, readonly) SWGUser *profile;
 
 DEF_SINGLETON(currentUser)
 
 - (void) signedOnWithUid:(NSString *)uid;
 - (void) signout;
-
+- (void) updateProfile:(SWGUser *)profile;
 - (void) updateHeadImage:(NSString *)headimage;
 - (void) updateEmail:(NSString *)email;
 - (void) updateUserName:(NSString *)username;

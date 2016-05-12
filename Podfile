@@ -28,6 +28,8 @@ target :"NoteBook" do
     pod 'ReactiveCocoa', '2.4.7'
     pod 'ReactiveViewModel', '0.3'
     pod 'CocoaLumberjack', '2.0.0-rc'
+    pod 'UMengSocialCOM', '~> 5.1'
+    pod 'FMDB'
 end
 target :"NoteBookTests" do
     testing_pods

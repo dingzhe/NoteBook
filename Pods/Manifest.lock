@@ -29,12 +29,15 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.0-rc):
     - CocoaLumberjack/Default
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - ISO8601 (0.3.0)
   - JSONModel (1.1.0)
   - Masonry (0.6.1)
   - MBProgressHUD (0.9.1)
   - MJRefresh (1.4.1)
-  - MMMarkdown (0.5.2)
+  - MMMarkdown (0.5.4)
   - ReactiveCocoa (2.4.7):
     - ReactiveCocoa/UI (= 2.4.7)
   - ReactiveCocoa/Core (2.4.7):
@@ -45,11 +48,13 @@ PODS:
   - ReactiveViewModel (0.3):
     - ReactiveCocoa (~> 2.4)
   - Tortuga22-NinePatch (0.1.1)
+  - UMengSocialCOM (5.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.0)
   - AJWValidator (= 0.0.7)
   - CocoaLumberjack (= 2.0.0-rc)
+  - FMDB
   - ISO8601 (= 0.3.0)
   - JSONModel (= 1.1.0)
   - Masonry (= 0.6.1)
@@ -59,19 +64,22 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.4.7)
   - ReactiveViewModel (= 0.3)
   - Tortuga22-NinePatch (= 0.1.1)
+  - UMengSocialCOM (~> 5.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   AJWValidator: 6bd0642cdd08ebccf847938e822fbd07a8ccfdbc
   CocoaLumberjack: 04c5b9b7479dd4276a09700fcd6644423ea1751c
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: 6a0fd4c81a957803bd99bbbf55a956d1d6f41263
-  MMMarkdown: cecb051181988f4f1f23b91c97b2bde3a9bac40f
+  MMMarkdown: 754f9154136d224178f51f2b2ba67a66a89d96ea
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
   Tortuga22-NinePatch: ea73eedc8d15967d9910ef202f62e50408e673c5
+  UMengSocialCOM: 8fa4732b03757161aaa8aab97be7d980adb9ccdb
 
 COCOAPODS: 0.39.0

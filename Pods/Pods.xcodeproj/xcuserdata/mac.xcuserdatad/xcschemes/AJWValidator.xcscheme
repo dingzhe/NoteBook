@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '56D6E1AB4385035C4670EB7B'
+               BlueprintIdentifier = 'C9FE16D9343BD746AC7509FC'
                BlueprintName = 'AJWValidator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libAJWValidator.a'>

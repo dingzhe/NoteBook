@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D41966CCBD6FC47092D6B817'
+               BlueprintIdentifier = '047B6F0AFD0A8ED7DBEB121A'
                BlueprintName = 'Tortuga22-NinePatch'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTortuga22-NinePatch.a'>

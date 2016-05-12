@@ -21,82 +21,134 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		049153171CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152CB1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.h */; };
-		049153181CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152CC1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.m */; };
-		049153191CDB65B500EAE9E0 /* SWGAddArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152CD1CDB65B500EAE9E0 /* SWGAddArticleApi.h */; };
-		0491531A1CDB65B500EAE9E0 /* SWGAddArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152CE1CDB65B500EAE9E0 /* SWGAddArticleApi.m */; };
-		0491531B1CDB65B500EAE9E0 /* SWGAddArticleResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152CF1CDB65B500EAE9E0 /* SWGAddArticleResponses.h */; };
-		0491531C1CDB65B500EAE9E0 /* SWGAddArticleResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152D01CDB65B500EAE9E0 /* SWGAddArticleResponses.m */; };
-		0491531D1CDB65B500EAE9E0 /* SWGAddWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152D11CDB65B500EAE9E0 /* SWGAddWeeklyRequest.h */; };
-		0491531E1CDB65B500EAE9E0 /* SWGAddWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152D21CDB65B500EAE9E0 /* SWGAddWeeklyRequest.m */; };
-		0491531F1CDB65B500EAE9E0 /* SWGAddWeeklyResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152D31CDB65B500EAE9E0 /* SWGAddWeeklyResponses.h */; };
-		049153201CDB65B500EAE9E0 /* SWGAddWeeklyResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152D41CDB65B500EAE9E0 /* SWGAddWeeklyResponses.m */; };
-		049153211CDB65B500EAE9E0 /* SWGAllArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152D51CDB65B500EAE9E0 /* SWGAllArticleApi.h */; };
-		049153221CDB65B500EAE9E0 /* SWGAllArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152D61CDB65B500EAE9E0 /* SWGAllArticleApi.m */; };
-		049153231CDB65B500EAE9E0 /* SWGApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152D71CDB65B500EAE9E0 /* SWGApi.h */; };
-		049153241CDB65B500EAE9E0 /* SWGApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152D81CDB65B500EAE9E0 /* SWGApi.m */; };
-		049153251CDB65B500EAE9E0 /* SWGApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152D91CDB65B500EAE9E0 /* SWGApiClient.h */; };
-		049153261CDB65B500EAE9E0 /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152DA1CDB65B500EAE9E0 /* SWGApiClient.m */; };
-		049153271CDB65B500EAE9E0 /* SWGArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152DB1CDB65B500EAE9E0 /* SWGArticle.h */; };
-		049153281CDB65B500EAE9E0 /* SWGArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152DC1CDB65B500EAE9E0 /* SWGArticle.m */; };
-		049153291CDB65B500EAE9E0 /* SWGArticleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152DD1CDB65B500EAE9E0 /* SWGArticleList.h */; };
-		0491532A1CDB65B500EAE9E0 /* SWGArticleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152DE1CDB65B500EAE9E0 /* SWGArticleList.m */; };
-		0491532B1CDB65B500EAE9E0 /* SWGArticleListApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152DF1CDB65B500EAE9E0 /* SWGArticleListApi.h */; };
-		0491532C1CDB65B500EAE9E0 /* SWGArticleListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152E01CDB65B500EAE9E0 /* SWGArticleListApi.m */; };
-		0491532D1CDB65B500EAE9E0 /* SWGConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152E11CDB65B500EAE9E0 /* SWGConfiguration.h */; };
-		0491532E1CDB65B500EAE9E0 /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152E21CDB65B500EAE9E0 /* SWGConfiguration.m */; };
-		0491532F1CDB65B500EAE9E0 /* SWGDeleteArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152E31CDB65B500EAE9E0 /* SWGDeleteArticleApi.h */; };
-		049153301CDB65B500EAE9E0 /* SWGDeleteArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152E41CDB65B500EAE9E0 /* SWGDeleteArticleApi.m */; };
-		049153311CDB65B500EAE9E0 /* SWGDelWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152E51CDB65B500EAE9E0 /* SWGDelWeeklyRequest.h */; };
-		049153321CDB65B500EAE9E0 /* SWGDelWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152E61CDB65B500EAE9E0 /* SWGDelWeeklyRequest.m */; };
-		049153331CDB65B500EAE9E0 /* SWGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152E71CDB65B500EAE9E0 /* SWGFile.h */; };
-		049153341CDB65B500EAE9E0 /* SWGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152E81CDB65B500EAE9E0 /* SWGFile.m */; };
-		049153351CDB65B500EAE9E0 /* SWGGetArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152E91CDB65B500EAE9E0 /* SWGGetArticleApi.h */; };
-		049153361CDB65B500EAE9E0 /* SWGGetArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152EA1CDB65B500EAE9E0 /* SWGGetArticleApi.m */; };
-		049153371CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152EB1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.h */; };
-		049153381CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152EC1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.m */; };
-		049153391CDB65B500EAE9E0 /* SWGId.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152ED1CDB65B500EAE9E0 /* SWGId.h */; };
-		0491533A1CDB65B500EAE9E0 /* SWGId.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152EE1CDB65B500EAE9E0 /* SWGId.m */; };
-		0491533B1CDB65B500EAE9E0 /* SWGIdList.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152EF1CDB65B500EAE9E0 /* SWGIdList.h */; };
-		0491533C1CDB65B500EAE9E0 /* SWGIdList.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152F01CDB65B500EAE9E0 /* SWGIdList.m */; };
-		0491533D1CDB65B500EAE9E0 /* SWGIdListApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152F11CDB65B500EAE9E0 /* SWGIdListApi.h */; };
-		0491533E1CDB65B500EAE9E0 /* SWGIdListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152F21CDB65B500EAE9E0 /* SWGIdListApi.m */; };
-		0491533F1CDB65B500EAE9E0 /* SWGMakeUrlApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152F31CDB65B500EAE9E0 /* SWGMakeUrlApi.h */; };
-		049153401CDB65B500EAE9E0 /* SWGMakeUrlApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152F41CDB65B500EAE9E0 /* SWGMakeUrlApi.m */; };
-		049153411CDB65B500EAE9E0 /* SWGMyWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152F51CDB65B500EAE9E0 /* SWGMyWeeklyRequest.h */; };
-		049153421CDB65B500EAE9E0 /* SWGMyWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152F61CDB65B500EAE9E0 /* SWGMyWeeklyRequest.m */; };
-		049153431CDB65B500EAE9E0 /* SWGMyWeeklyResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152F71CDB65B500EAE9E0 /* SWGMyWeeklyResponses.h */; };
-		049153441CDB65B500EAE9E0 /* SWGMyWeeklyResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152F81CDB65B500EAE9E0 /* SWGMyWeeklyResponses.m */; };
-		049153451CDB65B500EAE9E0 /* SWGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152F91CDB65B500EAE9E0 /* SWGObject.h */; };
-		049153461CDB65B500EAE9E0 /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152FA1CDB65B500EAE9E0 /* SWGObject.m */; };
-		049153471CDB65B500EAE9E0 /* SWGQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152FB1CDB65B500EAE9E0 /* SWGQueryParamCollection.h */; };
-		049153481CDB65B500EAE9E0 /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152FC1CDB65B500EAE9E0 /* SWGQueryParamCollection.m */; };
-		049153491CDB65B500EAE9E0 /* SWGResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152FD1CDB65B500EAE9E0 /* SWGResponses.h */; };
-		0491534A1CDB65B500EAE9E0 /* SWGResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049152FE1CDB65B500EAE9E0 /* SWGResponses.m */; };
-		0491534B1CDB65B500EAE9E0 /* SWGSignApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049152FF1CDB65B500EAE9E0 /* SWGSignApi.h */; };
-		0491534C1CDB65B500EAE9E0 /* SWGSignApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153001CDB65B500EAE9E0 /* SWGSignApi.m */; };
-		0491534D1CDB65B500EAE9E0 /* SWGSignRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153011CDB65B500EAE9E0 /* SWGSignRequest.h */; };
-		0491534E1CDB65B500EAE9E0 /* SWGSignRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153021CDB65B500EAE9E0 /* SWGSignRequest.m */; };
-		0491534F1CDB65B500EAE9E0 /* SWGSignResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153031CDB65B500EAE9E0 /* SWGSignResponses.h */; };
-		049153501CDB65B500EAE9E0 /* SWGSignResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153041CDB65B500EAE9E0 /* SWGSignResponses.m */; };
-		049153511CDB65B500EAE9E0 /* SWGUpdateArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153051CDB65B500EAE9E0 /* SWGUpdateArticleApi.h */; };
-		049153521CDB65B500EAE9E0 /* SWGUpdateArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153061CDB65B500EAE9E0 /* SWGUpdateArticleApi.m */; };
-		049153531CDB65B500EAE9E0 /* SWGUpdateArticleResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153071CDB65B500EAE9E0 /* SWGUpdateArticleResponses.h */; };
-		049153541CDB65B500EAE9E0 /* SWGUpdateArticleResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153081CDB65B500EAE9E0 /* SWGUpdateArticleResponses.m */; };
-		049153551CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153091CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.h */; };
-		049153561CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491530A1CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.m */; };
-		049153571CDB65B500EAE9E0 /* SWGUploadFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0491530B1CDB65B500EAE9E0 /* SWGUploadFileResponse.h */; };
-		049153581CDB65B500EAE9E0 /* SWGUploadFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491530C1CDB65B500EAE9E0 /* SWGUploadFileResponse.m */; };
-		049153591CDB65B500EAE9E0 /* SWGUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0491530D1CDB65B500EAE9E0 /* SWGUser.h */; };
-		0491535A1CDB65B500EAE9E0 /* SWGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491530E1CDB65B500EAE9E0 /* SWGUser.m */; };
-		0491535B1CDB65B500EAE9E0 /* SWGWeekly.h in Headers */ = {isa = PBXBuildFile; fileRef = 0491530F1CDB65B500EAE9E0 /* SWGWeekly.h */; };
-		0491535C1CDB65B500EAE9E0 /* SWGWeekly.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153101CDB65B500EAE9E0 /* SWGWeekly.m */; };
-		0491535D1CDB65B500EAE9E0 /* SWGWeeklyApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153111CDB65B500EAE9E0 /* SWGWeeklyApi.h */; };
-		0491535E1CDB65B500EAE9E0 /* SWGWeeklyApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153121CDB65B500EAE9E0 /* SWGWeeklyApi.m */; };
-		0491535F1CDB65B500EAE9E0 /* SWGWeeklyListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153131CDB65B500EAE9E0 /* SWGWeeklyListRequest.h */; };
-		049153601CDB65B500EAE9E0 /* SWGWeeklyListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153141CDB65B500EAE9E0 /* SWGWeeklyListRequest.m */; };
-		049153611CDB65B500EAE9E0 /* SWGWeeklyListResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 049153151CDB65B500EAE9E0 /* SWGWeeklyListResponses.h */; };
-		049153621CDB65B500EAE9E0 /* SWGWeeklyListResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 049153161CDB65B500EAE9E0 /* SWGWeeklyListResponses.m */; };
+		0460B2B51CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2351CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.h */; };
+		0460B2B61CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2361CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.m */; };
+		0460B2B71CE32ACB003CE9E2 /* SWGAddArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2371CE32ACB003CE9E2 /* SWGAddArticleApi.h */; };
+		0460B2B81CE32ACB003CE9E2 /* SWGAddArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2381CE32ACB003CE9E2 /* SWGAddArticleApi.m */; };
+		0460B2B91CE32ACB003CE9E2 /* SWGAddArticleResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2391CE32ACB003CE9E2 /* SWGAddArticleResponses.h */; };
+		0460B2BA1CE32ACB003CE9E2 /* SWGAddArticleResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B23A1CE32ACB003CE9E2 /* SWGAddArticleResponses.m */; };
+		0460B2BB1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B23B1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.h */; };
+		0460B2BC1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B23C1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.m */; };
+		0460B2BD1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B23D1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.h */; };
+		0460B2BE1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B23E1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.m */; };
+		0460B2BF1CE32ACB003CE9E2 /* SWGAddWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B23F1CE32ACB003CE9E2 /* SWGAddWeeklyRequest.h */; };
+		0460B2C01CE32ACB003CE9E2 /* SWGAddWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2401CE32ACB003CE9E2 /* SWGAddWeeklyRequest.m */; };
+		0460B2C11CE32ACB003CE9E2 /* SWGAddWeeklyResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2411CE32ACB003CE9E2 /* SWGAddWeeklyResponses.h */; };
+		0460B2C21CE32ACB003CE9E2 /* SWGAddWeeklyResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2421CE32ACB003CE9E2 /* SWGAddWeeklyResponses.m */; };
+		0460B2C31CE32ACB003CE9E2 /* SWGAllArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2431CE32ACB003CE9E2 /* SWGAllArticleApi.h */; };
+		0460B2C41CE32ACB003CE9E2 /* SWGAllArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2441CE32ACB003CE9E2 /* SWGAllArticleApi.m */; };
+		0460B2C51CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2451CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.h */; };
+		0460B2C61CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2461CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.m */; };
+		0460B2C71CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2471CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.h */; };
+		0460B2C81CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2481CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.m */; };
+		0460B2C91CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2491CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.h */; };
+		0460B2CA1CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B24A1CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.m */; };
+		0460B2CB1CE32ACB003CE9E2 /* SWGApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B24B1CE32ACB003CE9E2 /* SWGApi.h */; };
+		0460B2CC1CE32ACB003CE9E2 /* SWGApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B24C1CE32ACB003CE9E2 /* SWGApi.m */; };
+		0460B2CD1CE32ACB003CE9E2 /* SWGApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B24D1CE32ACB003CE9E2 /* SWGApiClient.h */; };
+		0460B2CE1CE32ACB003CE9E2 /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B24E1CE32ACB003CE9E2 /* SWGApiClient.m */; };
+		0460B2CF1CE32ACB003CE9E2 /* SWGArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B24F1CE32ACB003CE9E2 /* SWGArticle.h */; };
+		0460B2D01CE32ACB003CE9E2 /* SWGArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2501CE32ACB003CE9E2 /* SWGArticle.m */; };
+		0460B2D11CE32ACB003CE9E2 /* SWGArticleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2511CE32ACB003CE9E2 /* SWGArticleList.h */; };
+		0460B2D21CE32ACB003CE9E2 /* SWGArticleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2521CE32ACB003CE9E2 /* SWGArticleList.m */; };
+		0460B2D31CE32ACB003CE9E2 /* SWGArticleListApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2531CE32ACB003CE9E2 /* SWGArticleListApi.h */; };
+		0460B2D41CE32ACB003CE9E2 /* SWGArticleListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2541CE32ACB003CE9E2 /* SWGArticleListApi.m */; };
+		0460B2D51CE32ACB003CE9E2 /* SWGConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2551CE32ACB003CE9E2 /* SWGConfiguration.h */; };
+		0460B2D61CE32ACB003CE9E2 /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2561CE32ACB003CE9E2 /* SWGConfiguration.m */; };
+		0460B2D71CE32ACB003CE9E2 /* SWGDeleteArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2571CE32ACB003CE9E2 /* SWGDeleteArticleApi.h */; };
+		0460B2D81CE32ACB003CE9E2 /* SWGDeleteArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2581CE32ACB003CE9E2 /* SWGDeleteArticleApi.m */; };
+		0460B2D91CE32ACB003CE9E2 /* SWGDelWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2591CE32ACB003CE9E2 /* SWGDelWeeklyRequest.h */; };
+		0460B2DA1CE32ACB003CE9E2 /* SWGDelWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B25A1CE32ACB003CE9E2 /* SWGDelWeeklyRequest.m */; };
+		0460B2DB1CE32ACB003CE9E2 /* SWGEmptyResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B25B1CE32ACB003CE9E2 /* SWGEmptyResponses.h */; };
+		0460B2DC1CE32ACB003CE9E2 /* SWGEmptyResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B25C1CE32ACB003CE9E2 /* SWGEmptyResponses.m */; };
+		0460B2DD1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B25D1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.h */; };
+		0460B2DE1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B25E1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.m */; };
+		0460B2DF1CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B25F1CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.h */; };
+		0460B2E01CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2601CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.m */; };
+		0460B2E11CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2611CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.h */; };
+		0460B2E21CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2621CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.m */; };
+		0460B2E31CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2631CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.h */; };
+		0460B2E41CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2641CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.m */; };
+		0460B2E51CE32ACB003CE9E2 /* SWGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2651CE32ACB003CE9E2 /* SWGFile.h */; };
+		0460B2E61CE32ACB003CE9E2 /* SWGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2661CE32ACB003CE9E2 /* SWGFile.m */; };
+		0460B2E71CE32ACB003CE9E2 /* SWGGetArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2671CE32ACB003CE9E2 /* SWGGetArticleApi.h */; };
+		0460B2E81CE32ACB003CE9E2 /* SWGGetArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2681CE32ACB003CE9E2 /* SWGGetArticleApi.m */; };
+		0460B2E91CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2691CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.h */; };
+		0460B2EA1CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B26A1CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.m */; };
+		0460B2EB1CE32ACB003CE9E2 /* SWGId.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B26B1CE32ACB003CE9E2 /* SWGId.h */; };
+		0460B2EC1CE32ACB003CE9E2 /* SWGId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B26C1CE32ACB003CE9E2 /* SWGId.m */; };
+		0460B2ED1CE32ACB003CE9E2 /* SWGIdList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B26D1CE32ACB003CE9E2 /* SWGIdList.h */; };
+		0460B2EE1CE32ACB003CE9E2 /* SWGIdList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B26E1CE32ACB003CE9E2 /* SWGIdList.m */; };
+		0460B2EF1CE32ACB003CE9E2 /* SWGIdListApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B26F1CE32ACB003CE9E2 /* SWGIdListApi.h */; };
+		0460B2F01CE32ACB003CE9E2 /* SWGIdListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2701CE32ACB003CE9E2 /* SWGIdListApi.m */; };
+		0460B2F11CE32ACB003CE9E2 /* SWGIsBlogRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2711CE32ACB003CE9E2 /* SWGIsBlogRequest.h */; };
+		0460B2F21CE32ACB003CE9E2 /* SWGIsBlogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2721CE32ACB003CE9E2 /* SWGIsBlogRequest.m */; };
+		0460B2F31CE32ACB003CE9E2 /* SWGIsBlogResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2731CE32ACB003CE9E2 /* SWGIsBlogResponses.h */; };
+		0460B2F41CE32ACB003CE9E2 /* SWGIsBlogResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2741CE32ACB003CE9E2 /* SWGIsBlogResponses.m */; };
+		0460B2F51CE32ACB003CE9E2 /* SWGMakeUrlApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2751CE32ACB003CE9E2 /* SWGMakeUrlApi.h */; };
+		0460B2F61CE32ACB003CE9E2 /* SWGMakeUrlApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2761CE32ACB003CE9E2 /* SWGMakeUrlApi.m */; };
+		0460B2F71CE32ACB003CE9E2 /* SWGMyBlogListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2771CE32ACB003CE9E2 /* SWGMyBlogListRequest.h */; };
+		0460B2F81CE32ACB003CE9E2 /* SWGMyBlogListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2781CE32ACB003CE9E2 /* SWGMyBlogListRequest.m */; };
+		0460B2F91CE32ACB003CE9E2 /* SWGMyBlogListResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2791CE32ACB003CE9E2 /* SWGMyBlogListResponses.h */; };
+		0460B2FA1CE32ACB003CE9E2 /* SWGMyBlogListResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B27A1CE32ACB003CE9E2 /* SWGMyBlogListResponses.m */; };
+		0460B2FB1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B27B1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.h */; };
+		0460B2FC1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B27C1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.m */; };
+		0460B2FD1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B27D1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.h */; };
+		0460B2FE1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B27E1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.m */; };
+		0460B2FF1CE32ACB003CE9E2 /* SWGNoteGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B27F1CE32ACB003CE9E2 /* SWGNoteGroup.h */; };
+		0460B3001CE32ACB003CE9E2 /* SWGNoteGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2801CE32ACB003CE9E2 /* SWGNoteGroup.m */; };
+		0460B3011CE32ACB003CE9E2 /* SWGNoteGroupListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2811CE32ACB003CE9E2 /* SWGNoteGroupListRequest.h */; };
+		0460B3021CE32ACB003CE9E2 /* SWGNoteGroupListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2821CE32ACB003CE9E2 /* SWGNoteGroupListRequest.m */; };
+		0460B3031CE32ACB003CE9E2 /* SWGNoteGroupListResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2831CE32ACB003CE9E2 /* SWGNoteGroupListResponses.h */; };
+		0460B3041CE32ACB003CE9E2 /* SWGNoteGroupListResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2841CE32ACB003CE9E2 /* SWGNoteGroupListResponses.m */; };
+		0460B3051CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2851CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.h */; };
+		0460B3061CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2861CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.m */; };
+		0460B3071CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2871CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.h */; };
+		0460B3081CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2881CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.m */; };
+		0460B3091CE32ACB003CE9E2 /* SWGNoteGroupRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2891CE32ACB003CE9E2 /* SWGNoteGroupRequest.h */; };
+		0460B30A1CE32ACB003CE9E2 /* SWGNoteGroupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B28A1CE32ACB003CE9E2 /* SWGNoteGroupRequest.m */; };
+		0460B30B1CE32ACB003CE9E2 /* SWGNoteGroupResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B28B1CE32ACB003CE9E2 /* SWGNoteGroupResponses.h */; };
+		0460B30C1CE32ACB003CE9E2 /* SWGNoteGroupResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B28C1CE32ACB003CE9E2 /* SWGNoteGroupResponses.m */; };
+		0460B30D1CE32ACB003CE9E2 /* SWGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B28D1CE32ACB003CE9E2 /* SWGObject.h */; };
+		0460B30E1CE32ACB003CE9E2 /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B28E1CE32ACB003CE9E2 /* SWGObject.m */; };
+		0460B30F1CE32ACB003CE9E2 /* SWGQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B28F1CE32ACB003CE9E2 /* SWGQueryParamCollection.h */; };
+		0460B3101CE32ACB003CE9E2 /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2901CE32ACB003CE9E2 /* SWGQueryParamCollection.m */; };
+		0460B3111CE32ACB003CE9E2 /* SWGResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2911CE32ACB003CE9E2 /* SWGResponses.h */; };
+		0460B3121CE32ACB003CE9E2 /* SWGResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2921CE32ACB003CE9E2 /* SWGResponses.m */; };
+		0460B3131CE32ACB003CE9E2 /* SWGSignApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2931CE32ACB003CE9E2 /* SWGSignApi.h */; };
+		0460B3141CE32ACB003CE9E2 /* SWGSignApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2941CE32ACB003CE9E2 /* SWGSignApi.m */; };
+		0460B3151CE32ACB003CE9E2 /* SWGSignRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2951CE32ACB003CE9E2 /* SWGSignRequest.h */; };
+		0460B3161CE32ACB003CE9E2 /* SWGSignRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2961CE32ACB003CE9E2 /* SWGSignRequest.m */; };
+		0460B3171CE32ACB003CE9E2 /* SWGSignResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2971CE32ACB003CE9E2 /* SWGSignResponses.h */; };
+		0460B3181CE32ACB003CE9E2 /* SWGSignResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2981CE32ACB003CE9E2 /* SWGSignResponses.m */; };
+		0460B3191CE32ACB003CE9E2 /* SWGUpdateArticleApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2991CE32ACB003CE9E2 /* SWGUpdateArticleApi.h */; };
+		0460B31A1CE32ACB003CE9E2 /* SWGUpdateArticleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B29A1CE32ACB003CE9E2 /* SWGUpdateArticleApi.m */; };
+		0460B31B1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B29B1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.h */; };
+		0460B31C1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B29C1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.m */; };
+		0460B31D1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B29D1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.h */; };
+		0460B31E1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B29E1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.m */; };
+		0460B31F1CE32ACB003CE9E2 /* SWGUploadFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B29F1CE32ACB003CE9E2 /* SWGUploadFileResponse.h */; };
+		0460B3201CE32ACB003CE9E2 /* SWGUploadFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2A01CE32ACB003CE9E2 /* SWGUploadFileResponse.m */; };
+		0460B3211CE32ACB003CE9E2 /* SWGUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2A11CE32ACB003CE9E2 /* SWGUser.h */; };
+		0460B3221CE32ACB003CE9E2 /* SWGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2A21CE32ACB003CE9E2 /* SWGUser.m */; };
+		0460B3231CE32ACB003CE9E2 /* SWGUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2A31CE32ACB003CE9E2 /* SWGUserInfo.h */; };
+		0460B3241CE32ACB003CE9E2 /* SWGUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2A41CE32ACB003CE9E2 /* SWGUserInfo.m */; };
+		0460B3251CE32ACB003CE9E2 /* SWGUserInfoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2A51CE32ACB003CE9E2 /* SWGUserInfoRequest.h */; };
+		0460B3261CE32ACB003CE9E2 /* SWGUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2A61CE32ACB003CE9E2 /* SWGUserInfoRequest.m */; };
+		0460B3271CE32ACB003CE9E2 /* SWGUserInfoResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2A71CE32ACB003CE9E2 /* SWGUserInfoResponses.h */; };
+		0460B3281CE32ACB003CE9E2 /* SWGUserInfoResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2A81CE32ACB003CE9E2 /* SWGUserInfoResponses.m */; };
+		0460B3291CE32ACB003CE9E2 /* SWGWeekly.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2A91CE32ACB003CE9E2 /* SWGWeekly.h */; };
+		0460B32A1CE32ACB003CE9E2 /* SWGWeekly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2AA1CE32ACB003CE9E2 /* SWGWeekly.m */; };
+		0460B32B1CE32ACB003CE9E2 /* SWGWeeklyApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2AB1CE32ACB003CE9E2 /* SWGWeeklyApi.h */; };
+		0460B32C1CE32ACB003CE9E2 /* SWGWeeklyApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2AC1CE32ACB003CE9E2 /* SWGWeeklyApi.m */; };
+		0460B32D1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2AD1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.h */; };
+		0460B32E1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2AE1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.m */; };
+		0460B32F1CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2AF1CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.h */; };
+		0460B3301CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2B01CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.m */; };
+		0460B3311CE32ACB003CE9E2 /* SWGWeeklyListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2B11CE32ACB003CE9E2 /* SWGWeeklyListRequest.h */; };
+		0460B3321CE32ACB003CE9E2 /* SWGWeeklyListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2B21CE32ACB003CE9E2 /* SWGWeeklyListRequest.m */; };
+		0460B3331CE32ACB003CE9E2 /* SWGWeeklyListResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = 0460B2B31CE32ACB003CE9E2 /* SWGWeeklyListResponses.h */; };
+		0460B3341CE32ACB003CE9E2 /* SWGWeeklyListResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2B41CE32ACB003CE9E2 /* SWGWeeklyListResponses.m */; };
 		04ECA6221CD33F1B00C2513A /* NoteBookSignService.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ECA6211CD33F1B00C2513A /* NoteBookSignService.h */; };
 		04ECA6241CD3401700C2513A /* NoteBookConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ECA6231CD3401700C2513A /* NoteBookConfigure.h */; };
 		2030B4601BFF1C1D00C96C6B /* code-gen in Resources */ = {isa = PBXBuildFile; fileRef = 2030B45A1BFF1C1D00C96C6B /* code-gen */; };
@@ -143,82 +195,134 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		049152CB1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
-		049152CC1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
-		049152CD1CDB65B500EAE9E0 /* SWGAddArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddArticleApi.h; sourceTree = "<group>"; };
-		049152CE1CDB65B500EAE9E0 /* SWGAddArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddArticleApi.m; sourceTree = "<group>"; };
-		049152CF1CDB65B500EAE9E0 /* SWGAddArticleResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddArticleResponses.h; sourceTree = "<group>"; };
-		049152D01CDB65B500EAE9E0 /* SWGAddArticleResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddArticleResponses.m; sourceTree = "<group>"; };
-		049152D11CDB65B500EAE9E0 /* SWGAddWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddWeeklyRequest.h; sourceTree = "<group>"; };
-		049152D21CDB65B500EAE9E0 /* SWGAddWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddWeeklyRequest.m; sourceTree = "<group>"; };
-		049152D31CDB65B500EAE9E0 /* SWGAddWeeklyResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddWeeklyResponses.h; sourceTree = "<group>"; };
-		049152D41CDB65B500EAE9E0 /* SWGAddWeeklyResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddWeeklyResponses.m; sourceTree = "<group>"; };
-		049152D51CDB65B500EAE9E0 /* SWGAllArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAllArticleApi.h; sourceTree = "<group>"; };
-		049152D61CDB65B500EAE9E0 /* SWGAllArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAllArticleApi.m; sourceTree = "<group>"; };
-		049152D71CDB65B500EAE9E0 /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
-		049152D81CDB65B500EAE9E0 /* SWGApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApi.m; sourceTree = "<group>"; };
-		049152D91CDB65B500EAE9E0 /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
-		049152DA1CDB65B500EAE9E0 /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
-		049152DB1CDB65B500EAE9E0 /* SWGArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticle.h; sourceTree = "<group>"; };
-		049152DC1CDB65B500EAE9E0 /* SWGArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticle.m; sourceTree = "<group>"; };
-		049152DD1CDB65B500EAE9E0 /* SWGArticleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticleList.h; sourceTree = "<group>"; };
-		049152DE1CDB65B500EAE9E0 /* SWGArticleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticleList.m; sourceTree = "<group>"; };
-		049152DF1CDB65B500EAE9E0 /* SWGArticleListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticleListApi.h; sourceTree = "<group>"; };
-		049152E01CDB65B500EAE9E0 /* SWGArticleListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticleListApi.m; sourceTree = "<group>"; };
-		049152E11CDB65B500EAE9E0 /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
-		049152E21CDB65B500EAE9E0 /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
-		049152E31CDB65B500EAE9E0 /* SWGDeleteArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGDeleteArticleApi.h; sourceTree = "<group>"; };
-		049152E41CDB65B500EAE9E0 /* SWGDeleteArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGDeleteArticleApi.m; sourceTree = "<group>"; };
-		049152E51CDB65B500EAE9E0 /* SWGDelWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGDelWeeklyRequest.h; sourceTree = "<group>"; };
-		049152E61CDB65B500EAE9E0 /* SWGDelWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGDelWeeklyRequest.m; sourceTree = "<group>"; };
-		049152E71CDB65B500EAE9E0 /* SWGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFile.h; sourceTree = "<group>"; };
-		049152E81CDB65B500EAE9E0 /* SWGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFile.m; sourceTree = "<group>"; };
-		049152E91CDB65B500EAE9E0 /* SWGGetArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleApi.h; sourceTree = "<group>"; };
-		049152EA1CDB65B500EAE9E0 /* SWGGetArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleApi.m; sourceTree = "<group>"; };
-		049152EB1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleByIdRequest.h; sourceTree = "<group>"; };
-		049152EC1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleByIdRequest.m; sourceTree = "<group>"; };
-		049152ED1CDB65B500EAE9E0 /* SWGId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGId.h; sourceTree = "<group>"; };
-		049152EE1CDB65B500EAE9E0 /* SWGId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGId.m; sourceTree = "<group>"; };
-		049152EF1CDB65B500EAE9E0 /* SWGIdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIdList.h; sourceTree = "<group>"; };
-		049152F01CDB65B500EAE9E0 /* SWGIdList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIdList.m; sourceTree = "<group>"; };
-		049152F11CDB65B500EAE9E0 /* SWGIdListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIdListApi.h; sourceTree = "<group>"; };
-		049152F21CDB65B500EAE9E0 /* SWGIdListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIdListApi.m; sourceTree = "<group>"; };
-		049152F31CDB65B500EAE9E0 /* SWGMakeUrlApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMakeUrlApi.h; sourceTree = "<group>"; };
-		049152F41CDB65B500EAE9E0 /* SWGMakeUrlApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMakeUrlApi.m; sourceTree = "<group>"; };
-		049152F51CDB65B500EAE9E0 /* SWGMyWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyWeeklyRequest.h; sourceTree = "<group>"; };
-		049152F61CDB65B500EAE9E0 /* SWGMyWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyWeeklyRequest.m; sourceTree = "<group>"; };
-		049152F71CDB65B500EAE9E0 /* SWGMyWeeklyResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyWeeklyResponses.h; sourceTree = "<group>"; };
-		049152F81CDB65B500EAE9E0 /* SWGMyWeeklyResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyWeeklyResponses.m; sourceTree = "<group>"; };
-		049152F91CDB65B500EAE9E0 /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
-		049152FA1CDB65B500EAE9E0 /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
-		049152FB1CDB65B500EAE9E0 /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
-		049152FC1CDB65B500EAE9E0 /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
-		049152FD1CDB65B500EAE9E0 /* SWGResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGResponses.h; sourceTree = "<group>"; };
-		049152FE1CDB65B500EAE9E0 /* SWGResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGResponses.m; sourceTree = "<group>"; };
-		049152FF1CDB65B500EAE9E0 /* SWGSignApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignApi.h; sourceTree = "<group>"; };
-		049153001CDB65B500EAE9E0 /* SWGSignApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignApi.m; sourceTree = "<group>"; };
-		049153011CDB65B500EAE9E0 /* SWGSignRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignRequest.h; sourceTree = "<group>"; };
-		049153021CDB65B500EAE9E0 /* SWGSignRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignRequest.m; sourceTree = "<group>"; };
-		049153031CDB65B500EAE9E0 /* SWGSignResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignResponses.h; sourceTree = "<group>"; };
-		049153041CDB65B500EAE9E0 /* SWGSignResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignResponses.m; sourceTree = "<group>"; };
-		049153051CDB65B500EAE9E0 /* SWGUpdateArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateArticleApi.h; sourceTree = "<group>"; };
-		049153061CDB65B500EAE9E0 /* SWGUpdateArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateArticleApi.m; sourceTree = "<group>"; };
-		049153071CDB65B500EAE9E0 /* SWGUpdateArticleResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateArticleResponses.h; sourceTree = "<group>"; };
-		049153081CDB65B500EAE9E0 /* SWGUpdateArticleResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateArticleResponses.m; sourceTree = "<group>"; };
-		049153091CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateWeeklyRequest.h; sourceTree = "<group>"; };
-		0491530A1CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateWeeklyRequest.m; sourceTree = "<group>"; };
-		0491530B1CDB65B500EAE9E0 /* SWGUploadFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUploadFileResponse.h; sourceTree = "<group>"; };
-		0491530C1CDB65B500EAE9E0 /* SWGUploadFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUploadFileResponse.m; sourceTree = "<group>"; };
-		0491530D1CDB65B500EAE9E0 /* SWGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUser.h; sourceTree = "<group>"; };
-		0491530E1CDB65B500EAE9E0 /* SWGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUser.m; sourceTree = "<group>"; };
-		0491530F1CDB65B500EAE9E0 /* SWGWeekly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeekly.h; sourceTree = "<group>"; };
-		049153101CDB65B500EAE9E0 /* SWGWeekly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeekly.m; sourceTree = "<group>"; };
-		049153111CDB65B500EAE9E0 /* SWGWeeklyApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyApi.h; sourceTree = "<group>"; };
-		049153121CDB65B500EAE9E0 /* SWGWeeklyApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyApi.m; sourceTree = "<group>"; };
-		049153131CDB65B500EAE9E0 /* SWGWeeklyListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyListRequest.h; sourceTree = "<group>"; };
-		049153141CDB65B500EAE9E0 /* SWGWeeklyListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyListRequest.m; sourceTree = "<group>"; };
-		049153151CDB65B500EAE9E0 /* SWGWeeklyListResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyListResponses.h; sourceTree = "<group>"; };
-		049153161CDB65B500EAE9E0 /* SWGWeeklyListResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyListResponses.m; sourceTree = "<group>"; };
+		0460B2351CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
+		0460B2361CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
+		0460B2371CE32ACB003CE9E2 /* SWGAddArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddArticleApi.h; sourceTree = "<group>"; };
+		0460B2381CE32ACB003CE9E2 /* SWGAddArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddArticleApi.m; sourceTree = "<group>"; };
+		0460B2391CE32ACB003CE9E2 /* SWGAddArticleResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddArticleResponses.h; sourceTree = "<group>"; };
+		0460B23A1CE32ACB003CE9E2 /* SWGAddArticleResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddArticleResponses.m; sourceTree = "<group>"; };
+		0460B23B1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddNoteGroupRequest.h; sourceTree = "<group>"; };
+		0460B23C1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddNoteGroupRequest.m; sourceTree = "<group>"; };
+		0460B23D1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddNoteGroupResponses.h; sourceTree = "<group>"; };
+		0460B23E1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddNoteGroupResponses.m; sourceTree = "<group>"; };
+		0460B23F1CE32ACB003CE9E2 /* SWGAddWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddWeeklyRequest.h; sourceTree = "<group>"; };
+		0460B2401CE32ACB003CE9E2 /* SWGAddWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddWeeklyRequest.m; sourceTree = "<group>"; };
+		0460B2411CE32ACB003CE9E2 /* SWGAddWeeklyResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAddWeeklyResponses.h; sourceTree = "<group>"; };
+		0460B2421CE32ACB003CE9E2 /* SWGAddWeeklyResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAddWeeklyResponses.m; sourceTree = "<group>"; };
+		0460B2431CE32ACB003CE9E2 /* SWGAllArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAllArticleApi.h; sourceTree = "<group>"; };
+		0460B2441CE32ACB003CE9E2 /* SWGAllArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAllArticleApi.m; sourceTree = "<group>"; };
+		0460B2451CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlreadyFavoriteBlog.h; sourceTree = "<group>"; };
+		0460B2461CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlreadyFavoriteBlog.m; sourceTree = "<group>"; };
+		0460B2471CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlreadyFavoriteBlogRequest.h; sourceTree = "<group>"; };
+		0460B2481CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlreadyFavoriteBlogRequest.m; sourceTree = "<group>"; };
+		0460B2491CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlreadyFavoriteBlogResponses.h; sourceTree = "<group>"; };
+		0460B24A1CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlreadyFavoriteBlogResponses.m; sourceTree = "<group>"; };
+		0460B24B1CE32ACB003CE9E2 /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
+		0460B24C1CE32ACB003CE9E2 /* SWGApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApi.m; sourceTree = "<group>"; };
+		0460B24D1CE32ACB003CE9E2 /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
+		0460B24E1CE32ACB003CE9E2 /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
+		0460B24F1CE32ACB003CE9E2 /* SWGArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticle.h; sourceTree = "<group>"; };
+		0460B2501CE32ACB003CE9E2 /* SWGArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticle.m; sourceTree = "<group>"; };
+		0460B2511CE32ACB003CE9E2 /* SWGArticleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticleList.h; sourceTree = "<group>"; };
+		0460B2521CE32ACB003CE9E2 /* SWGArticleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticleList.m; sourceTree = "<group>"; };
+		0460B2531CE32ACB003CE9E2 /* SWGArticleListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArticleListApi.h; sourceTree = "<group>"; };
+		0460B2541CE32ACB003CE9E2 /* SWGArticleListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArticleListApi.m; sourceTree = "<group>"; };
+		0460B2551CE32ACB003CE9E2 /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
+		0460B2561CE32ACB003CE9E2 /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
+		0460B2571CE32ACB003CE9E2 /* SWGDeleteArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGDeleteArticleApi.h; sourceTree = "<group>"; };
+		0460B2581CE32ACB003CE9E2 /* SWGDeleteArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGDeleteArticleApi.m; sourceTree = "<group>"; };
+		0460B2591CE32ACB003CE9E2 /* SWGDelWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGDelWeeklyRequest.h; sourceTree = "<group>"; };
+		0460B25A1CE32ACB003CE9E2 /* SWGDelWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGDelWeeklyRequest.m; sourceTree = "<group>"; };
+		0460B25B1CE32ACB003CE9E2 /* SWGEmptyResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGEmptyResponses.h; sourceTree = "<group>"; };
+		0460B25C1CE32ACB003CE9E2 /* SWGEmptyResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGEmptyResponses.m; sourceTree = "<group>"; };
+		0460B25D1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFavoriteBlogListRequest.h; sourceTree = "<group>"; };
+		0460B25E1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFavoriteBlogListRequest.m; sourceTree = "<group>"; };
+		0460B25F1CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFavoriteBlogListResponses.h; sourceTree = "<group>"; };
+		0460B2601CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFavoriteBlogListResponses.m; sourceTree = "<group>"; };
+		0460B2611CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFavoriteBlogRequest.h; sourceTree = "<group>"; };
+		0460B2621CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFavoriteBlogRequest.m; sourceTree = "<group>"; };
+		0460B2631CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFavoriteBlogResponses.h; sourceTree = "<group>"; };
+		0460B2641CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFavoriteBlogResponses.m; sourceTree = "<group>"; };
+		0460B2651CE32ACB003CE9E2 /* SWGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGFile.h; sourceTree = "<group>"; };
+		0460B2661CE32ACB003CE9E2 /* SWGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGFile.m; sourceTree = "<group>"; };
+		0460B2671CE32ACB003CE9E2 /* SWGGetArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleApi.h; sourceTree = "<group>"; };
+		0460B2681CE32ACB003CE9E2 /* SWGGetArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleApi.m; sourceTree = "<group>"; };
+		0460B2691CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGGetArticleByIdRequest.h; sourceTree = "<group>"; };
+		0460B26A1CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGGetArticleByIdRequest.m; sourceTree = "<group>"; };
+		0460B26B1CE32ACB003CE9E2 /* SWGId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGId.h; sourceTree = "<group>"; };
+		0460B26C1CE32ACB003CE9E2 /* SWGId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGId.m; sourceTree = "<group>"; };
+		0460B26D1CE32ACB003CE9E2 /* SWGIdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIdList.h; sourceTree = "<group>"; };
+		0460B26E1CE32ACB003CE9E2 /* SWGIdList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIdList.m; sourceTree = "<group>"; };
+		0460B26F1CE32ACB003CE9E2 /* SWGIdListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIdListApi.h; sourceTree = "<group>"; };
+		0460B2701CE32ACB003CE9E2 /* SWGIdListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIdListApi.m; sourceTree = "<group>"; };
+		0460B2711CE32ACB003CE9E2 /* SWGIsBlogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIsBlogRequest.h; sourceTree = "<group>"; };
+		0460B2721CE32ACB003CE9E2 /* SWGIsBlogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIsBlogRequest.m; sourceTree = "<group>"; };
+		0460B2731CE32ACB003CE9E2 /* SWGIsBlogResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGIsBlogResponses.h; sourceTree = "<group>"; };
+		0460B2741CE32ACB003CE9E2 /* SWGIsBlogResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGIsBlogResponses.m; sourceTree = "<group>"; };
+		0460B2751CE32ACB003CE9E2 /* SWGMakeUrlApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMakeUrlApi.h; sourceTree = "<group>"; };
+		0460B2761CE32ACB003CE9E2 /* SWGMakeUrlApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMakeUrlApi.m; sourceTree = "<group>"; };
+		0460B2771CE32ACB003CE9E2 /* SWGMyBlogListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyBlogListRequest.h; sourceTree = "<group>"; };
+		0460B2781CE32ACB003CE9E2 /* SWGMyBlogListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyBlogListRequest.m; sourceTree = "<group>"; };
+		0460B2791CE32ACB003CE9E2 /* SWGMyBlogListResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyBlogListResponses.h; sourceTree = "<group>"; };
+		0460B27A1CE32ACB003CE9E2 /* SWGMyBlogListResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyBlogListResponses.m; sourceTree = "<group>"; };
+		0460B27B1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyWeeklyRequest.h; sourceTree = "<group>"; };
+		0460B27C1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyWeeklyRequest.m; sourceTree = "<group>"; };
+		0460B27D1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGMyWeeklyResponses.h; sourceTree = "<group>"; };
+		0460B27E1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGMyWeeklyResponses.m; sourceTree = "<group>"; };
+		0460B27F1CE32ACB003CE9E2 /* SWGNoteGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroup.h; sourceTree = "<group>"; };
+		0460B2801CE32ACB003CE9E2 /* SWGNoteGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroup.m; sourceTree = "<group>"; };
+		0460B2811CE32ACB003CE9E2 /* SWGNoteGroupListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupListRequest.h; sourceTree = "<group>"; };
+		0460B2821CE32ACB003CE9E2 /* SWGNoteGroupListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupListRequest.m; sourceTree = "<group>"; };
+		0460B2831CE32ACB003CE9E2 /* SWGNoteGroupListResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupListResponses.h; sourceTree = "<group>"; };
+		0460B2841CE32ACB003CE9E2 /* SWGNoteGroupListResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupListResponses.m; sourceTree = "<group>"; };
+		0460B2851CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupNameByIdRequest.h; sourceTree = "<group>"; };
+		0460B2861CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupNameByIdRequest.m; sourceTree = "<group>"; };
+		0460B2871CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupNameByIdResponses.h; sourceTree = "<group>"; };
+		0460B2881CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupNameByIdResponses.m; sourceTree = "<group>"; };
+		0460B2891CE32ACB003CE9E2 /* SWGNoteGroupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupRequest.h; sourceTree = "<group>"; };
+		0460B28A1CE32ACB003CE9E2 /* SWGNoteGroupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupRequest.m; sourceTree = "<group>"; };
+		0460B28B1CE32ACB003CE9E2 /* SWGNoteGroupResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGNoteGroupResponses.h; sourceTree = "<group>"; };
+		0460B28C1CE32ACB003CE9E2 /* SWGNoteGroupResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGNoteGroupResponses.m; sourceTree = "<group>"; };
+		0460B28D1CE32ACB003CE9E2 /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
+		0460B28E1CE32ACB003CE9E2 /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
+		0460B28F1CE32ACB003CE9E2 /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
+		0460B2901CE32ACB003CE9E2 /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
+		0460B2911CE32ACB003CE9E2 /* SWGResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGResponses.h; sourceTree = "<group>"; };
+		0460B2921CE32ACB003CE9E2 /* SWGResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGResponses.m; sourceTree = "<group>"; };
+		0460B2931CE32ACB003CE9E2 /* SWGSignApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignApi.h; sourceTree = "<group>"; };
+		0460B2941CE32ACB003CE9E2 /* SWGSignApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignApi.m; sourceTree = "<group>"; };
+		0460B2951CE32ACB003CE9E2 /* SWGSignRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignRequest.h; sourceTree = "<group>"; };
+		0460B2961CE32ACB003CE9E2 /* SWGSignRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignRequest.m; sourceTree = "<group>"; };
+		0460B2971CE32ACB003CE9E2 /* SWGSignResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSignResponses.h; sourceTree = "<group>"; };
+		0460B2981CE32ACB003CE9E2 /* SWGSignResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSignResponses.m; sourceTree = "<group>"; };
+		0460B2991CE32ACB003CE9E2 /* SWGUpdateArticleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateArticleApi.h; sourceTree = "<group>"; };
+		0460B29A1CE32ACB003CE9E2 /* SWGUpdateArticleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateArticleApi.m; sourceTree = "<group>"; };
+		0460B29B1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateArticleResponses.h; sourceTree = "<group>"; };
+		0460B29C1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateArticleResponses.m; sourceTree = "<group>"; };
+		0460B29D1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUpdateWeeklyRequest.h; sourceTree = "<group>"; };
+		0460B29E1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUpdateWeeklyRequest.m; sourceTree = "<group>"; };
+		0460B29F1CE32ACB003CE9E2 /* SWGUploadFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUploadFileResponse.h; sourceTree = "<group>"; };
+		0460B2A01CE32ACB003CE9E2 /* SWGUploadFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUploadFileResponse.m; sourceTree = "<group>"; };
+		0460B2A11CE32ACB003CE9E2 /* SWGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUser.h; sourceTree = "<group>"; };
+		0460B2A21CE32ACB003CE9E2 /* SWGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUser.m; sourceTree = "<group>"; };
+		0460B2A31CE32ACB003CE9E2 /* SWGUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUserInfo.h; sourceTree = "<group>"; };
+		0460B2A41CE32ACB003CE9E2 /* SWGUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUserInfo.m; sourceTree = "<group>"; };
+		0460B2A51CE32ACB003CE9E2 /* SWGUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUserInfoRequest.h; sourceTree = "<group>"; };
+		0460B2A61CE32ACB003CE9E2 /* SWGUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUserInfoRequest.m; sourceTree = "<group>"; };
+		0460B2A71CE32ACB003CE9E2 /* SWGUserInfoResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGUserInfoResponses.h; sourceTree = "<group>"; };
+		0460B2A81CE32ACB003CE9E2 /* SWGUserInfoResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGUserInfoResponses.m; sourceTree = "<group>"; };
+		0460B2A91CE32ACB003CE9E2 /* SWGWeekly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeekly.h; sourceTree = "<group>"; };
+		0460B2AA1CE32ACB003CE9E2 /* SWGWeekly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeekly.m; sourceTree = "<group>"; };
+		0460B2AB1CE32ACB003CE9E2 /* SWGWeeklyApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyApi.h; sourceTree = "<group>"; };
+		0460B2AC1CE32ACB003CE9E2 /* SWGWeeklyApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyApi.m; sourceTree = "<group>"; };
+		0460B2AD1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyByIdRequest.h; sourceTree = "<group>"; };
+		0460B2AE1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyByIdRequest.m; sourceTree = "<group>"; };
+		0460B2AF1CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyByIdResponses.h; sourceTree = "<group>"; };
+		0460B2B01CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyByIdResponses.m; sourceTree = "<group>"; };
+		0460B2B11CE32ACB003CE9E2 /* SWGWeeklyListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyListRequest.h; sourceTree = "<group>"; };
+		0460B2B21CE32ACB003CE9E2 /* SWGWeeklyListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyListRequest.m; sourceTree = "<group>"; };
+		0460B2B31CE32ACB003CE9E2 /* SWGWeeklyListResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGWeeklyListResponses.h; sourceTree = "<group>"; };
+		0460B2B41CE32ACB003CE9E2 /* SWGWeeklyListResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGWeeklyListResponses.m; sourceTree = "<group>"; };
 		04ECA6211CD33F1B00C2513A /* NoteBookSignService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookSignService.h; sourceTree = "<group>"; };
 		04ECA6231CD3401700C2513A /* NoteBookConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBookConfigure.h; sourceTree = "<group>"; };
 		2030B45A1BFF1C1D00C96C6B /* code-gen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "code-gen"; sourceTree = "<group>"; };
@@ -290,85 +394,137 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		049152CA1CDB65B500EAE9E0 /* noteApiSDK */ = {
+		0460B2341CE32ACB003CE9E2 /* noteApiSDK */ = {
 			isa = PBXGroup;
 			children = (
-				049152CB1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.h */,
-				049152CC1CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.m */,
-				049152CD1CDB65B500EAE9E0 /* SWGAddArticleApi.h */,
-				049152CE1CDB65B500EAE9E0 /* SWGAddArticleApi.m */,
-				049152CF1CDB65B500EAE9E0 /* SWGAddArticleResponses.h */,
-				049152D01CDB65B500EAE9E0 /* SWGAddArticleResponses.m */,
-				049152D11CDB65B500EAE9E0 /* SWGAddWeeklyRequest.h */,
-				049152D21CDB65B500EAE9E0 /* SWGAddWeeklyRequest.m */,
-				049152D31CDB65B500EAE9E0 /* SWGAddWeeklyResponses.h */,
-				049152D41CDB65B500EAE9E0 /* SWGAddWeeklyResponses.m */,
-				049152D51CDB65B500EAE9E0 /* SWGAllArticleApi.h */,
-				049152D61CDB65B500EAE9E0 /* SWGAllArticleApi.m */,
-				049152D71CDB65B500EAE9E0 /* SWGApi.h */,
-				049152D81CDB65B500EAE9E0 /* SWGApi.m */,
-				049152D91CDB65B500EAE9E0 /* SWGApiClient.h */,
-				049152DA1CDB65B500EAE9E0 /* SWGApiClient.m */,
-				049152DB1CDB65B500EAE9E0 /* SWGArticle.h */,
-				049152DC1CDB65B500EAE9E0 /* SWGArticle.m */,
-				049152DD1CDB65B500EAE9E0 /* SWGArticleList.h */,
-				049152DE1CDB65B500EAE9E0 /* SWGArticleList.m */,
-				049152DF1CDB65B500EAE9E0 /* SWGArticleListApi.h */,
-				049152E01CDB65B500EAE9E0 /* SWGArticleListApi.m */,
-				049152E11CDB65B500EAE9E0 /* SWGConfiguration.h */,
-				049152E21CDB65B500EAE9E0 /* SWGConfiguration.m */,
-				049152E31CDB65B500EAE9E0 /* SWGDeleteArticleApi.h */,
-				049152E41CDB65B500EAE9E0 /* SWGDeleteArticleApi.m */,
-				049152E51CDB65B500EAE9E0 /* SWGDelWeeklyRequest.h */,
-				049152E61CDB65B500EAE9E0 /* SWGDelWeeklyRequest.m */,
-				049152E71CDB65B500EAE9E0 /* SWGFile.h */,
-				049152E81CDB65B500EAE9E0 /* SWGFile.m */,
-				049152E91CDB65B500EAE9E0 /* SWGGetArticleApi.h */,
-				049152EA1CDB65B500EAE9E0 /* SWGGetArticleApi.m */,
-				049152EB1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.h */,
-				049152EC1CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.m */,
-				049152ED1CDB65B500EAE9E0 /* SWGId.h */,
-				049152EE1CDB65B500EAE9E0 /* SWGId.m */,
-				049152EF1CDB65B500EAE9E0 /* SWGIdList.h */,
-				049152F01CDB65B500EAE9E0 /* SWGIdList.m */,
-				049152F11CDB65B500EAE9E0 /* SWGIdListApi.h */,
-				049152F21CDB65B500EAE9E0 /* SWGIdListApi.m */,
-				049152F31CDB65B500EAE9E0 /* SWGMakeUrlApi.h */,
-				049152F41CDB65B500EAE9E0 /* SWGMakeUrlApi.m */,
-				049152F51CDB65B500EAE9E0 /* SWGMyWeeklyRequest.h */,
-				049152F61CDB65B500EAE9E0 /* SWGMyWeeklyRequest.m */,
-				049152F71CDB65B500EAE9E0 /* SWGMyWeeklyResponses.h */,
-				049152F81CDB65B500EAE9E0 /* SWGMyWeeklyResponses.m */,
-				049152F91CDB65B500EAE9E0 /* SWGObject.h */,
-				049152FA1CDB65B500EAE9E0 /* SWGObject.m */,
-				049152FB1CDB65B500EAE9E0 /* SWGQueryParamCollection.h */,
-				049152FC1CDB65B500EAE9E0 /* SWGQueryParamCollection.m */,
-				049152FD1CDB65B500EAE9E0 /* SWGResponses.h */,
-				049152FE1CDB65B500EAE9E0 /* SWGResponses.m */,
-				049152FF1CDB65B500EAE9E0 /* SWGSignApi.h */,
-				049153001CDB65B500EAE9E0 /* SWGSignApi.m */,
-				049153011CDB65B500EAE9E0 /* SWGSignRequest.h */,
-				049153021CDB65B500EAE9E0 /* SWGSignRequest.m */,
-				049153031CDB65B500EAE9E0 /* SWGSignResponses.h */,
-				049153041CDB65B500EAE9E0 /* SWGSignResponses.m */,
-				049153051CDB65B500EAE9E0 /* SWGUpdateArticleApi.h */,
-				049153061CDB65B500EAE9E0 /* SWGUpdateArticleApi.m */,
-				049153071CDB65B500EAE9E0 /* SWGUpdateArticleResponses.h */,
-				049153081CDB65B500EAE9E0 /* SWGUpdateArticleResponses.m */,
-				049153091CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.h */,
-				0491530A1CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.m */,
-				0491530B1CDB65B500EAE9E0 /* SWGUploadFileResponse.h */,
-				0491530C1CDB65B500EAE9E0 /* SWGUploadFileResponse.m */,
-				0491530D1CDB65B500EAE9E0 /* SWGUser.h */,
-				0491530E1CDB65B500EAE9E0 /* SWGUser.m */,
-				0491530F1CDB65B500EAE9E0 /* SWGWeekly.h */,
-				049153101CDB65B500EAE9E0 /* SWGWeekly.m */,
-				049153111CDB65B500EAE9E0 /* SWGWeeklyApi.h */,
-				049153121CDB65B500EAE9E0 /* SWGWeeklyApi.m */,
-				049153131CDB65B500EAE9E0 /* SWGWeeklyListRequest.h */,
-				049153141CDB65B500EAE9E0 /* SWGWeeklyListRequest.m */,
-				049153151CDB65B500EAE9E0 /* SWGWeeklyListResponses.h */,
-				049153161CDB65B500EAE9E0 /* SWGWeeklyListResponses.m */,
+				0460B2351CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.h */,
+				0460B2361CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.m */,
+				0460B2371CE32ACB003CE9E2 /* SWGAddArticleApi.h */,
+				0460B2381CE32ACB003CE9E2 /* SWGAddArticleApi.m */,
+				0460B2391CE32ACB003CE9E2 /* SWGAddArticleResponses.h */,
+				0460B23A1CE32ACB003CE9E2 /* SWGAddArticleResponses.m */,
+				0460B23B1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.h */,
+				0460B23C1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.m */,
+				0460B23D1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.h */,
+				0460B23E1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.m */,
+				0460B23F1CE32ACB003CE9E2 /* SWGAddWeeklyRequest.h */,
+				0460B2401CE32ACB003CE9E2 /* SWGAddWeeklyRequest.m */,
+				0460B2411CE32ACB003CE9E2 /* SWGAddWeeklyResponses.h */,
+				0460B2421CE32ACB003CE9E2 /* SWGAddWeeklyResponses.m */,
+				0460B2431CE32ACB003CE9E2 /* SWGAllArticleApi.h */,
+				0460B2441CE32ACB003CE9E2 /* SWGAllArticleApi.m */,
+				0460B2451CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.h */,
+				0460B2461CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.m */,
+				0460B2471CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.h */,
+				0460B2481CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.m */,
+				0460B2491CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.h */,
+				0460B24A1CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.m */,
+				0460B24B1CE32ACB003CE9E2 /* SWGApi.h */,
+				0460B24C1CE32ACB003CE9E2 /* SWGApi.m */,
+				0460B24D1CE32ACB003CE9E2 /* SWGApiClient.h */,
+				0460B24E1CE32ACB003CE9E2 /* SWGApiClient.m */,
+				0460B24F1CE32ACB003CE9E2 /* SWGArticle.h */,
+				0460B2501CE32ACB003CE9E2 /* SWGArticle.m */,
+				0460B2511CE32ACB003CE9E2 /* SWGArticleList.h */,
+				0460B2521CE32ACB003CE9E2 /* SWGArticleList.m */,
+				0460B2531CE32ACB003CE9E2 /* SWGArticleListApi.h */,
+				0460B2541CE32ACB003CE9E2 /* SWGArticleListApi.m */,
+				0460B2551CE32ACB003CE9E2 /* SWGConfiguration.h */,
+				0460B2561CE32ACB003CE9E2 /* SWGConfiguration.m */,
+				0460B2571CE32ACB003CE9E2 /* SWGDeleteArticleApi.h */,
+				0460B2581CE32ACB003CE9E2 /* SWGDeleteArticleApi.m */,
+				0460B2591CE32ACB003CE9E2 /* SWGDelWeeklyRequest.h */,
+				0460B25A1CE32ACB003CE9E2 /* SWGDelWeeklyRequest.m */,
+				0460B25B1CE32ACB003CE9E2 /* SWGEmptyResponses.h */,
+				0460B25C1CE32ACB003CE9E2 /* SWGEmptyResponses.m */,
+				0460B25D1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.h */,
+				0460B25E1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.m */,
+				0460B25F1CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.h */,
+				0460B2601CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.m */,
+				0460B2611CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.h */,
+				0460B2621CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.m */,
+				0460B2631CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.h */,
+				0460B2641CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.m */,
+				0460B2651CE32ACB003CE9E2 /* SWGFile.h */,
+				0460B2661CE32ACB003CE9E2 /* SWGFile.m */,
+				0460B2671CE32ACB003CE9E2 /* SWGGetArticleApi.h */,
+				0460B2681CE32ACB003CE9E2 /* SWGGetArticleApi.m */,
+				0460B2691CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.h */,
+				0460B26A1CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.m */,
+				0460B26B1CE32ACB003CE9E2 /* SWGId.h */,
+				0460B26C1CE32ACB003CE9E2 /* SWGId.m */,
+				0460B26D1CE32ACB003CE9E2 /* SWGIdList.h */,
+				0460B26E1CE32ACB003CE9E2 /* SWGIdList.m */,
+				0460B26F1CE32ACB003CE9E2 /* SWGIdListApi.h */,
+				0460B2701CE32ACB003CE9E2 /* SWGIdListApi.m */,
+				0460B2711CE32ACB003CE9E2 /* SWGIsBlogRequest.h */,
+				0460B2721CE32ACB003CE9E2 /* SWGIsBlogRequest.m */,
+				0460B2731CE32ACB003CE9E2 /* SWGIsBlogResponses.h */,
+				0460B2741CE32ACB003CE9E2 /* SWGIsBlogResponses.m */,
+				0460B2751CE32ACB003CE9E2 /* SWGMakeUrlApi.h */,
+				0460B2761CE32ACB003CE9E2 /* SWGMakeUrlApi.m */,
+				0460B2771CE32ACB003CE9E2 /* SWGMyBlogListRequest.h */,
+				0460B2781CE32ACB003CE9E2 /* SWGMyBlogListRequest.m */,
+				0460B2791CE32ACB003CE9E2 /* SWGMyBlogListResponses.h */,
+				0460B27A1CE32ACB003CE9E2 /* SWGMyBlogListResponses.m */,
+				0460B27B1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.h */,
+				0460B27C1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.m */,
+				0460B27D1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.h */,
+				0460B27E1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.m */,
+				0460B27F1CE32ACB003CE9E2 /* SWGNoteGroup.h */,
+				0460B2801CE32ACB003CE9E2 /* SWGNoteGroup.m */,
+				0460B2811CE32ACB003CE9E2 /* SWGNoteGroupListRequest.h */,
+				0460B2821CE32ACB003CE9E2 /* SWGNoteGroupListRequest.m */,
+				0460B2831CE32ACB003CE9E2 /* SWGNoteGroupListResponses.h */,
+				0460B2841CE32ACB003CE9E2 /* SWGNoteGroupListResponses.m */,
+				0460B2851CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.h */,
+				0460B2861CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.m */,
+				0460B2871CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.h */,
+				0460B2881CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.m */,
+				0460B2891CE32ACB003CE9E2 /* SWGNoteGroupRequest.h */,
+				0460B28A1CE32ACB003CE9E2 /* SWGNoteGroupRequest.m */,
+				0460B28B1CE32ACB003CE9E2 /* SWGNoteGroupResponses.h */,
+				0460B28C1CE32ACB003CE9E2 /* SWGNoteGroupResponses.m */,
+				0460B28D1CE32ACB003CE9E2 /* SWGObject.h */,
+				0460B28E1CE32ACB003CE9E2 /* SWGObject.m */,
+				0460B28F1CE32ACB003CE9E2 /* SWGQueryParamCollection.h */,
+				0460B2901CE32ACB003CE9E2 /* SWGQueryParamCollection.m */,
+				0460B2911CE32ACB003CE9E2 /* SWGResponses.h */,
+				0460B2921CE32ACB003CE9E2 /* SWGResponses.m */,
+				0460B2931CE32ACB003CE9E2 /* SWGSignApi.h */,
+				0460B2941CE32ACB003CE9E2 /* SWGSignApi.m */,
+				0460B2951CE32ACB003CE9E2 /* SWGSignRequest.h */,
+				0460B2961CE32ACB003CE9E2 /* SWGSignRequest.m */,
+				0460B2971CE32ACB003CE9E2 /* SWGSignResponses.h */,
+				0460B2981CE32ACB003CE9E2 /* SWGSignResponses.m */,
+				0460B2991CE32ACB003CE9E2 /* SWGUpdateArticleApi.h */,
+				0460B29A1CE32ACB003CE9E2 /* SWGUpdateArticleApi.m */,
+				0460B29B1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.h */,
+				0460B29C1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.m */,
+				0460B29D1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.h */,
+				0460B29E1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.m */,
+				0460B29F1CE32ACB003CE9E2 /* SWGUploadFileResponse.h */,
+				0460B2A01CE32ACB003CE9E2 /* SWGUploadFileResponse.m */,
+				0460B2A11CE32ACB003CE9E2 /* SWGUser.h */,
+				0460B2A21CE32ACB003CE9E2 /* SWGUser.m */,
+				0460B2A31CE32ACB003CE9E2 /* SWGUserInfo.h */,
+				0460B2A41CE32ACB003CE9E2 /* SWGUserInfo.m */,
+				0460B2A51CE32ACB003CE9E2 /* SWGUserInfoRequest.h */,
+				0460B2A61CE32ACB003CE9E2 /* SWGUserInfoRequest.m */,
+				0460B2A71CE32ACB003CE9E2 /* SWGUserInfoResponses.h */,
+				0460B2A81CE32ACB003CE9E2 /* SWGUserInfoResponses.m */,
+				0460B2A91CE32ACB003CE9E2 /* SWGWeekly.h */,
+				0460B2AA1CE32ACB003CE9E2 /* SWGWeekly.m */,
+				0460B2AB1CE32ACB003CE9E2 /* SWGWeeklyApi.h */,
+				0460B2AC1CE32ACB003CE9E2 /* SWGWeeklyApi.m */,
+				0460B2AD1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.h */,
+				0460B2AE1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.m */,
+				0460B2AF1CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.h */,
+				0460B2B01CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.m */,
+				0460B2B11CE32ACB003CE9E2 /* SWGWeeklyListRequest.h */,
+				0460B2B21CE32ACB003CE9E2 /* SWGWeeklyListRequest.m */,
+				0460B2B31CE32ACB003CE9E2 /* SWGWeeklyListResponses.h */,
+				0460B2B41CE32ACB003CE9E2 /* SWGWeeklyListResponses.m */,
 			);
 			path = noteApiSDK;
 			sourceTree = "<group>";
@@ -460,7 +616,7 @@
 		20D709C21C0C442200F301AB /* services */ = {
 			isa = PBXGroup;
 			children = (
-				049152CA1CDB65B500EAE9E0 /* noteApiSDK */,
+				0460B2341CE32ACB003CE9E2 /* noteApiSDK */,
 				20D709C31C0C447F00F301AB /* NoteBookDALService.h */,
 				20D709C41C0C447F00F301AB /* NoteBookDALService.m */,
 				20D709BA1C0406F300F301AB /* NoteBookArticleService.h */,
@@ -499,59 +655,85 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0491534B1CDB65B500EAE9E0 /* SWGSignApi.h in Headers */,
-				049153591CDB65B500EAE9E0 /* SWGUser.h in Headers */,
-				0491532B1CDB65B500EAE9E0 /* SWGArticleListApi.h in Headers */,
-				0491532F1CDB65B500EAE9E0 /* SWGDeleteArticleApi.h in Headers */,
-				049153411CDB65B500EAE9E0 /* SWGMyWeeklyRequest.h in Headers */,
+				0460B3011CE32ACB003CE9E2 /* SWGNoteGroupListRequest.h in Headers */,
+				0460B3331CE32ACB003CE9E2 /* SWGWeeklyListResponses.h in Headers */,
+				0460B3031CE32ACB003CE9E2 /* SWGNoteGroupListResponses.h in Headers */,
+				0460B2EB1CE32ACB003CE9E2 /* SWGId.h in Headers */,
+				0460B2F51CE32ACB003CE9E2 /* SWGMakeUrlApi.h in Headers */,
+				0460B2BF1CE32ACB003CE9E2 /* SWGAddWeeklyRequest.h in Headers */,
+				0460B30D1CE32ACB003CE9E2 /* SWGObject.h in Headers */,
+				0460B2D11CE32ACB003CE9E2 /* SWGArticleList.h in Headers */,
+				0460B3071CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.h in Headers */,
+				0460B2BB1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.h in Headers */,
+				0460B3191CE32ACB003CE9E2 /* SWGUpdateArticleApi.h in Headers */,
+				0460B3111CE32ACB003CE9E2 /* SWGResponses.h in Headers */,
 				20D709F91C0E9B2E00F301AB /* ErrorHandler.h in Headers */,
-				049153531CDB65B500EAE9E0 /* SWGUpdateArticleResponses.h in Headers */,
-				0491531D1CDB65B500EAE9E0 /* SWGAddWeeklyRequest.h in Headers */,
 				2089CC551BFF12C500B80E5A /* NoteBookLib.h in Headers */,
-				0491535B1CDB65B500EAE9E0 /* SWGWeekly.h in Headers */,
-				0491535D1CDB65B500EAE9E0 /* SWGWeeklyApi.h in Headers */,
+				0460B32F1CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.h in Headers */,
+				0460B2C11CE32ACB003CE9E2 /* SWGAddWeeklyResponses.h in Headers */,
+				0460B2ED1CE32ACB003CE9E2 /* SWGIdList.h in Headers */,
+				0460B3211CE32ACB003CE9E2 /* SWGUser.h in Headers */,
+				0460B3231CE32ACB003CE9E2 /* SWGUserInfo.h in Headers */,
+				0460B3291CE32ACB003CE9E2 /* SWGWeekly.h in Headers */,
+				0460B2E11CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.h in Headers */,
+				0460B31B1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.h in Headers */,
+				0460B2BD1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.h in Headers */,
+				0460B2C31CE32ACB003CE9E2 /* SWGAllArticleApi.h in Headers */,
+				0460B3151CE32ACB003CE9E2 /* SWGSignRequest.h in Headers */,
 				2030B48D1BFF1D2B00C96C6B /* NoteBookLib_gen.h in Headers */,
-				0491534D1CDB65B500EAE9E0 /* SWGSignRequest.h in Headers */,
-				049153171CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.h in Headers */,
-				0491531B1CDB65B500EAE9E0 /* SWGAddArticleResponses.h in Headers */,
-				0491535F1CDB65B500EAE9E0 /* SWGWeeklyListRequest.h in Headers */,
+				0460B2E71CE32ACB003CE9E2 /* SWGGetArticleApi.h in Headers */,
+				0460B2F71CE32ACB003CE9E2 /* SWGMyBlogListRequest.h in Headers */,
+				0460B2CB1CE32ACB003CE9E2 /* SWGApi.h in Headers */,
+				0460B3131CE32ACB003CE9E2 /* SWGSignApi.h in Headers */,
+				0460B2B51CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.h in Headers */,
+				0460B2CF1CE32ACB003CE9E2 /* SWGArticle.h in Headers */,
+				0460B2DF1CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.h in Headers */,
+				0460B2DB1CE32ACB003CE9E2 /* SWGEmptyResponses.h in Headers */,
+				0460B2B91CE32ACB003CE9E2 /* SWGAddArticleResponses.h in Headers */,
+				0460B2E31CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.h in Headers */,
 				04ECA6221CD33F1B00C2513A /* NoteBookSignService.h in Headers */,
-				0491533D1CDB65B500EAE9E0 /* SWGIdListApi.h in Headers */,
-				049153611CDB65B500EAE9E0 /* SWGWeeklyListResponses.h in Headers */,
-				049153351CDB65B500EAE9E0 /* SWGGetArticleApi.h in Headers */,
+				0460B2D71CE32ACB003CE9E2 /* SWGDeleteArticleApi.h in Headers */,
+				0460B2F11CE32ACB003CE9E2 /* SWGIsBlogRequest.h in Headers */,
+				0460B2D91CE32ACB003CE9E2 /* SWGDelWeeklyRequest.h in Headers */,
+				0460B2FD1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.h in Headers */,
 				20D709C91C0C4BC500F301AB /* RACCommand+Ext.h in Headers */,
+				0460B3311CE32ACB003CE9E2 /* SWGWeeklyListRequest.h in Headers */,
+				0460B3251CE32ACB003CE9E2 /* SWGUserInfoRequest.h in Headers */,
 				207555BC1C3FAE2A00253F7E /* NSString+Ext.h in Headers */,
-				0491533F1CDB65B500EAE9E0 /* SWGMakeUrlApi.h in Headers */,
+				0460B2FB1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.h in Headers */,
+				0460B32D1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.h in Headers */,
 				04ECA6241CD3401700C2513A /* NoteBookConfigure.h in Headers */,
-				049153551CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.h in Headers */,
-				049153331CDB65B500EAE9E0 /* SWGFile.h in Headers */,
-				049153491CDB65B500EAE9E0 /* SWGResponses.h in Headers */,
+				0460B3271CE32ACB003CE9E2 /* SWGUserInfoResponses.h in Headers */,
+				0460B31F1CE32ACB003CE9E2 /* SWGUploadFileResponse.h in Headers */,
+				0460B2D51CE32ACB003CE9E2 /* SWGConfiguration.h in Headers */,
 				20D709FF1C0E9D2000F301AB /* RACSignal+Ext.h in Headers */,
 				20D709C01C04437400F301AB /* SWGApi+RAC.h in Headers */,
+				0460B2D31CE32ACB003CE9E2 /* SWGArticleListApi.h in Headers */,
 				20D709BC1C0406F300F301AB /* NoteBookArticleService.h in Headers */,
 				2089CC6D1BFF162100B80E5A /* Person.h in Headers */,
-				049153191CDB65B500EAE9E0 /* SWGAddArticleApi.h in Headers */,
-				0491533B1CDB65B500EAE9E0 /* SWGIdList.h in Headers */,
-				049153271CDB65B500EAE9E0 /* SWGArticle.h in Headers */,
+				0460B32B1CE32ACB003CE9E2 /* SWGWeeklyApi.h in Headers */,
+				0460B30F1CE32ACB003CE9E2 /* SWGQueryParamCollection.h in Headers */,
+				0460B2F91CE32ACB003CE9E2 /* SWGMyBlogListResponses.h in Headers */,
+				0460B31D1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.h in Headers */,
+				0460B2E91CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.h in Headers */,
+				0460B2C91CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.h in Headers */,
+				0460B2F31CE32ACB003CE9E2 /* SWGIsBlogResponses.h in Headers */,
+				0460B2B71CE32ACB003CE9E2 /* SWGAddArticleApi.h in Headers */,
+				0460B2FF1CE32ACB003CE9E2 /* SWGNoteGroup.h in Headers */,
 				20D709FB1C0E9B2E00F301AB /* ErrorHandlerManager.h in Headers */,
+				0460B30B1CE32ACB003CE9E2 /* SWGNoteGroupResponses.h in Headers */,
+				0460B2E51CE32ACB003CE9E2 /* SWGFile.h in Headers */,
 				20D709C51C0C447F00F301AB /* NoteBookDALService.h in Headers */,
-				049153431CDB65B500EAE9E0 /* SWGMyWeeklyResponses.h in Headers */,
-				049153511CDB65B500EAE9E0 /* SWGUpdateArticleApi.h in Headers */,
-				049153371CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.h in Headers */,
-				049153571CDB65B500EAE9E0 /* SWGUploadFileResponse.h in Headers */,
-				049153311CDB65B500EAE9E0 /* SWGDelWeeklyRequest.h in Headers */,
-				0491534F1CDB65B500EAE9E0 /* SWGSignResponses.h in Headers */,
-				049153451CDB65B500EAE9E0 /* SWGObject.h in Headers */,
-				049153211CDB65B500EAE9E0 /* SWGAllArticleApi.h in Headers */,
+				0460B2C51CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.h in Headers */,
+				0460B3051CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.h in Headers */,
+				0460B2EF1CE32ACB003CE9E2 /* SWGIdListApi.h in Headers */,
+				0460B2C71CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.h in Headers */,
+				0460B2DD1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.h in Headers */,
 				207556511C3FB47800253F7E /* NoteBookWeeklyService.h in Headers */,
-				0491531F1CDB65B500EAE9E0 /* SWGAddWeeklyResponses.h in Headers */,
-				049153291CDB65B500EAE9E0 /* SWGArticleList.h in Headers */,
+				0460B2CD1CE32ACB003CE9E2 /* SWGApiClient.h in Headers */,
+				0460B3091CE32ACB003CE9E2 /* SWGNoteGroupRequest.h in Headers */,
 				207555C01C3FAE9E00253F7E /* NSMutableString+Ext.h in Headers */,
-				049153471CDB65B500EAE9E0 /* SWGQueryParamCollection.h in Headers */,
-				0491532D1CDB65B500EAE9E0 /* SWGConfiguration.h in Headers */,
-				049153391CDB65B500EAE9E0 /* SWGId.h in Headers */,
-				049153251CDB65B500EAE9E0 /* SWGApiClient.h in Headers */,
-				049153231CDB65B500EAE9E0 /* SWGApi.h in Headers */,
+				0460B3171CE32ACB003CE9E2 /* SWGSignResponses.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,56 +889,82 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0460B2D61CE32ACB003CE9E2 /* SWGConfiguration.m in Sources */,
+				0460B2C21CE32ACB003CE9E2 /* SWGAddWeeklyResponses.m in Sources */,
+				0460B2E01CE32ACB003CE9E2 /* SWGFavoriteBlogListResponses.m in Sources */,
+				0460B31E1CE32ACB003CE9E2 /* SWGUpdateWeeklyRequest.m in Sources */,
+				0460B3001CE32ACB003CE9E2 /* SWGNoteGroup.m in Sources */,
+				0460B3041CE32ACB003CE9E2 /* SWGNoteGroupListResponses.m in Sources */,
+				0460B2EE1CE32ACB003CE9E2 /* SWGIdList.m in Sources */,
+				0460B3341CE32ACB003CE9E2 /* SWGWeeklyListResponses.m in Sources */,
 				207555C11C3FAE9E00253F7E /* NSMutableString+Ext.m in Sources */,
-				0491531A1CDB65B500EAE9E0 /* SWGAddArticleApi.m in Sources */,
-				0491534A1CDB65B500EAE9E0 /* SWGResponses.m in Sources */,
+				0460B2C81CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogRequest.m in Sources */,
+				0460B2B81CE32ACB003CE9E2 /* SWGAddArticleApi.m in Sources */,
 				20D709FA1C0E9B2E00F301AB /* ErrorHandler.m in Sources */,
-				049153581CDB65B500EAE9E0 /* SWGUploadFileResponse.m in Sources */,
-				0491535E1CDB65B500EAE9E0 /* SWGWeeklyApi.m in Sources */,
-				0491534C1CDB65B500EAE9E0 /* SWGSignApi.m in Sources */,
-				0491535A1CDB65B500EAE9E0 /* SWGUser.m in Sources */,
-				0491533C1CDB65B500EAE9E0 /* SWGIdList.m in Sources */,
 				2089CC6E1BFF162100B80E5A /* Person.m in Sources */,
-				0491531E1CDB65B500EAE9E0 /* SWGAddWeeklyRequest.m in Sources */,
-				049153241CDB65B500EAE9E0 /* SWGApi.m in Sources */,
-				049153341CDB65B500EAE9E0 /* SWGFile.m in Sources */,
-				049153621CDB65B500EAE9E0 /* SWGWeeklyListResponses.m in Sources */,
+				0460B2EC1CE32ACB003CE9E2 /* SWGId.m in Sources */,
+				0460B2CC1CE32ACB003CE9E2 /* SWGApi.m in Sources */,
+				0460B2D81CE32ACB003CE9E2 /* SWGDeleteArticleApi.m in Sources */,
 				20D709BD1C0406F300F301AB /* NoteBookArticleService.m in Sources */,
-				049153281CDB65B500EAE9E0 /* SWGArticle.m in Sources */,
-				049153301CDB65B500EAE9E0 /* SWGDeleteArticleApi.m in Sources */,
-				0491535C1CDB65B500EAE9E0 /* SWGWeekly.m in Sources */,
-				049153561CDB65B500EAE9E0 /* SWGUpdateWeeklyRequest.m in Sources */,
+				0460B2F01CE32ACB003CE9E2 /* SWGIdListApi.m in Sources */,
+				0460B31C1CE32ACB003CE9E2 /* SWGUpdateArticleResponses.m in Sources */,
 				20D709CA1C0C4BC500F301AB /* RACCommand+Ext.m in Sources */,
+				0460B2CE1CE32ACB003CE9E2 /* SWGApiClient.m in Sources */,
 				20D709C61C0C447F00F301AB /* NoteBookDALService.m in Sources */,
-				049153181CDB65B500EAE9E0 /* JSONValueTransformer+ISO8601.m in Sources */,
-				049153221CDB65B500EAE9E0 /* SWGAllArticleApi.m in Sources */,
-				0491531C1CDB65B500EAE9E0 /* SWGAddArticleResponses.m in Sources */,
-				049153321CDB65B500EAE9E0 /* SWGDelWeeklyRequest.m in Sources */,
-				049153361CDB65B500EAE9E0 /* SWGGetArticleApi.m in Sources */,
+				0460B3021CE32ACB003CE9E2 /* SWGNoteGroupListRequest.m in Sources */,
+				0460B30A1CE32ACB003CE9E2 /* SWGNoteGroupRequest.m in Sources */,
+				0460B3281CE32ACB003CE9E2 /* SWGUserInfoResponses.m in Sources */,
+				0460B2FE1CE32ACB003CE9E2 /* SWGMyWeeklyResponses.m in Sources */,
+				0460B2B61CE32ACB003CE9E2 /* JSONValueTransformer+ISO8601.m in Sources */,
+				0460B2BA1CE32ACB003CE9E2 /* SWGAddArticleResponses.m in Sources */,
+				0460B3121CE32ACB003CE9E2 /* SWGResponses.m in Sources */,
+				0460B3221CE32ACB003CE9E2 /* SWGUser.m in Sources */,
+				0460B32C1CE32ACB003CE9E2 /* SWGWeeklyApi.m in Sources */,
+				0460B2F21CE32ACB003CE9E2 /* SWGIsBlogRequest.m in Sources */,
+				0460B3301CE32ACB003CE9E2 /* SWGWeeklyByIdResponses.m in Sources */,
+				0460B2CA1CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlogResponses.m in Sources */,
+				0460B2DC1CE32ACB003CE9E2 /* SWGEmptyResponses.m in Sources */,
+				0460B2E81CE32ACB003CE9E2 /* SWGGetArticleApi.m in Sources */,
+				0460B2D21CE32ACB003CE9E2 /* SWGArticleList.m in Sources */,
+				0460B3321CE32ACB003CE9E2 /* SWGWeeklyListRequest.m in Sources */,
+				0460B2C61CE32ACB003CE9E2 /* SWGAlreadyFavoriteBlog.m in Sources */,
+				0460B2BC1CE32ACB003CE9E2 /* SWGAddNoteGroupRequest.m in Sources */,
+				0460B2D01CE32ACB003CE9E2 /* SWGArticle.m in Sources */,
+				0460B30C1CE32ACB003CE9E2 /* SWGNoteGroupResponses.m in Sources */,
 				2075564E1C3FB31D00253F7E /* NoteBookSignService.m in Sources */,
-				049153541CDB65B500EAE9E0 /* SWGUpdateArticleResponses.m in Sources */,
-				0491533A1CDB65B500EAE9E0 /* SWGId.m in Sources */,
-				0491532C1CDB65B500EAE9E0 /* SWGArticleListApi.m in Sources */,
+				0460B32E1CE32ACB003CE9E2 /* SWGWeeklyByIdRequest.m in Sources */,
+				0460B2BE1CE32ACB003CE9E2 /* SWGAddNoteGroupResponses.m in Sources */,
+				0460B2C41CE32ACB003CE9E2 /* SWGAllArticleApi.m in Sources */,
+				0460B32A1CE32ACB003CE9E2 /* SWGWeekly.m in Sources */,
+				0460B2F41CE32ACB003CE9E2 /* SWGIsBlogResponses.m in Sources */,
+				0460B2C01CE32ACB003CE9E2 /* SWGAddWeeklyRequest.m in Sources */,
+				0460B3181CE32ACB003CE9E2 /* SWGSignResponses.m in Sources */,
+				0460B2FC1CE32ACB003CE9E2 /* SWGMyWeeklyRequest.m in Sources */,
 				20D709FC1C0E9B2E00F301AB /* ErrorHandlerManager.m in Sources */,
-				049153401CDB65B500EAE9E0 /* SWGMakeUrlApi.m in Sources */,
-				049153601CDB65B500EAE9E0 /* SWGWeeklyListRequest.m in Sources */,
-				049153381CDB65B500EAE9E0 /* SWGGetArticleByIdRequest.m in Sources */,
+				0460B2F81CE32ACB003CE9E2 /* SWGMyBlogListRequest.m in Sources */,
+				0460B3081CE32ACB003CE9E2 /* SWGNoteGroupNameByIdResponses.m in Sources */,
+				0460B2EA1CE32ACB003CE9E2 /* SWGGetArticleByIdRequest.m in Sources */,
 				20D70A001C0E9D2000F301AB /* RACSignal+Ext.m in Sources */,
+				0460B2DE1CE32ACB003CE9E2 /* SWGFavoriteBlogListRequest.m in Sources */,
+				0460B3161CE32ACB003CE9E2 /* SWGSignRequest.m in Sources */,
 				207556521C3FB47800253F7E /* NoteBookWeeklyService.m in Sources */,
-				049153481CDB65B500EAE9E0 /* SWGQueryParamCollection.m in Sources */,
-				049153461CDB65B500EAE9E0 /* SWGObject.m in Sources */,
-				049153201CDB65B500EAE9E0 /* SWGAddWeeklyResponses.m in Sources */,
+				0460B3261CE32ACB003CE9E2 /* SWGUserInfoRequest.m in Sources */,
+				0460B2D41CE32ACB003CE9E2 /* SWGArticleListApi.m in Sources */,
 				207555BD1C3FAE2A00253F7E /* NSString+Ext.m in Sources */,
-				049153421CDB65B500EAE9E0 /* SWGMyWeeklyRequest.m in Sources */,
-				049153501CDB65B500EAE9E0 /* SWGSignResponses.m in Sources */,
+				0460B2FA1CE32ACB003CE9E2 /* SWGMyBlogListResponses.m in Sources */,
+				0460B3061CE32ACB003CE9E2 /* SWGNoteGroupNameByIdRequest.m in Sources */,
+				0460B3201CE32ACB003CE9E2 /* SWGUploadFileResponse.m in Sources */,
+				0460B30E1CE32ACB003CE9E2 /* SWGObject.m in Sources */,
+				0460B2E61CE32ACB003CE9E2 /* SWGFile.m in Sources */,
+				0460B3101CE32ACB003CE9E2 /* SWGQueryParamCollection.m in Sources */,
+				0460B2F61CE32ACB003CE9E2 /* SWGMakeUrlApi.m in Sources */,
+				0460B31A1CE32ACB003CE9E2 /* SWGUpdateArticleApi.m in Sources */,
+				0460B3141CE32ACB003CE9E2 /* SWGSignApi.m in Sources */,
+				0460B2E41CE32ACB003CE9E2 /* SWGFavoriteBlogResponses.m in Sources */,
+				0460B3241CE32ACB003CE9E2 /* SWGUserInfo.m in Sources */,
+				0460B2E21CE32ACB003CE9E2 /* SWGFavoriteBlogRequest.m in Sources */,
 				20D709C11C04437400F301AB /* SWGApi+RAC.m in Sources */,
-				0491532A1CDB65B500EAE9E0 /* SWGArticleList.m in Sources */,
-				049153521CDB65B500EAE9E0 /* SWGUpdateArticleApi.m in Sources */,
-				049153441CDB65B500EAE9E0 /* SWGMyWeeklyResponses.m in Sources */,
-				0491533E1CDB65B500EAE9E0 /* SWGIdListApi.m in Sources */,
-				0491532E1CDB65B500EAE9E0 /* SWGConfiguration.m in Sources */,
-				0491534E1CDB65B500EAE9E0 /* SWGSignRequest.m in Sources */,
-				049153261CDB65B500EAE9E0 /* SWGApiClient.m in Sources */,
+				0460B2DA1CE32ACB003CE9E2 /* SWGDelWeeklyRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

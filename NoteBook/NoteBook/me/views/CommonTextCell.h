@@ -13,6 +13,7 @@
 
 @interface CommonTextCell : NBTableViewCell
 
+@property (nonatomic,strong) UISwitch *switchbtn;
 @property (nonatomic,strong,readonly) CommonTextCellViewModel *viewModel;
 
 @end

@@ -10,6 +10,8 @@
 #import "CommonTextCellViewModel.h"
 #import "PersonalManagerHeadCell.h"
 #import "PersonalInformationViewController.h"
+#import "MyBlogViewController.h"
+#import "MyFavoriteViewController.h"
 
 
 @interface PersonalViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
@@ -164,11 +166,13 @@
         PersonalManagerHeadCell *headCell = (PersonalManagerHeadCell *)cell;
         headCell.previewBtn.rac_command = [RACCommand commandWithBlock:^(id input) {
             @strongify(self)
-            [self goToPreview];
+            //我的博客
+            [self goToMyBlog];
         }];
         headCell.browseHistoryBtn.rac_command = [RACCommand commandWithBlock:^(id input) {
-//            @strongify(self)
-//            [self goToBrowseHistory];
+            @strongify(self)
+            //我的收藏
+            [self goToMyFavorite];
         }];
         headCell.headBtn.rac_command = [RACCommand commandWithBlock:^(id input) {
             @strongify(self)
@@ -177,11 +181,17 @@
     }
     return  cell;
 }
-- (void)goToPreview {
-    PersonalInformationViewController *detailVC = [PersonalInformationViewController viewController];
+
+
+
+- (void)goToMyBlog {
+    MyBlogViewController *detailVC = [MyBlogViewController viewController];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
-
+- (void)goToMyFavorite {
+    MyFavoriteViewController *detailVC = [MyFavoriteViewController viewController];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 - (void) tableView:(UITableView *)tableView didSelectCellWithViewModel:(CellViewModel *)cellViewModel {
     if ([cellViewModel isKindOfClass:CommonTextCellViewModel.class]) {
         CommonTextCellModel *commonTextCellModel = (CommonTextCellModel*)cellViewModel.model;

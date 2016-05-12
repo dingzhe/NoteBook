@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, CommonTextCellEditType) {
     CommonTextCellEditTypeCustomPickerView,
     CommonTextCellEditTypeDictSelect,
     CommonTextCellEditTypeImageUpload,
+    CommonTextCellEditTypeSwitch,
 };
 
 @interface CommonTextCellModel : NSObject
@@ -27,7 +28,8 @@ typedef NS_ENUM(NSUInteger, CommonTextCellEditType) {
 @property (nonatomic,strong) NSString *detailText;
 @property (nonatomic,strong) NSString *tag;
 @property (nonatomic,assign) BOOL showIndicator;
-
+@property (nonatomic,assign) BOOL showSwitch;
+@property (nonatomic,assign) BOOL isBlog;
 @property (nonatomic,strong) NSString *destinationVC;
 @property (nonatomic,strong) NSString *dictType;
 @property (nonatomic,strong) NSString *dictPcode;
@@ -42,6 +44,7 @@ typedef NS_ENUM(NSUInteger, CommonTextCellEditType) {
 //- (instancetype)initWithDict:(SWGVisionDict*)dict;
 - (instancetype)initWithDictType:(NSString*)type pcode:(NSString*)pcode;
 - (instancetype)initWithImageType:(NSString*)imageType imageUrl:(NSString*)imageUrl;
+- (instancetype)initShowSwitch;
 
 
 @end

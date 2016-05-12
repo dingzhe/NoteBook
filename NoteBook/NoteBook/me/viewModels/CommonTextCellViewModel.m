@@ -37,8 +37,9 @@
             [mutableAttributedString replaceFont:[UIFont largeFont] inRange:range];
             [mutableAttributedString replaceColor:isDisable?[UIColor lightGray2TextColor]:[UIColor whiteColor] inRange:range];
         }];
-        
+        _showSwitch = model.showSwitch;
         _showIndicator = model.showIndicator;
+        _isblog = model.isBlog;
         if (model.editType == CommonTextCellEditTypeDisable) {
             _showIndicator = NO;
         }
@@ -64,6 +65,7 @@
     CGSize detailTextSize = [NSAttributedString getSizeOfAttributedStr:_detailText withConstraints:CGSizeMake(self.cellWidth-cOuterInset.left-(_showIndicator==YES?40:cOuterInset.right), CGFLOAT_MAX)];
     _detailTextFrame = CGRectMake(cOuterInset.left,oneLineHeight,detailTextSize.width,detailTextSize.height);
     
+    _switchBtnFrame = CGRectMake(self.cellWidth-(_showSwitch==YES?40:cOuterInset.right)- 30, 0,120, self.cellHeight);
     if (_detailText.length>0) {
         self.cellHeight = CGRectGetMaxY(_detailTextFrame)+(oneLineHeight-titleSize.height)/2;
     }else{

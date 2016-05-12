@@ -36,15 +36,24 @@
         _loginCommand = [NoteBookSignService.service signInCommandEnable:enabeld];
         [_loginCommand.responses subscribeNext:^(SWGSignResponses* response) {
             @strongify(self)
-            NSString *uid = [NSString stringWithFormat:@"%@",response.data.userid];
-            NSString *headimage = [NSString stringWithFormat:@"%@",response.data.headimage];
-            NSString *email = [NSString stringWithFormat:@"%@",response.data.email];
-            NSString *username = [NSString stringWithFormat:@"%@",response.data.username];
-            [UserModel.currentUser signedOnWithUid:uid];
-            [UserModel.currentUser updateHeadImage:headimage];
-            [UserModel.currentUser updateEmail:email];
-            [UserModel.currentUser updateUserName:username];
-            [self showHUDMessage:@"登录成功"];
+            
+            
+            if (response.code.integerValue == 200) {
+                NSString *uid = [NSString stringWithFormat:@"%@",response.data.userid];
+                NSString *headimage = [NSString stringWithFormat:@"%@",response.data.headimage];
+                NSString *email = [NSString stringWithFormat:@"%@",response.data.email];
+                NSString *username = [NSString stringWithFormat:@"%@",response.data.username];
+                [UserModel.currentUser signedOnWithUid:uid];
+                [UserModel.currentUser updateHeadImage:headimage];
+                [UserModel.currentUser updateEmail:email];
+                [UserModel.currentUser updateUserName:username];
+                [UserModel.currentUser updateProfile:response.data];
+                [self showHUDMessage:@"登录成功"];
+            }else{
+                [self showHUDMessage:response.message];
+            }
+            
+            
         }];
         [_loginCommand.errors subscribeNext:^(NSError *error) {
 //            DDLogError(@"Error while login:%@", error);

@@ -13,10 +13,11 @@
 #import "MKPreviewController.h"
 #import "FeedViewController+Refresh.h"
 #import "WeeklyListCellViewModel.h"
+#import "UIView+HUD.h"
 
 @interface WeeklyListTableViewController () <UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) RACCommand *weeklyListCommand;
+@property (nonatomic, strong) RACCommand *favoriteBlogCommand;
 @property (nonatomic, strong) RACCommand *delWeeklyCommand;
 @property (nonatomic, strong) RACCommand *updateWeeklyCommand;
 
@@ -32,6 +33,39 @@
     result.navBackBarButtonHidden = YES;
     return result;
 }
+- (instancetype) initWithModel:(WeeklyListTableViewModel *)model {
+    self = [super initWithModel:model];
+    if (self) {
+//        _selectedSignal = [RACSubject subject];
+        _favoriteBlogCommand = [NoteBookWeeklyService.service favoriteBlogCommandEnable:nil];
+        @weakify(self)
+        [_favoriteBlogCommand.responses subscribeNext:^(SWGFavoriteBlogResponses *response) {
+            @strongify(self)
+//            [self.viewModel showHUDMessage:response.message];
+            if (response.code.integerValue == 200) {
+                [self.navigationController.view showHUDWithText:nil detailText:response.message autoDismiss:YES];
+            }else{
+                [self.navigationController.view  showHUDWithText:nil detailText:@"收藏失败" autoDismiss:YES];
+            
+            }
+            
+        }];
+        [_favoriteBlogCommand.errors subscribeNext:^(NSError *error) {
+            [self.navigationController.view  showHUDWithText:nil detailText:@"收藏失败" autoDismiss:YES];
+            
+        }];
+    }
+    return self;
+}
+- (void)FavoriteBlog:(SWGWeekly *)model{
+    SWGFavoriteBlogRequest *request = [[SWGFavoriteBlogRequest alloc] init];
+    request.uid = UserModel.currentUser.uid;
+    request.weeklyid = model.weeklyid;
+    [_favoriteBlogCommand execute:request];
+}
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,6 +95,23 @@
 //        [previewController ]
         previewController.type = MKPreviewControllerBlog;
         previewController.title = model.title;
+        @weakify(self) //@strongify(self)
+        previewController.onclickBarBtn  = ^(UIBarButtonItem *item){
+            if ([item.title isEqualToString:@"收藏"]) {
+                @strongify(self)
+                [self FavoriteBlog:model];
+                NSLog(@"weeklyid:%@",model.weeklyid);
+            }else if([item.title isEqualToString:@"分享"]){
+                NSLog(@"weeklyid:%@",model.weeklyid);
+            }
+        };
+
+        
+        
+        
+        
+        
+        
 //        previewController.onComplete   = self.onComplete;
         [self.navigationController pushViewController:previewController
                                              animated:YES];

@@ -64,8 +64,8 @@
 }
 
 - (void)setBlogType{
-    UIBarButtonItem *favorites = [[UIBarButtonItem alloc] initWithTitle:@"收藏" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit:)];
-    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithTitle:@"分享" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit:)];
+    UIBarButtonItem *favorites = [[UIBarButtonItem alloc] initWithTitle:@"收藏" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit1:)];
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithTitle:@"分享" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit1:)];
     self.navigationItem.rightBarButtonItems = @[share,favorites];
 }
 
@@ -74,7 +74,10 @@
     UIBarButtonItem *setting = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:self action:@selector(onSubmit1:)];
     self.navigationItem.rightBarButtonItems = @[setting,edit];
 }
+- (void)openNoteSettingView{
+    
 
+}
 
 - (void)onSubmit:(id)sender
 {

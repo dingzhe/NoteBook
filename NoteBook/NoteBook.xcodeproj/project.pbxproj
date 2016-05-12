@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0460B1341CE2BF74003CE9E2 /* NoteSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B1331CE2BF74003CE9E2 /* NoteSettingViewController.m */; };
+		0460B1371CE2C9FC003CE9E2 /* NoteSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B1361CE2C9FC003CE9E2 /* NoteSettingViewModel.m */; };
+		0460B2331CE31ABA003CE9E2 /* NoteSetGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2321CE31ABA003CE9E2 /* NoteSetGroupViewController.m */; };
+		0460B3371CE331CF003CE9E2 /* NoteSetGroupViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3361CE331CF003CE9E2 /* NoteSetGroupViewModel.m */; };
+		0460B33A1CE33E3F003CE9E2 /* NoteGroupCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3391CE33E3F003CE9E2 /* NoteGroupCellViewModel.m */; };
+		0460B33D1CE342E1003CE9E2 /* NoteGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B33C1CE342E1003CE9E2 /* NoteGroupTableViewCell.m */; };
+		0460B3401CE3628E003CE9E2 /* MyBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B33F1CE3628E003CE9E2 /* MyBlogViewController.m */; };
+		0460B3431CE362E7003CE9E2 /* MyBlogViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3421CE362E7003CE9E2 /* MyBlogViewModel.m */; };
+		0460B3461CE36340003CE9E2 /* MyFavoriteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3451CE36340003CE9E2 /* MyFavoriteViewModel.m */; };
+		0460B3491CE3635B003CE9E2 /* MyFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3481CE3635B003CE9E2 /* MyFavoriteViewController.m */; };
 		049151471CD9F0AC00EAE9E0 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049151461CD9F0AC00EAE9E0 /* FeedViewController.m */; };
 		0491514A1CD9F0FE00EAE9E0 /* FeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049151491CD9F0FE00EAE9E0 /* FeedViewModel.m */; };
 		0491514E1CD9F14D00EAE9E0 /* CellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491514D1CD9F14D00EAE9E0 /* CellViewModel.m */; };
@@ -210,6 +220,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0460B1321CE2BF74003CE9E2 /* NoteSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteSettingViewController.h; sourceTree = "<group>"; };
+		0460B1331CE2BF74003CE9E2 /* NoteSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSettingViewController.m; sourceTree = "<group>"; };
+		0460B1351CE2C9FC003CE9E2 /* NoteSettingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteSettingViewModel.h; sourceTree = "<group>"; };
+		0460B1361CE2C9FC003CE9E2 /* NoteSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSettingViewModel.m; sourceTree = "<group>"; };
+		0460B2311CE31ABA003CE9E2 /* NoteSetGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteSetGroupViewController.h; sourceTree = "<group>"; };
+		0460B2321CE31ABA003CE9E2 /* NoteSetGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSetGroupViewController.m; sourceTree = "<group>"; };
+		0460B3351CE331CF003CE9E2 /* NoteSetGroupViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteSetGroupViewModel.h; sourceTree = "<group>"; };
+		0460B3361CE331CF003CE9E2 /* NoteSetGroupViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSetGroupViewModel.m; sourceTree = "<group>"; };
+		0460B3381CE33E3F003CE9E2 /* NoteGroupCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteGroupCellViewModel.h; sourceTree = "<group>"; };
+		0460B3391CE33E3F003CE9E2 /* NoteGroupCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteGroupCellViewModel.m; sourceTree = "<group>"; };
+		0460B33B1CE342E1003CE9E2 /* NoteGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteGroupTableViewCell.h; sourceTree = "<group>"; };
+		0460B33C1CE342E1003CE9E2 /* NoteGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteGroupTableViewCell.m; sourceTree = "<group>"; };
+		0460B33E1CE3628E003CE9E2 /* MyBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlogViewController.h; sourceTree = "<group>"; };
+		0460B33F1CE3628E003CE9E2 /* MyBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBlogViewController.m; sourceTree = "<group>"; };
+		0460B3411CE362E7003CE9E2 /* MyBlogViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlogViewModel.h; sourceTree = "<group>"; };
+		0460B3421CE362E7003CE9E2 /* MyBlogViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBlogViewModel.m; sourceTree = "<group>"; };
+		0460B3441CE36340003CE9E2 /* MyFavoriteViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteViewModel.h; sourceTree = "<group>"; };
+		0460B3451CE36340003CE9E2 /* MyFavoriteViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteViewModel.m; sourceTree = "<group>"; };
+		0460B3471CE3635B003CE9E2 /* MyFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteViewController.h; sourceTree = "<group>"; };
+		0460B3481CE3635B003CE9E2 /* MyFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteViewController.m; sourceTree = "<group>"; };
 		049151451CD9F0AC00EAE9E0 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		049151461CD9F0AC00EAE9E0 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		049151481CD9F0FE00EAE9E0 /* FeedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModel.h; sourceTree = "<group>"; };
@@ -621,6 +651,10 @@
 			children = (
 				04979DFB1CDE338D00D4BCC6 /* NoteViewController.h */,
 				04979DFC1CDE338D00D4BCC6 /* NoteViewController.m */,
+				0460B1321CE2BF74003CE9E2 /* NoteSettingViewController.h */,
+				0460B1331CE2BF74003CE9E2 /* NoteSettingViewController.m */,
+				0460B2311CE31ABA003CE9E2 /* NoteSetGroupViewController.h */,
+				0460B2321CE31ABA003CE9E2 /* NoteSetGroupViewController.m */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -632,6 +666,12 @@
 				04979DFF1CDE338D00D4BCC6 /* NoteCellViewModel.m */,
 				04979E001CDE338D00D4BCC6 /* NoteViewModel.h */,
 				04979E011CDE338D00D4BCC6 /* NoteViewModel.m */,
+				0460B1351CE2C9FC003CE9E2 /* NoteSettingViewModel.h */,
+				0460B1361CE2C9FC003CE9E2 /* NoteSettingViewModel.m */,
+				0460B3351CE331CF003CE9E2 /* NoteSetGroupViewModel.h */,
+				0460B3361CE331CF003CE9E2 /* NoteSetGroupViewModel.m */,
+				0460B3381CE33E3F003CE9E2 /* NoteGroupCellViewModel.h */,
+				0460B3391CE33E3F003CE9E2 /* NoteGroupCellViewModel.m */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -641,6 +681,8 @@
 			children = (
 				04979E031CDE338D00D4BCC6 /* NoteTableViewCell.h */,
 				04979E041CDE338D00D4BCC6 /* NoteTableViewCell.m */,
+				0460B33B1CE342E1003CE9E2 /* NoteGroupTableViewCell.h */,
+				0460B33C1CE342E1003CE9E2 /* NoteGroupTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -660,6 +702,10 @@
 			children = (
 				04979E151CDE347900D4BCC6 /* PersonalViewController.h */,
 				04979E161CDE347900D4BCC6 /* PersonalViewController.m */,
+				0460B33E1CE3628E003CE9E2 /* MyBlogViewController.h */,
+				0460B33F1CE3628E003CE9E2 /* MyBlogViewController.m */,
+				0460B3471CE3635B003CE9E2 /* MyFavoriteViewController.h */,
+				0460B3481CE3635B003CE9E2 /* MyFavoriteViewController.m */,
 				04979E601CDE3BF200D4BCC6 /* CommonEditViewController.h */,
 				04979E611CDE3BF200D4BCC6 /* CommonEditViewController.m */,
 				04979E6C1CDE3F3800D4BCC6 /* PersonalInformationViewController.h */,
@@ -703,6 +749,10 @@
 				04979E411CDE357E00D4BCC6 /* PersonalViewModel.m */,
 				04979E721CDE430600D4BCC6 /* PersonalInformationViewModel.h */,
 				04979E731CDE430600D4BCC6 /* PersonalInformationViewModel.m */,
+				0460B3411CE362E7003CE9E2 /* MyBlogViewModel.h */,
+				0460B3421CE362E7003CE9E2 /* MyBlogViewModel.m */,
+				0460B3441CE36340003CE9E2 /* MyFavoriteViewModel.h */,
+				0460B3451CE36340003CE9E2 /* MyFavoriteViewModel.m */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -1365,6 +1415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04ECA5D51CD32B4800C2513A /* UIFont+DZNote.m in Sources */,
+				0460B33D1CE342E1003CE9E2 /* NoteGroupTableViewCell.m in Sources */,
 				0491516D1CDA103C00EAE9E0 /* UITableView+DzNote.m in Sources */,
 				04ECA6151CD33B1800C2513A /* NSObject+RAC+Ext.m in Sources */,
 				04979E531CDE358D00D4BCC6 /* PersonalManagerHeadCell.m in Sources */,
@@ -1381,12 +1432,14 @@
 				04ECA50F1CCFB97C00C2513A /* syntax.md in Sources */,
 				04ECA5EB1CD32F8800C2513A /* AuthPermissionRegistry.m in Sources */,
 				04979E451CDE357E00D4BCC6 /* EmptyCellViewModel.m in Sources */,
+				0460B3401CE3628E003CE9E2 /* MyBlogViewController.m in Sources */,
 				04ECA5E31CD32EC800C2513A /* TextValidator.m in Sources */,
 				04ECA4FF1CCFB97C00C2513A /* MKRegularExpressionHighlighter.m in Sources */,
 				04ECA61B1CD33B1800C2513A /* RACOnceSubscriptingAssignmentTrampoline.m in Sources */,
 				04979E511CDE358D00D4BCC6 /* CommonTextCell.m in Sources */,
 				04979DF81CDE333300D4BCC6 /* WeeklyListCell.m in Sources */,
 				04ECA5741CD320BD00C2513A /* UIViewController+Ext.m in Sources */,
+				0460B2331CE31ABA003CE9E2 /* NoteSetGroupViewController.m in Sources */,
 				049151611CD9F9D700EAE9E0 /* FeedViewController+Refresh.m in Sources */,
 				04ECA6171CD33B1800C2513A /* RACCommand+Ext.m in Sources */,
 				04979E621CDE3BF200D4BCC6 /* CommonEditViewController.m in Sources */,
@@ -1394,6 +1447,7 @@
 				049151701CDA110200EAE9E0 /* IconTextCellModel.m in Sources */,
 				04ECA61F1CD33B1800C2513A /* UIButton+RACCommandSupport+Ext.m in Sources */,
 				04979E6E1CDE3F3800D4BCC6 /* PersonalInformationViewController.m in Sources */,
+				0460B3431CE362E7003CE9E2 /* MyBlogViewModel.m in Sources */,
 				049151471CD9F0AC00EAE9E0 /* FeedViewController.m in Sources */,
 				0491515E1CD9F81800EAE9E0 /* UIView+Ext.m in Sources */,
 				04ECA6191CD33B1800C2513A /* RACDisposableSubscriptingAssignmentTrampoline.m in Sources */,
@@ -1422,11 +1476,13 @@
 				04979E431CDE357E00D4BCC6 /* CommonTextCellViewModel.m in Sources */,
 				04ECA4F91CCFB97C00C2513A /* MKMarkdownLinkHighlighter.m in Sources */,
 				04ECA61D1CD33B1800C2513A /* RACSignal+Ext.m in Sources */,
+				0460B3461CE36340003CE9E2 /* MyFavoriteViewModel.m in Sources */,
 				049151971CDA21F900EAE9E0 /* NSMutableAttributedString+Ext.m in Sources */,
 				04979E5F1CDE369A00D4BCC6 /* LoginViewModel.m in Sources */,
 				04979E421CDE357E00D4BCC6 /* CommonTextCellModel.m in Sources */,
 				04979E491CDE357E00D4BCC6 /* PersonalViewModel.m in Sources */,
 				049151571CD9F50B00EAE9E0 /* ModelProxy.m in Sources */,
+				0460B1371CE2C9FC003CE9E2 /* NoteSettingViewModel.m in Sources */,
 				2089CC281BFF12A100B80E5A /* ViewController.m in Sources */,
 				04ECA4F81CCFB97C00C2513A /* MKMarkdownItalicHighlighter.m in Sources */,
 				20D70A061C0ECD5F00F301AB /* TestViewModel.m in Sources */,
@@ -1452,6 +1508,7 @@
 				04ECA4F61CCFB97C00C2513A /* MKMarkdownHeaderHighlighter.m in Sources */,
 				04979DF51CDE333300D4BCC6 /* WeeklyListTableViewController.m in Sources */,
 				0491514E1CD9F14D00EAE9E0 /* CellViewModel.m in Sources */,
+				0460B33A1CE33E3F003CE9E2 /* NoteGroupCellViewModel.m in Sources */,
 				04979E521CDE358D00D4BCC6 /* EmptyTableViewCell.m in Sources */,
 				04ECA5641CD308C700C2513A /* NBBaseNavigationController.m in Sources */,
 				0491514A1CD9F0FE00EAE9E0 /* FeedViewModel.m in Sources */,
@@ -1460,15 +1517,18 @@
 				04ECA4BD1CCFB96800C2513A /* MarkdownViewController.m in Sources */,
 				04ECA5601CD3086B00C2513A /* UIViewController+DzNote.m in Sources */,
 				04979DE11CDE31ED00D4BCC6 /* UserModel.m in Sources */,
+				0460B3371CE331CF003CE9E2 /* NoteSetGroupViewModel.m in Sources */,
 				04979E5E1CDE369A00D4BCC6 /* RegisterViewController.m in Sources */,
 				04ECA5981CD32A9100C2513A /* UIViewController+Redirect.m in Sources */,
 				04ECA5FE1CD334AE00C2513A /* ConcurrentUtils.m in Sources */,
 				04ECA5681CD308F700C2513A /* NBBaseViewController.m in Sources */,
 				049151941CDA21A300EAE9E0 /* NSAttributedString+Ext.m in Sources */,
 				2089CC221BFF12A100B80E5A /* main.m in Sources */,
+				0460B3491CE3635B003CE9E2 /* MyFavoriteViewController.m in Sources */,
 				04ECA4F11CCFB97C00C2513A /* MKHighlighterTextStorage.m in Sources */,
 				04ECA4F31CCFB97C00C2513A /* MKKeyboardToolBar.m in Sources */,
 				04ECA4FD1CCFB97C00C2513A /* MKMarkdownStrongBlockHighlighter.m in Sources */,
+				0460B1341CE2BF74003CE9E2 /* NoteSettingViewController.m in Sources */,
 				04ECA5D31CD32B4800C2513A /* UIColor+Ext.m in Sources */,
 				04ECA5BF1CD32B4800C2513A /* NSObject+Ext.m in Sources */,
 				04979DE81CDE325000D4BCC6 /* RootTabBarViewController.m in Sources */,

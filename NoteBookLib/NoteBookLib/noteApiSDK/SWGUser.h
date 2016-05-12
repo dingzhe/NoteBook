@@ -20,6 +20,6 @@
 
 @property(nonatomic) NSString* headimage;
 
-@property(nonatomic) NSString* token;
+@property(nonatomic) NSString* about;
 
 @end

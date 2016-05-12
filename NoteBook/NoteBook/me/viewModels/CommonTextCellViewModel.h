@@ -19,9 +19,11 @@
 @property (nonatomic,strong) NSAttributedString *imageUrl;
 @property (nonatomic,strong) NSAttributedString *count;
 @property (nonatomic,assign) BOOL showIndicator;
-
+@property (nonatomic,assign) BOOL showSwitch;
+@property (nonatomic,assign) BOOL isblog;
 @property (nonatomic,assign) CGRect titleFrame;
 @property (nonatomic,assign) CGRect subTitleFrame;
+@property (nonatomic,assign) CGRect switchBtnFrame;
 @property (nonatomic,assign) CGRect detailTextFrame;
 @property (nonatomic,assign) CGRect imageFrame;
 @property (nonatomic,assign) CGRect countFrame;

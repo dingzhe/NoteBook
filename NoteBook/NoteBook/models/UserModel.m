@@ -109,6 +109,7 @@ static NSString *ProfileStorageKey = @"vision.storage.usermodel.profile";
     NSString *headimage = VisionStorage.storage[HeadImageStorageKey];
     NSString *email = VisionStorage.storage[EmailStorageKey];
     NSString *username = VisionStorage.storage[UserNameStorageKey];
+    SWGUser *info = VisionStorage.storage[ProfileStorageKey];
     
 //    NSLog(@"username:%@ \n email:%@",UserModel.currentUser.username,UserModel.currentUser.email);
     
@@ -118,6 +119,7 @@ static NSString *ProfileStorageKey = @"vision.storage.usermodel.profile";
     if ([uid isNotEmpty]) {
         [self _updateStatus:UserModelSignedOn];
         [self _updateUid:uid save:NO];
+        [self _updateProfile:info save:NO];
     }else{
         [self _updateStatus:UserModelIdle];
     }
@@ -152,7 +154,7 @@ END_IMP_SINGLETON
 }
 - (void) signout {
     [self _updateUid:nil save:YES];
-    
+    [self _updateProfile:nil save:YES];
     [self _updateStatus:UserModelIdle];
     [self _updateHeadImage:nil];
     [self _updateEmail:nil];

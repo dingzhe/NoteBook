@@ -11,7 +11,207 @@ consumes:
 produces:
   - application/json
 paths:
+  /userinfo:
+    post:
+      tags:
+        - weekly
+      summary: 个人信息
+      description: 个人信息
+      operationId: userInfo
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/UserInfoRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/UserInfoResponses'
+  /updateuserinfo:
+    post:
+      tags:
+        - weekly
+      summary: 修改个人信息
+      description: 修改个人信息
+      operationId: updateUserInfo
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/UserInfo'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/UserInfoResponses'
 
+  /alreadyfavoriteblog:
+    post:
+      tags:
+        - weekly
+      summary: 判断博客是否已经收藏
+      description: 判断博客是否已经收藏
+      operationId: alreadyFavoriteBlog
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/AlreadyFavoriteBlogRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AlreadyFavoriteBlogResponses'
+            
+  /favoriteblog:
+    post:
+      tags:
+        - weekly
+      summary: 收藏博客
+      description: 收藏博客
+      operationId: favoriteBlog
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/FavoriteBlogRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/FavoriteBlogResponses'
+  /favoritebloglist:
+    post:
+      tags:
+        - weekly
+      summary: 收藏博客列表
+      description: 收藏博客列表
+      operationId: favoriteBlogList
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/FavoriteBlogListRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/FavoriteBlogListResponses'
+  /isblog:
+    post:
+      tags:
+        - weekly
+      summary: 设置笔记为博客
+      description: 设置笔记为博客
+      operationId: isBlog
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/IsBlogRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/IsBlogResponses'
+  /mybloglist:
+    post:
+      tags:
+        - weekly
+      summary: 我的博客列表
+      description: 我的博客列表
+      operationId: myBlogList
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/MyBlogListRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/MyBlogListResponses'
+  /notegroup:
+    post:
+      tags:
+        - weekly
+      summary: 设置笔记分组
+      description: 设置笔记分组
+      operationId: noteGroup
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/NoteGroupRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/NoteGroupResponses'         
+  /notegroupnamebyid:
+    post:
+      tags:
+        - weekly
+      summary: 设置笔记分组
+      description: 设置笔记分组
+      operationId: noteGroupNameById
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/NoteGroupNameByIdRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/NoteGroupNameByIdResponses'  
+  /notegrouplist:
+    post:
+      tags:
+        - weekly
+      summary: 笔记本列表
+      description: 笔记本列表
+      operationId: noteGroupList
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/NoteGroupListRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/NoteGroupListResponses' 
+  /addnotegroup:
+    post:
+      tags:
+        - weekly
+      summary: 新添笔记本
+      description: 新添笔记本
+      operationId: addNoteGroup
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/AddNoteGroupRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AddNoteGroupResponses' 
+            
   /uploadfile:
     post:
       tags:
@@ -96,6 +296,24 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/AddWeeklyResponses'
+  /weeklybyid:
+    post:
+      tags:
+        - weekly
+      summary: 根据weekid查询博客内容
+      description: 根据weekid查询博客内容
+      operationId: weeklyById
+      parameters:
+        - name: body
+          schema:
+            $ref: '#/definitions/WeeklyByIdRequest'
+          in: body
+          required: true
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/WeeklyByIdResponses'
   /delweekly:
     post:
       tags:
@@ -387,7 +605,7 @@ definitions:
         type: string
       headimage:
         type: string
-      token:
+      about:
         type: string
   Weekly:
     properties:
@@ -404,6 +622,16 @@ definitions:
       dateline:
         type: string
       private:
+        type: string
+      createtime:
+        type: string
+      updatetime:
+        type: string
+      isblog:
+        type: string
+      blogurl:
+        type: string
+      groupid:
         type: string
   AddWeeklyRequest:
     properties:
@@ -436,6 +664,298 @@ definitions:
       data:
         items:
           $ref: '#/definitions/Weekly'
+  UserInfoRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+  UserInfoResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/UserInfo'
+  UserInfo:
+    properties:
+      userid:
+        type: string
+      username:
+        type: string
+      sex:
+        type: string
+      headimage:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      about:
+        type: string
+  FavoriteBlogListRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      size:
+        type: string
+      pagenum:
+        type: string
+  FavoriteBlogListResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Weekly'
+  FavoriteBlogRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      weeklyid:
+        type: string
+  FavoriteBlogResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/AlreadyFavoriteBlog'
+  IsBlogRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      isblog:
+        type: string
+      weeklyid:
+        type: string
+  IsBlogResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/EmptyResponses'
+  MyBlogListRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+  MyBlogListResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Weekly'          
+  EmptyResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+  NoteGroupRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      groupid:
+        type: string
+      weeklyid:
+        type: string
+        
+  NoteGroupResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/EmptyResponses'           
+  NoteGroupNameByIdRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      groupid:
+        type: string
+  NoteGroupNameByIdResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/NoteGroup'              
+  NoteGroup:
+    properties:
+      groupid:
+        type: string
+      groupname:
+        type: string
+      userid:
+        type: string
+        
+  NoteGroupListRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      size:
+        type: string
+      pagenum:
+        type: string
+  NoteGroupListResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/NoteGroup'        
+  AddNoteGroupRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      groupname:
+        type: string
+  AddNoteGroupResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/EmptyResponses' 
+          
+          
+          
+  WeeklyByIdRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      weeklyid:
+        type: string          
+  WeeklyByIdResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Weekly'          
+        
+        
+        
+  AlreadyFavoriteBlogRequest:
+    properties:
+      app:
+        type: string
+      sign:
+        type: string
+      time:
+        type: string
+      uid:
+        type: string
+      weeklyid:
+        type: string
+  AlreadyFavoriteBlogResponses:
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/AlreadyFavoriteBlog'
+  AlreadyFavoriteBlog:
+    properties:
+      already:
+        type: string          
+          
+          
+          
+  MyWeeklyRequest:
   WeeklyListRequest:
     properties:
       app:

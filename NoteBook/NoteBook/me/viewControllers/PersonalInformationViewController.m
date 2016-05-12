@@ -23,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"基本资料";
+    self.title = @"个人信息";
+    [self.viewModel loadAtHead];
     [self addFreshingControls];
     [self.viewModel reload];
     @weakify(self)

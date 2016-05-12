@@ -34,6 +34,10 @@
     [_detailTitleLab setBackgroundColor:[UIColor clearColor]];
     _detailTitleLab.numberOfLines = 0;
     [self.contentView addSubview:_detailTitleLab];
+    
+    _switchbtn = [[UISwitch alloc]initWithFrame:CGRectZero];
+    [_switchbtn setBackgroundColor:[UIColor clearColor]];
+    [self.contentView addSubview:_switchbtn];
 }
 
 
@@ -43,12 +47,18 @@
     _titleLab.attributedText = viewModel.title;
     _subTitleLab.attributedText = viewModel.subTitle;
     _detailTitleLab.attributedText = viewModel.detailText;
+//    _switchbtn.isOn = viewModel.isblog;
+//    [_switchbtn setOn:viewModel.isblog];
     if (viewModel.showIndicator == NO) {
         self.accessoryType = UITableViewCellAccessoryNone;
     }else{
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
+    if (viewModel.showSwitch == YES) {
+        _switchbtn.hidden = NO;
+    }else{
+        _switchbtn.hidden = YES;
+    }
 }
 
 
@@ -58,6 +68,7 @@
     _titleLab.frame = self.viewModel.titleFrame;
     _subTitleLab.frame = self.viewModel.subTitleFrame;
     _detailTitleLab.frame = self.viewModel.detailTextFrame;
+    _switchbtn.frame = self.viewModel.switchBtnFrame;
 }
 
 @end

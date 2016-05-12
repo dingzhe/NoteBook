@@ -40,4 +40,43 @@
     return [_api commandWithSelector:@selector(uploadFileWithUid:type:file:completionHandler:)
                              enabled:enable];
 }
+
+- (RACCommand*) userInfoCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(userInfoWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) updateUserInfoCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(updateUserInfoWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) alreadyFavoriteBlogCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(alreadyFavoriteBlogWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) favoriteBlogCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(favoriteBlogWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) favoriteBlogListCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(favoriteBlogListWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) isBlogCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(isBlogWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) myBlogListCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(myBlogListWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) noteGroupCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(noteGroupWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) noteGroupNameByIdCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(noteGroupNameByIdWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) noteGroupListCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(noteGroupListWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) addNoteGroupCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(addNoteGroupWithBody:completionHandler:) enabled:enable];
+}
+- (RACCommand*) weeklyByIdCommandEnable:(RACSignal*)enable{
+    return [_api commandWithSelector:@selector(weeklyByIdWithBody:completionHandler:) enabled:enable];
+}
+
+
 @end

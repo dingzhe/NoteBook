@@ -14,6 +14,7 @@
 #import "Masonry.h"
 #import "UIView+HUD.h"
 #import "FeedViewModel+MultipleSections.h"
+#import "NoteSettingViewController.h"
 
 @implementation NoteViewController
 @dynamic viewModel;
@@ -65,8 +66,12 @@
                     @strongify(self)
                     [self presentViewController:nav animated:YES completion:nil];
 //                    [self.navigationController pushViewController:nav animated:YES];
-                
-                
+            }else if([item.title isEqualToString:@"设置"]){
+                NoteSettingViewController *vc = [NoteSettingViewController viewControllerWithModel:model];
+//                vc.model = model;
+                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+                @strongify(self)
+                [self presentViewController:nav animated:YES completion:nil];
             }
         };
         [self.navigationController pushViewController:previewController

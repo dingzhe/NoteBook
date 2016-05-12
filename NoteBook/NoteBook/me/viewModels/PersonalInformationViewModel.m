@@ -16,7 +16,7 @@
 
 @property (nonatomic,strong) SWGUser *baseInfo;
 @property (nonatomic,strong) RACCommand *updateBaseCommand;
-
+@property (nonatomic,strong) RACCommand *userInfoCommand;
 @end
 
 @implementation PersonalInformationViewModel
@@ -28,28 +28,77 @@
 - (instancetype) initWithSectionCount:(NSInteger) count {
     self = [super initWithSectionCount:count];
     if (self) {
-        if (UserModel.currentUser.profile == nil) {
-            _baseInfo = [[SWGUser alloc]init];
-        }else{
-            _baseInfo = [[SWGUser alloc]initWithDictionary:[UserModel.currentUser.profile toDictionary] error:nil];
-        }
+//        if (UserModel.currentUser.profile == nil) {
+//            _baseInfo = [[SWGUser alloc]init];
+//        }else{
+//            _baseInfo = [[SWGUser alloc]initWithDictionary:[UserModel.currentUser.profile toDictionary] error:nil];
+////            _baseInfo = UserModel.currentUser.profile;
+//        }
+        
+        
+        _baseInfo = [[SWGUser alloc]init];
         
         @weakify(self)
-        //        _updateBaseCommand = [VisionResumeService.service updateBaseCommandEnable:nil];
-        //        [_updateBaseCommand.responses subscribeNext:^(SWGUpdateBaseResponse *response) {
-        //            @strongify(self)
-        //            [self.showHUDSignal sendNext:@"保存成功"];
-        //            [[ResumeManagerViewModel sharedViewModel] refreshResume];
-        //        }];
-        //        [_updateBaseCommand.errors subscribeNext:^(NSError *error) {
-        //            DDLogError(@"Error while update base:%@", error);
-        //        }];
+        _userInfoCommand = [NoteBookWeeklyService.service userInfoCommandEnable:nil];
+        [_userInfoCommand.responses subscribeNext:^(SWGUserInfoResponses *response) {
+            @strongify(self)
+//            [self.showHUDSignal sendNext:@"保存成功"];
+            SWGUser *user = [self Models:response];
+            
+            if (user != nil) {
+                _baseInfo = user;
+                [self reload];
+                [UserModel.currentUser updateProfile:user];
+            }
+        }];
+        [_userInfoCommand.errors subscribeNext:^(NSError *error) {
+//            [self.showHUDSignal sendNext:@"保存失败"];
+            //            DDLogError(@"Error while update base:%@", error);
+        }];
+        _updateBaseCommand = [NoteBookWeeklyService.service updateUserInfoCommandEnable:nil];
+        [_updateBaseCommand.responses subscribeNext:^(SWGUserInfoResponses *response) {
+            @strongify(self)
+            if (response.code.integerValue == 200) {
+                [self.showHUDSignal sendNext:@"保存成功"];
+                SWGUser *user = [self Models:response];
+                if (user != nil) {
+                    [self reload];
+                    [UserModel.currentUser updateProfile:user];
+                }
+            }else{
+                [self.showHUDSignal sendNext:response.message];
+            }
+
+        }];
+        [_updateBaseCommand.errors subscribeNext:^(NSError *error) {
+            [self.showHUDSignal sendNext:@"保存失败"];
+//            DDLogError(@"Error while update base:%@", error);
+        }];
         
-//        self.hudExecutingSignals = @[_updateBaseCommand.executing];
+        self.hudExecutingSignals = @[_updateBaseCommand.executing];
     }
     return self;
 }
+- (void)loadAtHead{
+    SWGUserInfoRequest *request = [[SWGUserInfoRequest alloc] init];
+    request.uid = UserModel.currentUser.uid;
+    [_userInfoCommand execute:request];
 
+}
+
+- (SWGUser*)Models:(SWGUserInfoResponses *)response {
+    NSDictionary *dict = response.toDictionary;
+    id item_dict = dict[@"data"];
+    if([item_dict isKindOfClass:[NSArray class]]) {
+        if([(NSArray*)item_dict count] > 0) {
+            for (NSDictionary* dict1 in (NSArray*)item_dict) {
+                SWGUser* d = [[SWGUser alloc] initWithDictionary:dict1 error:nil];
+                return d;
+            }
+        }
+    }
+    return nil;
+}
 - (void) registerCellViewModelClasses {
     [super registerCellViewModelClasses];
     
@@ -64,54 +113,34 @@
     model0.title = @"姓名";
     model0.showIndicator = YES;
     model0.editType = CommonTextCellEditTypeInputField;
-    if (_baseInfo.username != nil && [_baseInfo.username isKindOfClass:[NSString class]]) {
+    if (_baseInfo.username != nil) {
         model0.subTitle = _baseInfo.username;
     }else{
         model0.subTitle = @"必填";
     }
     [modelAry addObject:model0];
     
-    CommonTextCellModel *model1 = [[CommonTextCellModel alloc]initWithDictType:@"com" pcode:@"sex"];
+    CommonTextCellModel *model1 = [[CommonTextCellModel alloc]init];
     model1.title = @"性别";
-    if (_baseInfo.sex != nil && [_baseInfo.sex isKindOfClass:[NSString class]]) {
+    model0.showIndicator = YES;
+    model0.editType = CommonTextCellEditTypeInputField;
+    if (_baseInfo.sex != nil) {
         model1.subTitle = _baseInfo.sex;
     }else{
         model1.subTitle = @"必填";
     }
     [modelAry addObject:model1];
     
-    //    CommonTextCellModel *model2 = [[CommonTextCellModel alloc]init];
-    //    model2.title = @"身份证号";
-    //    model2.showIndicator = YES;
-    //    model2.editType = CommonTextCellEditTypeInputField;
-    //    if (_baseInfo.idcard != nil && [_baseInfo.idcard isKindOfClass:[NSString class]]) {
-    //        model2.subTitle = _baseInfo.idcard;
-    //    }else{
-    //        model2.subTitle = @"必填";
-    //    }
-    //    [modelAry addObject:model2];
-    
-    //    CommonTextCellModel *model3 = [[CommonTextCellModel alloc]init];
-    //    model3.title = @"出生日期";
-    //    model3.showIndicator = YES;
-    //    model3.editType = CommonTextCellEditTypeDatePickerView;
-    //    if (_baseInfo.birthday != nil && [_baseInfo.birthday isKindOfClass:[NSString class]]) {
-    //        model3.subTitle = _baseInfo.birthday;
-    //    }else{
-    //        model3.subTitle = @"未填写";
-    //    }
-    //    [modelAry addObject:model3];
-    
     CommonTextCellModel *model4 = [[CommonTextCellModel alloc]init];
     model4.title = @"邮箱";
     model4.showIndicator = YES;
     model4.editType = CommonTextCellEditTypeInputField;
-    if (_baseInfo.email != nil && [_baseInfo.email isKindOfClass:[NSString class]]) {
+    if (_baseInfo.email != nil) {
         model4.subTitle = _baseInfo.email;
     }else{
         model4.subTitle = @"必填";
     }
-    [modelAry addObject:model4];
+//    [modelAry addObject:model4];
     
     CommonTextCellModel *model5 = [[CommonTextCellModel alloc]init];
     model5.title = @"手机";
@@ -124,93 +153,46 @@
     }
     [modelAry addObject:model5];
     
-    //    CommonTextCellModel *model6 = [[CommonTextCellModel alloc]initWithDictType:@"com" pcode:@"marriage"];
-    //    model6.title = @"婚姻状况";
-    //    if (_baseInfo.isMarry != nil && [_baseInfo.isMarryCn isKindOfClass:[NSString class]]) {
-    //        model6.subTitle = _baseInfo.isMarryCn;
-    //    }else{
-    //        model6.subTitle = @"未填写";
-    //    }
-    //    [modelAry addObject:model6];
-    
-    //    CommonTextCellModel *model7 = [[CommonTextCellModel alloc]initWithDictType:@"city" pcode:@"-1"];
-    //    model7.title = @"户口所在地";
-    //    if (_baseInfo.homeCity != nil && [_baseInfo.homeCityCn isKindOfClass:[NSString class]]) {
-    //        model7.subTitle = _baseInfo.homeCityCn;
-    //    }else{
-    //        model7.subTitle = @"未填写";
-    //    }
-    //    [modelAry addObject:model7];
-    
-    //    CommonTextCellModel *model8 = [[CommonTextCellModel alloc]initWithDictType:@"city" pcode:@"-1"];
-    //    model8.title = @"居住地";
-    //    if (_baseInfo.livingCity != nil && [_baseInfo.livingCityCn isKindOfClass:[NSString class]]) {
-    //        model8.subTitle = _baseInfo.livingCityCn;
-    //    }else{
-    //        model8.subTitle = @"未填写";
-    //    }
-    //    [modelAry addObject:model8];
-    
-    
     //TODO  about
-    //    CommonTextCellModel *model9 = [[CommonTextCellModel alloc]init];
-    //    model9.title = @"详细地址";
-    //    model9.showIndicator = YES;
-    //    model9.editType = CommonTextCellEditTypeTextView;
-    //    if (_baseInfo.address != nil && [_baseInfo.address isKindOfClass:[NSString class]]) {
-    //        model9.detailText = _baseInfo.address;
-    //    }else{
-    //        model9.subTitle = @"必填";
-    //    }
-    //    [modelAry addObject:model9];
-    //
-        [self setModels:modelAry inSection:0];
+    CommonTextCellModel *model9 = [[CommonTextCellModel alloc]init];
+    model9.title = @"个人简介";
+    model9.showIndicator = YES;
+    model9.editType = CommonTextCellEditTypeTextView;
+    if (_baseInfo.about != nil) {
+        model9.detailText = _baseInfo.about;
+    }else{
+        model9.subTitle = @"必填";
+    }
+    [modelAry addObject:model9];
+    [self setModels:modelAry inSection:0];
 }
 
 - (void)modifyModel:(CommonTextCellModel*)model withValue:(id)value {
     if ([model.title isEqualToString:@"姓名"]) {
         _baseInfo.username = (NSString*)value;
     }else if ([model.title isEqualToString:@"性别"]) {
-        //        SWGVisionDict *dict = (SWGVisionDict*)value;
         _baseInfo.sex = (NSString*)value;
-        //        _baseInfo.sexCn = dict.name;
-        //    }else if ([model.title isEqualToString:@"身份证号"]) {
-        //        _baseInfo.idcard = (NSString*)value;
-        //    }else if ([model.title isEqualToString:@"出生日期"]) {
-        //        _baseInfo.birthday = (NSString*)value;
     }else if ([model.title isEqualToString:@"手机"]) {
         _baseInfo.phone = (NSString*)value;
-    }else if ([model.title isEqualToString:@"邮箱"]) {
-        _baseInfo.email = (NSString*)value;
     }
-    //    }else if ([model.title isEqualToString:@"婚姻状况"]) {
-    //        SWGVisionDict *dict = (SWGVisionDict*)value;
-    //        _baseInfo.isMarry = [NSNumber numberWithInt:dict.value.intValue];
-    //        _baseInfo.isMarryCn = dict.name;
-    //    }else if ([model.title isEqualToString:@"户口所在地"]) {
-    //        SWGVisionDict *dict = (SWGVisionDict*)value;
-    //        _baseInfo.homeCity = [NSNumber numberWithInt:dict.value.intValue];
-    //        _baseInfo.homeCityCn = dict.name;
-    //    }else if ([model.title isEqualToString:@"居住地"]) {
-    //        SWGVisionDict *dict = (SWGVisionDict*)value;
-    //        _baseInfo.livingCity = [NSNumber numberWithInt:dict.value.intValue];
-    //        _baseInfo.livingCityCn = dict.name;
-    //    }else if ([model.title isEqualToString:@"详细地址"]) {
-    //        _baseInfo.address = (NSString*)value;
-    //    }
+    //    }else if ([model.title isEqualToString:@"邮箱"]) {
+//        _baseInfo.email = (NSString*)value;
+//    }
+    else if ([model.title isEqualToString:@"个人简介"]) {
+        _baseInfo.about = (NSString*)value;
+    }
     [self reload];
 }
 
 - (void)save {
-    //    SWGUpdateBaseRequest *request = [[SWGUpdateBaseRequest alloc]init];
-    //    
-    //    _baseInfo.created = nil;
-    //    _baseInfo.modified = nil;
-    //    
-    //    request.base = _baseInfo;
-    //    request.uid = UserModel.currentUser.uid;
-    //    request.rid = UserModel.currentUser.rid;
-    //    [_updateBaseCommand execute:request];
+    SWGUserInfo *request = [[SWGUserInfo alloc]init];
+    request.userid = UserModel.currentUser.uid;
+    request.username = _baseInfo.username;
+    request.sex = _baseInfo.sex;
+    request.phone = _baseInfo.phone;
+//    request.email = _baseInfo.email;
+    request.about = _baseInfo.about;
+    [_updateBaseCommand execute:request];
 }
 
 

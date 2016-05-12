@@ -22,4 +22,14 @@
 
 @property(nonatomic) NSString* private;
 
+@property(nonatomic) NSString* createtime;
+
+@property(nonatomic) NSString* updatetime;
+
+@property(nonatomic) NSString* isblog;
+
+@property(nonatomic) NSString* blogurl;
+
+@property(nonatomic) NSString* groupid;
+
 @end

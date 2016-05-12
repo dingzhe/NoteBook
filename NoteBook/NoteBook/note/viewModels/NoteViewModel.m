@@ -31,6 +31,7 @@
         [_getweeklyListCommand.responses subscribeNext:^(SWGWeeklyListResponses *response) {
             @strongify(self)
             [self updateFromGetWeeklyListResponse:response];
+            [self showHUDMessage:@"同步成功"];
         }];
         [_getweeklyListCommand.errors subscribeNext:^(NSError *error) {
             //            DDLogError(@"Error while get resume browse history:%@", error);
@@ -75,9 +76,9 @@
 }
 
 
-- (void)deleteWeekly:(NSString *)weeklyid {
+- (void)deleteWeekly:(SWGWeekly *)weekly {
     SWGDelWeeklyRequest *request = [[SWGDelWeeklyRequest alloc] init];
-    request.weeklyid = weeklyid;
+    request.weeklyid = weekly.weeklyid;
     request.uid = UserModel.currentUser.uid;
     [_delWeeklyCommand execute:request];
 }

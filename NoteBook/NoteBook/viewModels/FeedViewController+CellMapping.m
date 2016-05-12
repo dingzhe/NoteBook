@@ -18,6 +18,8 @@
 #import "CommonTextCellViewModel.h"
 #import "EmptyTableViewCell.h"
 #import "EmptyCellViewModel.h"
+#import "NoteGroupCellViewModel.h"
+#import "NoteGroupTableViewCell.h"
 
 #pragma mark -
 
@@ -43,6 +45,8 @@ static NSMutableDictionary *globalCellsMapping = nil;
         REG_CELL_VIEWMODEL(WeeklyListCell,WeeklyListCellViewModel);
         REG_CELL_VIEWMODEL(NoteTableViewCell,NoteCellViewModel);
         REG_CELL_VIEWMODEL(CommonTextCell, CommonTextCellViewModel);
+        REG_CELL_VIEWMODEL(NoteGroupTableViewCell, NoteGroupCellViewModel);
+        
     });
 }
 

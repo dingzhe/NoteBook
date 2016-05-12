@@ -17,11 +17,24 @@
         self.subTitle = @"";
         self.detailText = @"";
         self.showIndicator = YES;
+        self.showSwitch = NO;
         self.editType = CommonTextCellEditTypeNormal;
     }
     return self;
 }
-
+- (instancetype)initShowSwitch
+{
+    self = [super init];
+    if (self) {
+        self.title = @"";
+        self.subTitle = @"";
+        self.detailText = @"";
+        self.showIndicator = NO;
+        self.showSwitch = YES;
+        self.editType = CommonTextCellEditTypeSwitch;
+    }
+    return self;
+}
 //- (instancetype)initWithDict:(SWGVisionDict*)dict {
 //    self = [super init];
 //    if (self) {
@@ -45,6 +58,7 @@
         self.dictType = type;
         self.dictPcode = pcode;
         self.showIndicator = YES;
+        self.showSwitch = NO;
     }
     return self;
 }
@@ -56,6 +70,7 @@
         self.imageUrl = imageUrl;
         self.imageType = imageType;
         self.showIndicator = YES;
+        self.showSwitch = NO;
     }
     return self;
 }

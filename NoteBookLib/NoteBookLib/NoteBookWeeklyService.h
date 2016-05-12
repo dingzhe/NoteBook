@@ -17,4 +17,18 @@
 - (RACCommand*) updateWeeklyCommandEnable:(RACSignal*)enable;
 
 - (RACCommand*) uploadFileCommandEnable:(RACSignal*)enable;
+
+- (RACCommand*) userInfoCommandEnable:(RACSignal*)enable;
+- (RACCommand*) updateUserInfoCommandEnable:(RACSignal*)enable;
+- (RACCommand*) alreadyFavoriteBlogCommandEnable:(RACSignal*)enable;
+- (RACCommand*) favoriteBlogCommandEnable:(RACSignal*)enable;
+- (RACCommand*) favoriteBlogListCommandEnable:(RACSignal*)enable;
+- (RACCommand*) isBlogCommandEnable:(RACSignal*)enable;
+- (RACCommand*) myBlogListCommandEnable:(RACSignal*)enable;
+- (RACCommand*) noteGroupCommandEnable:(RACSignal*)enable;
+- (RACCommand*) noteGroupNameByIdCommandEnable:(RACSignal*)enable;
+- (RACCommand*) noteGroupListCommandEnable:(RACSignal*)enable;
+- (RACCommand*) addNoteGroupCommandEnable:(RACSignal*)enable;
+- (RACCommand*) weeklyByIdCommandEnable:(RACSignal*)enable;
+
 @end

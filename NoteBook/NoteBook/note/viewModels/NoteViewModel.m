@@ -15,6 +15,8 @@
 @property (nonatomic,strong) RACCommand *getweeklyListCommand;
 @property (nonatomic,strong) RACCommand *delWeeklyCommand;
 @property (nonatomic,strong) SWGWeeklyListResponses *weeklyListResponses;
+@property (weak, nonatomic)  DataManager *db;
+
 
 @end
 
@@ -26,11 +28,15 @@
     self = [super initWithSectionCount:count];
     if (self) {
         @weakify(self) //@strongify(self)
-
+        
+        
+        _db = [DataManager shareDataBase];
+        
         _getweeklyListCommand = [NoteBookWeeklyService.service myWeeklyCommandEnable:nil];
         [_getweeklyListCommand.responses subscribeNext:^(SWGWeeklyListResponses *response) {
             @strongify(self)
             [self updateFromGetWeeklyListResponse:response];
+            [self savaToDB:response];
             [self showHUDMessage:@"同步成功"];
         }];
         [_getweeklyListCommand.errors subscribeNext:^(NSError *error) {
@@ -45,7 +51,7 @@
         self.headerExecuting = _getweeklyListCommand.executing;
         self.hudExecutingSignals = @[_getweeklyListCommand.executing];
         
-        self.placeHolderText = @"暂无博客";
+        self.placeHolderText = @"暂无笔记";
         [[RACSignal combineLatest:@[RACObserve(self, weeklyListResponses)]] subscribeNext:^(id _) {
             @strongify(self)
             NSInteger requestCount = ((self.weeklyListResponses.data!=nil)?[self.weeklyListResponses.data count]:0);
@@ -66,7 +72,22 @@
     self.weeklyListResponses = response;
     [self resetModelSections:@[[self WeeklyListModels]]];
 }
-
+- (void )savaToDB:(SWGWeeklyListResponses *)response {
+    NSDictionary *dict = response.toDictionary;
+    id item_dict = dict[@"data"];
+    if([item_dict isKindOfClass:[NSArray class]]) {
+        if([(NSArray*)item_dict count] > 0) {
+            for (NSDictionary* dict1 in (NSArray*)item_dict) {
+                SWGWeekly* w = [[SWGWeekly alloc] initWithDictionary:dict1 error:nil];
+                if ([_db returnWeeklyById:w.weeklyid] != nil) {
+                    [_db updateItemWithWeekly:w];
+                }else{
+                    [_db insertIntoDBWithItem:w];
+                }
+            }
+        }
+    }
+}
 - (NSMutableArray*)WeeklyListModels {
     NSMutableArray *modelAry = [NSMutableArray array];
     

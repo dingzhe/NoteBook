@@ -13,6 +13,9 @@
 #import "RootTabBarViewController.h"
 //#import "PermissionManager.h"
 #import "PermissionManager+DzNote.h"
+#import "UMSocial.h"   
+#import "UMSocialSinaSSOHandler.h"
+
 @interface AppDelegate ()
 @property(nonatomic,strong)UINavigationController *navController;
 @end
@@ -26,6 +29,10 @@
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[RootTabBarViewController alloc]init];
     [PermissionManager.manager registerVisionPermissions];
+    [UMSocialData setAppKey:@"5733e97d67e58e03bc000fd2"];
+    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2351825892"
+                                              secret:@"9f175cbf56a2ba272b4fee64287d11f8"
+                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
 //    MarkdownViewController *appVC = [[MarkdownViewController alloc] init];
 //    appVC.view.backgroundColor = [UIColor orangeColor];
 //    appVC.title = @"app";
@@ -50,6 +57,14 @@
     ViewController *testVC = [ViewController viewController];
     [_navController pushViewController:testVC animated:YES];
 
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    if (result == FALSE) {
+        //调用其他SDK，例如支付宝SDK等
+    }
+    return result;
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

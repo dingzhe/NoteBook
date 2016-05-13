@@ -132,7 +132,7 @@ IMP_SINGLETON(sharedViewModel, PersonalViewModel)
     CommonTextCellModel *model2 = [[CommonTextCellModel alloc]init];
     model2.title = @"设置";
     model2.showIndicator = YES;
-    model2.destinationVC = @"PersonalInformationViewController";
+    model2.destinationVC = @"SettingViewController";
     [modelAry addObject:model2];
 //    [modelAry addObject:[EmptyCellModel seperatorModel]];
 //

@@ -25,19 +25,16 @@
     return result;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self.viewModel loadAtHead];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"笔记";
     [self.view setBackgroundColor:[UIColor whiteColor]];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onPreview:)];
-    
-    
-    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"test"
-//                                                                             style:UIBarButtonItemStylePlain
-//                                                                            target:self
-//                                                                            action:@selector(openTestView)];
     [self addFreshingControls];
     [self.viewModel loadAtHead];
 }

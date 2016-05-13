@@ -52,11 +52,12 @@
     
     self.phoneNumberTextField = [[CommonTextField alloc]initWithFrame:CGRectZero];
     _phoneNumberTextField.placeholder = @"请输入您的邮箱";
-    self.phoneNumberTextField.maxLength = MOBILE_MAX_LENGTH;
+//    self.phoneNumberTextField.maxLength = MOBILE_MAX_LENGTH;
     [self.scrollView addSubview:_phoneNumberTextField];
     
     self.verifyCodeTextField = [[CommonTextField alloc]initWithFrame:CGRectZero];
     _verifyCodeTextField.placeholder = @"请输入密码";
+    _verifyCodeTextField.secureTextEntry = YES;
     [self.scrollView addSubview:_verifyCodeTextField];
     
     self.nextButton = [UIButton buttonWithType:UIButtonTypeCustom];

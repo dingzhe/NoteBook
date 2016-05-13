@@ -14,7 +14,7 @@
 @interface GetVerifyCodeViewModel ()
 
 @property (nonatomic,strong)NSDate *latestGetVerifyCodeTime;
-
+//@property (nonatomic, readonly) RACCommand *loginUpCommand;
 @end
 
 @implementation GetVerifyCodeViewModel
@@ -33,16 +33,40 @@
             _getVerifyCodeTitle = @"设置新密码";
         }
         
-        RACSignal *getCodeEnabeld = \
+        RACSignal *enabeld = \
         [RACSignal combineLatest:@[
                                    RACObserve(self, phoneNumber),
                                    RACObserve(self, getVerifyCodeCountDown)
                                    ] reduce:^(NSString *phoneNumber, NSNumber *countDown){
-                                       return @(phoneNumber.length == MOBILE_MAX_LENGTH && 0 == countDown.integerValue);
+                                       return @(phoneNumber.length == RECEIVER_NAME_MAX_LENGTH && 0 == countDown.integerValue);
                                    }];
         
 //        _getVerifyCodeCommand = \
 //        [[VisionIdentityService service] sendSmsCommandEnable:getCodeEnabeld];
+        _loginUpCommand = [NoteBookSignService.service signUpCommandEnable:nil];
+        
+        
+        [_loginUpCommand.responses subscribeNext:^(SWGSignResponses* response) {
+            @strongify(self)
+            
+            if (response.code.integerValue == 200) {
+                [self showHUDMessage:@"注册成功，请前往登录"];
+//                @weakify(self)
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1ull * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    @strongify(self)
+                    [self.nextSignal sendNext:response];
+//                    [self.navigationController popViewControllerAnimated:YES];
+                });
+            }
+            
+            
+         
+        }];
+        [_loginUpCommand.errors subscribeNext:^(NSError *error) {
+            [self showHUDMessage:@"注册失败！"];
+            //            DDLogError(@"Error while get resume browse history:%@", error);
+        }];
+        
         
 //        [_getVerifyCodeCommand.responses subscribeNext:^(SWGSendSmsResponse *response) {
 //            @strongify(self)
@@ -59,16 +83,27 @@
 - (void)goNext {
     
     TextValidator *validator = [TextValidator alloc];
-    if (![validator valid:self.phoneNumber withType:InputValidTypeMobile]) {
+    if (![validator valid:self.phoneNumber withType:InputValidTypeNone]) {
         [self showHUDMessage:validator.validErrorMessage];
         return;
     }
     
-    if (self.verifyCode.integerValue == self.serverVerifyCode.integerValue) {
-        [_nextSignal sendNext:nil];
-    }else{
-        [self showHUDMessage:@"验证码错误"];
-    }
+    SWGSignRequest * request = [[SWGSignRequest alloc] init];
+    request.username = self.phoneNumber;
+    request.password = self.verifyCode;
+    [_loginUpCommand execute:request];
+    
+    
+    
+    
+    
+    
+    
+//    if (self.verifyCode.integerValue == self.serverVerifyCode.integerValue) {
+//      [_nextSignal sendNext:nil];
+//    }else{
+//        [self showHUDMessage:@"验证码错误"];
+//    }
 }
 
 - (void)getVerifyCode {

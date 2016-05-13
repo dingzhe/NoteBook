@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, GetVerifyCodeType) {
 @property (nonatomic,assign) NSInteger getVerifyCodeCountDown;
 @property (nonatomic,strong,readonly) RACCommand *getVerifyCodeCommand;
 @property (nonatomic,strong,readonly) RACSubject *nextSignal;
-
+@property (nonatomic,readonly) RACCommand *loginUpCommand;
 - (instancetype) initWithType:(GetVerifyCodeType)type;
 
 - (void)getVerifyCode;

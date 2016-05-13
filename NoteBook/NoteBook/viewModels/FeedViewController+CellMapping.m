@@ -20,6 +20,8 @@
 #import "EmptyCellViewModel.h"
 #import "NoteGroupCellViewModel.h"
 #import "NoteGroupTableViewCell.h"
+#import "ButtonCellViewModel.h"
+#import "ButtonCell.h"
 
 #pragma mark -
 
@@ -46,7 +48,7 @@ static NSMutableDictionary *globalCellsMapping = nil;
         REG_CELL_VIEWMODEL(NoteTableViewCell,NoteCellViewModel);
         REG_CELL_VIEWMODEL(CommonTextCell, CommonTextCellViewModel);
         REG_CELL_VIEWMODEL(NoteGroupTableViewCell, NoteGroupCellViewModel);
-        
+        REG_CELL_VIEWMODEL(ButtonCell, ButtonCellViewModel);
     });
 }
 

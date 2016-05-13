@@ -164,23 +164,24 @@
     
     @weakify(self)
     
-    RegisterViewModel *registerVM = [[RegisterViewModel alloc] init];
+    GetVerifyCodeViewModel *registerVM = [[GetVerifyCodeViewModel alloc] initWithType:GetVerifyCodeTypeRegister];
+//    RegisterViewController *registerVC = [[RegisterViewController alloc] initWithModel:registerVM];
+//    [self.navigationController pushViewController:registerVC animated:YES];
+    
     
     // show register view controller after getting verify code
     [registerVM.nextSignal subscribeNext:^(id x) {
         @strongify(self)
-        if ([self.navigationController hasPushedViewControllerWithClass:RegisterViewController.class]) {
-            return;
-        }
-        RegisterViewController *registerVC = [[RegisterViewController alloc] initWithModel:registerVM];
-        [self.navigationController pushViewController:registerVC animated:YES];
+        [self.navigationController popToRootViewControllerAnimated:YES];
     }];
     
 //     after register successfully
-    [registerVM.registerCommand.responses subscribeNext:^(id _) {
-        @strongify(self)
-        [self.navigationController popToRootViewControllerAnimated:YES];
-    }];
+//    [registerVM.loginUpCommand.responses subscribeNext:^(id _) {
+//        @strongify(self)
+//        
+//        
+//
+//    }];
     
     GetVerifyCodeViewController *getCodeVC = [[GetVerifyCodeViewController alloc] initWithViewModel:registerVM];
     [self.navigationController pushViewController:getCodeVC animated:YES];

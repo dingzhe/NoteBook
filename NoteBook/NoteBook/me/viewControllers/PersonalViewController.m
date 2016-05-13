@@ -12,6 +12,7 @@
 #import "PersonalInformationViewController.h"
 #import "MyBlogViewController.h"
 #import "MyFavoriteViewController.h"
+#import "SettingViewController.h"
 
 
 @interface PersonalViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
@@ -26,21 +27,6 @@
     result.navBackBarButtonHidden = YES;
     return result;
 }
-//- (instancetype) initWithModel:(FeedViewModel *)model {
-//    if (self = [super initWithModel:model]) {
-//    }
-//    
-//    return self;
-//}
-
-//- (instancetype)init
-//{
-//    self = [super initWithModel:[PersonalViewModel sharedViewModel]];
-//    if (self) {
-//        
-//    }
-//    return self;
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,35 +36,12 @@
     [self.viewModel refreshResume];
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(signout)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:UIBarButtonItemStyleDone target:self action:@selector(signout)];
-    //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn setTitle:UserModel.currentUser.uid
-//         forState:UIControlStateNormal];
-//   
-//    [btn setTitleColor:[UIColor blueColor]
-//              forState:UIControlStateNormal];
-//    [self.view addSubview:btn];
-//    [btn sizeToFit];
-//    [btn setCenter:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)];
-//    [btn addTarget:self
-//            action:@selector(onClick:)
-//  forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)signout{
-    UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:@"确定退出该账号的登录？"
-                                                        delegate:nil
-                                               cancelButtonTitle:@"取消"
-                                          destructiveButtonTitle:@"退出"
-                                               otherButtonTitles:nil];
-    
-    [[action.rac_buttonClickedSignal takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNumber *index) {
-        if (0 == index.integerValue) {
-            [UserModel.currentUser signout];
-            
-        }
-    }];
-    
-    [action showInView:[UIApplication sharedApplication].keyWindow];
+
+    SettingViewController *desVC = [SettingViewController viewController];
+    [self.navigationController pushViewController:desVC animated:YES];
 
 }
 
@@ -207,18 +170,5 @@
     NSString *content  = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     
     content = [content stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-    
-//    MKMarkdownController *controller = [MKMarkdownController new];
-//    controller.defaultMarkdownText   = content;
-//    controller.onComplete = ^(UIViewController *c)
-//    {
-//        MKPreviewController *pc = (MKPreviewController *) c;
-//        NSLog(@"%@", pc.bodyMarkdown);
-//        [c dismissViewControllerAnimated:YES completion:nil];
-//    };
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-//    [self presentViewController:nav
-//                       animated:YES
-//                     completion:nil];
 }
 @end

@@ -14,6 +14,10 @@
 #import "FeedViewController+Refresh.h"
 #import "WeeklyListCellViewModel.h"
 #import "UIView+HUD.h"
+#import "UMSocialSnsService.h"
+#import "UMSocialSnsPlatformManager.h"
+
+
 
 @interface WeeklyListTableViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -72,14 +76,6 @@
     // Do any additional setup after loading the view.
     self.title = @"博客";
     [self.view setBackgroundColor:[UIColor whiteColor]];
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onPreview:)];
-    
-    
-    
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"test"
-                                                                                 style:UIBarButtonItemStylePlain
-                                                                                target:self
-                                                 action:@selector(openTestView)];
     [self addFreshingControls];
     [self.viewModel loadAtHead];
 }
@@ -102,6 +98,21 @@
                 [self FavoriteBlog:model];
                 NSLog(@"weeklyid:%@",model.weeklyid);
             }else if([item.title isEqualToString:@"分享"]){
+                NSString *content = [NSString new];
+                if (model.content.length > 100) {
+                    content = [model.content substringToIndex:100];
+                }else{
+                    content = model.content;
+                }
+                NSString *str = [NSString stringWithFormat:@"%@%@",content,model.blogurl];
+                @strongify(self)
+                [UMSocialSnsService presentSnsIconSheetView:self
+                                                     appKey:@"5733e97d67e58e03bc000fd2"
+                                                  shareText:str
+                                                 shareImage:[UIImage imageNamed:@"icon"]
+                                            shareToSnsNames:@[UMShareToSina]
+                                                   delegate:self];
+                
                 NSLog(@"weeklyid:%@",model.weeklyid);
             }
         };
@@ -117,21 +128,19 @@
                                              animated:YES];
         
         
-//        controller.onComplete = ^(UIViewController *c)
-//        {
-//            MKPreviewController *pc = (MKPreviewController *) c;
-//            NSLog(@"%@", pc.bodyMarkdown);
-//            [c dismissViewControllerAnimated:YES completion:nil];
-//        };
-//        [self.navigationController pushViewController:controller animated:YES];
-//        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-//        [self presentViewController:nav animated:YES completion:nil];
-//        [self.navigationController pushViewController:nav animated:YES];
-        
-        
     }
 }
 
+//实现回调方法：
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
+}
 //- (instancetype)init{
 //    self = [super initWithStyle:UITableViewStylePlain];
 //    if (self) {

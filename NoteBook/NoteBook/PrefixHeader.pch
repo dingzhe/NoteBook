@@ -39,5 +39,6 @@
 #import "AuthPermissionRegistry.h"
 #import "CocoaLumberjack.h"
 #import "UIView+Ext.h"
-
+#import "UIImage+DzNote.h"
+#import "DataManager.h"
 #endif

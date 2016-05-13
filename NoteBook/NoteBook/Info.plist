@@ -22,7 +22,11 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeRole</key>
-			<string></string>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb2351825892</string>
+			</array>
 		</dict>
 		<dict>
 			<key>CFBundleURLSchemes</key>

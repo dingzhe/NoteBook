@@ -17,14 +17,7 @@
     if (self = [super init]) {
         
         @weakify(self)
-//        RACSignal *enabeld = \
-//        [RACSignal combineLatest:@[
-//                                   RACObserve(self, phoneNumber),
-//                                   RACObserve(self, password)
-//                                   ]
-//                          reduce:^(NSString *phoneNumber, NSString *password){
-//                              return @(phoneNumber.length == MOBILE_MAX_LENGTH && password.length > 0);
-//                          }];
+
         RACSignal *enabeld = \
         [RACSignal combineLatest:@[
                                    RACObserve(self, phoneNumber),

@@ -8,7 +8,6 @@
 
 #import "RootTabBarViewController.h"
 #import "WeeklyListTableViewController.h"
-//#import "MarkdownViewController.h"
 #import "PersonalViewController.h"
 #import "NoteViewController.h"
 
@@ -101,10 +100,7 @@
                    imageName:@"ic_profile_normal"
            selectedImageName:@"ic_profile_press"];
     
-//    [self setTabBarItem:tabBarItems[3]
-//                  title:@"我的"
-//              imageName:@"ic_profile_normal"
-//      selectedImageName:@"ic_profile_press"];
+    
 }
 
 - (void) customiseAppearance {

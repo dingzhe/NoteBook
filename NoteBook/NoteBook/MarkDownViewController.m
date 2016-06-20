@@ -19,6 +19,7 @@
 @implementation MarkdownViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClick:)];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

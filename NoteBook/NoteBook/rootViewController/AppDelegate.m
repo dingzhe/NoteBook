@@ -9,9 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "WeeklyListTableViewController.h"
-//#import "MarkdownViewController.h"
 #import "RootTabBarViewController.h"
-//#import "PermissionManager.h"
+#import "PermissionManager.h"
 #import "PermissionManager+DzNote.h"
 #import "UMSocial.h"   
 #import "UMSocialSinaSSOHandler.h"
@@ -25,6 +24,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Lauched in %f.",CFAbsoluteTimeGetCurrent());
+    });
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[RootTabBarViewController alloc]init];
@@ -33,22 +35,6 @@
     [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2351825892"
                                               secret:@"9f175cbf56a2ba272b4fee64287d11f8"
                                          RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
-//    MarkdownViewController *appVC = [[MarkdownViewController alloc] init];
-//    appVC.view.backgroundColor = [UIColor orangeColor];
-//    appVC.title = @"app";
-//    UINavigationController *appNav = [[UINavigationController alloc] initWithRootViewController:appVC];
-//    
-//    WeeklyListTableViewController *weelyListController = [[WeeklyListTableViewController alloc] init];
-//    
-//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-//    
-//    
-////    UIBarButtonItem *testAPI = [[UIBarButtonItem alloc] initWithTitle:@"test" style:UIBarButtonItemStylePlain target:self action:@selector(openTestView)];
-////    
-////    weelyListController.navigationItem.leftBarButtonItem = testAPI;
-//    _navController = [[UINavigationController alloc] initWithRootViewController:weelyListController];
-//    tabBarController.viewControllers = @[_navController,appNav];
-//    self.window.rootViewController = tabBarController;
     
     
     return YES;

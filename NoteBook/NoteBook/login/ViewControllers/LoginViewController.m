@@ -165,8 +165,7 @@
     @weakify(self)
     
     GetVerifyCodeViewModel *registerVM = [[GetVerifyCodeViewModel alloc] initWithType:GetVerifyCodeTypeRegister];
-//    RegisterViewController *registerVC = [[RegisterViewController alloc] initWithModel:registerVM];
-//    [self.navigationController pushViewController:registerVC animated:YES];
+    
     
     
     // show register view controller after getting verify code
@@ -175,13 +174,8 @@
         [self.navigationController popToRootViewControllerAnimated:YES];
     }];
     
-//     after register successfully
-//    [registerVM.loginUpCommand.responses subscribeNext:^(id _) {
-//        @strongify(self)
-//        
-//        
-//
-//    }];
+
+    
     
     GetVerifyCodeViewController *getCodeVC = [[GetVerifyCodeViewController alloc] initWithViewModel:registerVM];
     [self.navigationController pushViewController:getCodeVC animated:YES];
@@ -191,26 +185,7 @@
     
     [self setEditing:NO];
     
-    @weakify(self)
-    
-//    ResetPasswordViewModel *resetPasswordVM = [[ResetPasswordViewModel alloc] init];
-//    
-//    [resetPasswordVM.nextSignal subscribeNext:^(id x) {
-//        @strongify(self)
-//        if ([self.navigationController hasPushedViewControllerWithClass:RegisterViewController.class]) {
-//            return;
-//        }
-//        ResetPasswordViewController *registerVC = [[ResetPasswordViewController alloc] initWithModel:resetPasswordVM];
-//        [self.navigationController pushViewController:registerVC animated:YES];
-//    }];
-//    
-//    [resetPasswordVM.resetPassowrdCommand.responses subscribeNext:^(id _) {
-//        @strongify(self)
-//        [self.navigationController popToRootViewControllerAnimated:YES];
-//    }];
-//    
-//    GetVerifyCodeViewController *getCodeVC = [[GetVerifyCodeViewController alloc] initWithViewModel:resetPasswordVM];
-//    [self.navigationController pushViewController:getCodeVC animated:YES];
+//    @weakify(self)
 }
 
 

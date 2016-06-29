@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "435AE8A72A53311CECD478C7D634C04CDE0578BB+++AF7206D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++6762863" : 0,
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++AF7206D" : 0,
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++0C1075A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "947E5881-1B17-49B2-82F0-46261D14CD36",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++6762863" : "testLib\/",
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++AF7206D" : "note-ios\/",
+    "435AE8A72A53311CECD478C7D634C04CDE0578BB+++0C1075A" : "testLib\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NoteBook",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NoteBook.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "114.215.152.69:\/home\/dz\/git\/note-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "435AE8A72A53311CECD478C7D634C04CDE0578BB+++0C1075A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dingzhe\/NoteBook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "435AE8A72A53311CECD478C7D634C04CDE0578BB+++6762863"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dingzhe\/NoteBook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "435AE8A72A53311CECD478C7D634C04CDE0578BB+++AF7206D"
+    }
+  ]
+}

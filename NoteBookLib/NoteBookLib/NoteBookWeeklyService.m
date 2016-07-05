@@ -13,12 +13,15 @@
 
 - (instancetype) init {
     if (self = [super init]) {
+        
         _api = [SWGWeeklyApi apiWithBasePath:ServerURL];
+    
     }
     return self;
 }
 
 - (RACCommand*) weeklyListCommandEnable:(RACSignal*)enable{
+//    NSLog(@"---%@",ServerURL);
     return [_api commandWithSelector:@selector(weeklyListWithBody:completionHandler:) enabled:enable];
 }
 

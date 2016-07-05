@@ -3,10 +3,10 @@ platform :ios, '7.0'
 workspace 'NoteBook'
 
 # Dummy default project
-xcodeproj 'NoteBook/NoteBook.xcodeproj'
+project 'NoteBook/NoteBook.xcodeproj'
 
 target :NoteBookLib do
-    xcodeproj 'NoteBookLib/NoteBookLib.xcodeproj'
+    project 'NoteBookLib/NoteBookLib.xcodeproj'
     
     pod 'AFNetworking', '2.6.0', :inhibit_warnings => true
 end
@@ -21,7 +21,7 @@ def testing_pods
     pod 'ISO8601', '0.3.0'
 end
 target :"NoteBook" do
-    xcodeproj 'NoteBook/NoteBook.xcodeproj'
+    project 'NoteBook/NoteBook.xcodeproj'
     testing_pods
     pod 'MMMarkdown'
 #    pod 'Reveal-iOS-SDK', '1.5.1', :configurations => ['Debug']
@@ -30,6 +30,8 @@ target :"NoteBook" do
     pod 'CocoaLumberjack', '2.0.0-rc'
     pod 'UMengSocialCOM', '~> 5.1'
     pod 'FMDB'
+    pod 'OneAPM','~> 2.2.1'
+    pod 'JSPatch'
 end
 target :"NoteBookTests" do
     testing_pods

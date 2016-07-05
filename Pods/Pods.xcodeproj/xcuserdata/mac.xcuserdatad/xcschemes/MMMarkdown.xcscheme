@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2CB9BAC7A108C1061FE08DE7'
+               BlueprintIdentifier = 'F0C7F9FBF3A825957E5748F71026206C'
                BlueprintName = 'MMMarkdown'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMMMarkdown.a'>

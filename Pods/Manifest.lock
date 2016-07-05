@@ -34,10 +34,14 @@ PODS:
   - FMDB/standard (2.6.2)
   - ISO8601 (0.3.0)
   - JSONModel (1.1.0)
+  - JSPatch (1.1):
+    - JSPatch/Core (= 1.1)
+  - JSPatch/Core (1.1)
   - Masonry (0.6.1)
   - MBProgressHUD (0.9.1)
   - MJRefresh (1.4.1)
   - MMMarkdown (0.5.4)
+  - OneAPM (2.2.3)
   - ReactiveCocoa (2.4.7):
     - ReactiveCocoa/UI (= 2.4.7)
   - ReactiveCocoa/Core (2.4.7):
@@ -57,10 +61,12 @@ DEPENDENCIES:
   - FMDB
   - ISO8601 (= 0.3.0)
   - JSONModel (= 1.1.0)
+  - JSPatch
   - Masonry (= 0.6.1)
   - MBProgressHUD (= 0.9.1)
   - MJRefresh (= 1.4.1)
   - MMMarkdown
+  - OneAPM (~> 2.2.1)
   - ReactiveCocoa (= 2.4.7)
   - ReactiveViewModel (= 0.3)
   - Tortuga22-NinePatch (= 0.1.1)
@@ -73,13 +79,17 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
+  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: 6a0fd4c81a957803bd99bbbf55a956d1d6f41263
   MMMarkdown: 754f9154136d224178f51f2b2ba67a66a89d96ea
+  OneAPM: e40bc66d6d101a51529bf8b3bfc647174e8d1bc0
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
   Tortuga22-NinePatch: ea73eedc8d15967d9910ef202f62e50408e673c5
   UMengSocialCOM: 8fa4732b03757161aaa8aab97be7d980adb9ccdb
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 26dae141c742418b29ef0e77048173bc04a24574
+
+COCOAPODS: 1.0.1

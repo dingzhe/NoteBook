@@ -8,7 +8,9 @@
 
 #ifndef NoteBookConfigure_h
 #define NoteBookConfigure_h
+//Test
+//#define ServerURL @"http://114.215.152.69/php/api"
 
-#define ServerURL @"http://114.215.152.69/php/api"
-
+//Pro
+#define ServerURL @"https://dingzero.com/api"
 #endif /* NoteBookConfigure_h */

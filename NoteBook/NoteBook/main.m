@@ -14,6 +14,7 @@ int main(int argc, char * argv[]) {
     
     NSLog(@"start in %f ",CFAbsoluteTimeGetCurrent());
     @autoreleasepool {
+        [OneAPM startWithApplicationToken: @ "9C1574EDF94C926FE9908020C1E277CE83"];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

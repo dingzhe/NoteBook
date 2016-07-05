@@ -14,6 +14,7 @@
 #import "PermissionManager+DzNote.h"
 #import "UMSocial.h"   
 #import "UMSocialSinaSSOHandler.h"
+#import "JPEngine.h"
 
 @interface AppDelegate ()
 @property(nonatomic,strong)UINavigationController *navController;
@@ -24,20 +25,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [JPEngine startEngine];
+//    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
+//    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dingzero.com/jizhe.js"]] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        NSString *script = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [JPEngine evaluateScript:script];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [self.window makeKeyAndVisible];
+        self.window.rootViewController = [[RootTabBarViewController alloc]init];
+        [PermissionManager.manager registerVisionPermissions];
+        [UMSocialData setAppKey:@"5733e97d67e58e03bc000fd2"];
+        [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2351825892"
+                                                  secret:@"9f175cbf56a2ba272b4fee64287d11f8"
+                                             RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    }];
+//    [JPEngine evaluateScript:script];
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [self.window addSubview:[self genView]];
+//    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = [UIViewController new];
+    
+    
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"Lauched in %f.",CFAbsoluteTimeGetCurrent());
+        NSLog(@"---%@",ServerURL);
     });
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = [[RootTabBarViewController alloc]init];
-    [PermissionManager.manager registerVisionPermissions];
-    [UMSocialData setAppKey:@"5733e97d67e58e03bc000fd2"];
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2351825892"
-                                              secret:@"9f175cbf56a2ba272b4fee64287d11f8"
-                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
-    
+
+//
+//    NSString *str = ServerURL;
+    NSLog(@"%@",ServerURL);
     
     return YES;
+}
+
+
+- (UIView *)genView
+{
+    NSLog(@"%@",ServerURL);
+    return [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
 }
 - (void)openTestView{
     ViewController *testVC = [ViewController viewController];

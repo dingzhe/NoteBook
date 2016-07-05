@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 2030B4671BFF1CD700C96C6B /* Build configuration list for PBXAggregateTarget "CreatNoteApiSDK" */;
 			buildPhases = (
-				2030B46A1BFF1CDB00C96C6B /* ShellScript */,
+				2030B46A1BFF1CDB00C96C6B /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -839,13 +839,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2030B46A1BFF1CDB00C96C6B /* ShellScript */ = {
+		2030B46A1BFF1CDB00C96C6B /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

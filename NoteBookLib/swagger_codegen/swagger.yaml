@@ -952,10 +952,6 @@ definitions:
     properties:
       already:
         type: string          
-          
-          
-          
-  MyWeeklyRequest:
   WeeklyListRequest:
     properties:
       app:

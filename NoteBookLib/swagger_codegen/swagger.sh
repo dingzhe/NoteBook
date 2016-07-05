@@ -12,16 +12,16 @@ echo "Clean generated files..."
 rm -f NoteBookLib/$GEN_HEADER
 rm -f NoteBookLib/$DES_DIR/*
                           
-                          echo "Generating $GEN_HEADER"
+echo "Generating $GEN_HEADER"
                           
-                          for file in $(ls "$TMP_DIR/client" | grep \\.h); do
-                          echo "#import \"$DES_DIR/$file\"" >> NoteBookLib/$GEN_HEADER
-                          done
+for file in $(ls "$TMP_DIR/client" | grep \\.h); do
+echo "#import \"$DES_DIR/$file\"" >> NoteBookLib/$GEN_HEADER
+done
                           
-                          echo "Moving generted files..."
-                          mkdir -p "NoteBookLib/$DES_DIR"
-                          mv $TMP_DIR/client/* NoteBookLib/$DES_DIR/
+echo "Moving generted files..."
+mkdir -p "NoteBookLib/$DES_DIR"
+mv $TMP_DIR/client/* NoteBookLib/$DES_DIR/
                           
-                          rm -r "$TMP_DIR/client"
-                          rm -f "$TMP_DIR/Podfile"
-                          fi
+rm -r "$TMP_DIR/client"
+rm -f "$TMP_DIR/Podfile"
+fi

@@ -1473,22 +1473,6 @@
                 }
             }
         },
-        "MyWeeklyRequest": {
-            "properties": {
-                "app": {
-                    "type": "string"
-                },
-                "sign": {
-                    "type": "string"
-                },
-                "time": {
-                    "type": "string"
-                },
-                "uid": {
-                    "type": "string"
-                }
-            }
-        },
         "WeeklyListRequest": {
             "properties": {
                 "app": {
@@ -1518,6 +1502,22 @@
                     "items": {
                         "$ref": "#/definitions/Weekly"
                     }
+                }
+            }
+        },
+        "MyWeeklyRequest": {
+            "properties": {
+                "app": {
+                    "type": "string"
+                },
+                "sign": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "uid": {
+                    "type": "string"
                 }
             }
         },
